@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Months>
+  <Month value="01" showscore="1" />
+  <Month value="02" showscore="0" />
+  <Month value="03" showscore="1" />
+  <Month value="04" showscore="1" />
+  <Month value="05" showscore="1" />
+  <Month value="06" showscore="1" />
+  <Month value="07" showscore="0" />
+  <Month value="08" showscore="0" />
+  <Month value="09" showscore="1" />
+  <Month value="10" showscore="1" />
+  <Month value="11" showscore="1" />
+  <Month value="12" showscore="1" />
+</Months>

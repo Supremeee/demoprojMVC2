@@ -1,0 +1,55 @@
+<!--l version="1.0" encoding="gb2312"-->
+<Departments>
+  <Department Dept_code="A01" Dept_name="纪委监察处" dept_type="1" Website="http://jw.hynu.cn" />
+  <Department Dept_code="A02" Dept_name="工会" dept_type="1" Website="http://gh.hynu.cn" />
+  <Department Dept_code="A03" Dept_name="党政办公室" dept_type="1" Website="http://dzbgs.hynu.cn" />
+  <Department Dept_code="A06" Dept_name="组织部、党校" dept_type="1" Website="http://zzb.hynu.cn" />
+  <Department Dept_code="A05" Dept_name="机关党总支" dept_type="1" Website="http://jgdzz.hynu.cn" />
+  <Department Dept_code="A04" Dept_name="宣传统战部" dept_type="1" Website="http://xctzb.hynu.cn" />
+  <Department Dept_code="A07" Dept_name="人事处" dept_type="1" Website="http://rsc.hynu.cn" />
+  <Department Dept_code="A08" Dept_name="教务处" dept_type="1" Website="http://jwc.hynu.cn" />
+  <Department Dept_code="A09" Dept_name="改革与发展研究中心" dept_type="1" Website="http://gfzx.hynu.cn" />
+  <Department Dept_code="A10" Dept_name="科技处" dept_type="1" Website="http://kyc.hynu.cn" />
+  <Department Dept_code="A11" Dept_name="学生工作处" dept_type="1" Website="http://xsc.hynu.cn" />
+  <Department Dept_code="A12" Dept_name="招生就业处" dept_type="1" Website="http://zsjy.hynu.cn" />
+  <Department Dept_code="A13" Dept_name="规划建设处" dept_type="1" Website="http://hqc.hynu.cn" />
+  <Department Dept_code="A14" Dept_name="资产处" dept_type="1" Website="http://zcc.hynu.cn" />
+  <Department Dept_code="A15" Dept_name="计划财务处" dept_type="1" Website="http://cwc.hynu.cn" />
+  <Department Dept_code="A16" Dept_name="审计处" dept_type="1" Website="http://sjc.hynu.cn" />
+  <Department Dept_code="A17" Dept_name="保卫处" dept_type="1" Website="http://bwc.hynu.cn" />
+  <Department Dept_code="A18" Dept_name="团委" dept_type="1" Website="http://tw.hynu.cn" />
+  <Department Dept_code="A19" Dept_name="期刊社" dept_type="1" Website="http://xb.hynu.cn" />
+  <Department Dept_code="A20" Dept_name="离退休人员管理处" dept_type="1" Website="http://ltxc.hynu.cn" />
+  <Department Dept_code="A21" Dept_name="国际交流处" dept_type="1" Website="http://gjjlc.hynu.cn" />
+  <Department Dept_code="A22" Dept_name="档案馆" dept_type="1" Website="http://dag.hynu.cn" />
+  <Department Dept_code="A23" Dept_name="图书馆" dept_type="1" Website="http://tsg.hynu.cn" />
+  <Department Dept_code="A24" Dept_name="信息与网络中心" dept_type="1" Website="http://metc.hynu.cn" />
+  <Department Dept_code="A25" Dept_name="后勤处" dept_type="1" Website="http://xhqjt.hynu.cn" />
+  <Department Dept_code="A26" Dept_name="关心下一代工作委员会" dept_type="1" Website="http://ltxc.hynu.cn/ggw" />
+  <Department Dept_code="A27" Dept_name="学科建设办" dept_type="1" Website="http://xkjsb.hynu.cn" />
+  <Department Dept_code="A28" Dept_name="转型发展办" dept_type="1" Website="http://zxfzb.hynu.cn" />
+  <Department Dept_code="A29" Dept_name="教学质量监控中心、审核评估办公室" dept_type="1" Website="http://pg.hynu.cn/" />
+  <Department Dept_code="A30" Dept_name="校医院" dept_type="1" Website="http://yws.hynu.cn" />
+  <Department Dept_code="A31" Dept_name="马克思主义学院" dept_type="2" Website="http://marx.hynu.cn" />
+
+  <Department Dept_code="A33" Dept_name="经济与管理学院" dept_type="2" Website="http://jjglxy.hynu.cn" />
+  <Department Dept_code="A34" Dept_name="法学院" dept_type="2" Website="http://law.hynu.cn" />
+  <Department Dept_code="A35" Dept_name="文学院" dept_type="2" Website="http://wxy.hynu.cn" />
+  <Department Dept_code="A36" Dept_name="新闻与传播学院" dept_type="2" Website="http://xwxy.hynu.cn" />
+  <Department Dept_code="A37" Dept_name="外国语学院" dept_type="2" Website="http://wyxy.hynu.cn" />
+  <Department Dept_code="A38" Dept_name="数学与统计学院" dept_type="2" Website="http://sxxy.hynu.cn" />
+  <Department Dept_code="A39" Dept_name="体育科学学院" dept_type="2" Website="http://tyxy.hynu.cn" />
+  <Department Dept_code="A40" Dept_name="音乐学院" dept_type="2" Website="http://yyxy.hynu.cn" />
+  <Department Dept_code="A41" Dept_name="美术学院" dept_type="2" Website="http://msxy.hynu.cn" />
+  <Department Dept_code="A42" Dept_name="城市与旅游学院" dept_type="2" Website="http://clxy.hynu.cn" />
+  <Department Dept_code="A43" Dept_name="物理与电子工程学院" dept_type="2" Website="http://wdxy.hynu.cn" />
+  <Department Dept_code="A44" Dept_name="化学与材料科学学院" dept_type="2" Website="http://hcxy.hynu.cn" />
+  <Department Dept_code="A45" Dept_name="计算机科学与技术学院" dept_type="2" Website="http://jkxy.hynu.cn" />
+  <Department Dept_code="A46" Dept_name="教育科学学院" dept_type="2" Website="http://jykxxy.hynu.cn" />
+  <Department Dept_code="A47" Dept_name="生命科学与环境学院" dept_type="2" Website="http://swxy.hynu.cn" />
+  <Department Dept_code="A50" Dept_name="初等教育学院" dept_type="2" Website="http://cjxy.hynu.cn" />
+  <Department Dept_code="A51" Dept_name="中兴通讯信息工程学院" dept_type="2" Website="http://xxgcxy.hynu.cn" />
+  <Department Dept_code="A48" Dept_name="南岳学院" dept_type="2" Website="http://nyxy.hynu.cn" />
+  <Department Dept_code="A49" Dept_name="继续教育与教师培训学院教师发展中心" dept_type="2" Website="http://jjy.hynu.cn" />
+  <Department Dept_code="A28" Dept_name="协同创新中心" dept_type="2" Website="http://xtcxzx.hynu.cn" />
+</Departments>

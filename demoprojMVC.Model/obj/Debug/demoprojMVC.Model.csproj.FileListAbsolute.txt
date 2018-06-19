@@ -1,0 +1,12 @@
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\demoprojMVC.Model.dll.config
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\demoprojMVC.Model.dll
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\demoprojMVC.Model.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\EntityFramework.dll
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\EntityFramework.xml
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\Project\demoprojMVC2\demoprojMVC.Model\obj\Debug\demoprojMVC.Model.dll
+I:\Project\demoprojMVC2\demoprojMVC.Model\obj\Debug\demoprojMVC.Model.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\EntityFramework.SqlServer.dll
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\EntityFramework.SqlServer.xml
+I:\Project\demoprojMVC2\demoprojMVC.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+I:\Project\demoprojMVC2\demoprojMVC.Model\obj\Debug\demoprojMVC.Model.csprojResolveAssemblyReference.cache

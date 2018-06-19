@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<DItems D_Name="增扣分数" DValue="a0101" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0102" CodeLength="10">
+  <DItem DValue="1" Text="10" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0103" CodeLength="10">
+  <DItem DValue="1" Text="40" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0104" CodeLength="10">
+  <DItem DValue="1" Text="20" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0105" CodeLength="10">
+  <DItem DValue="1" Text="40" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0106" CodeLength="10">
+  <DItem DValue="1" Text="40" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0107" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0201" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0202" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0203" CodeLength="10">
+  <DItem DValue="1" Text="2.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0204" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0205" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0206" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0301" CodeLength="10">
+  <DItem DValue="1" Text="20" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0302" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0303" CodeLength="10">
+  <DItem DValue="1" Text="5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0304" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0305" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0306" CodeLength="10">
+  <DItem DValue="1" Text="5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0307" CodeLength="10">
+  <DItem DValue="1" Text="0.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0401" CodeLength="10">
+  <DItem DValue="1" Text="20" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0402" CodeLength="10">
+  <DItem DValue="1" Text="40" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0501" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0502" CodeLength="10">
+  <DItem DValue="1" Text="20" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0503" CodeLength="10">
+  <DItem DValue="1" Text="10" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0504" CodeLength="10">
+  <DItem DValue="1" Text="10" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0505" CodeLength="10">
+  <DItem DValue="1" Text="40" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0506" CodeLength="10">
+  <DItem DValue="1" Text="50" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0507" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0508" CodeLength="10">
+  <DItem DValue="1" Text="20" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0509" CodeLength="10">
+  <DItem DValue="1" Text="20" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0510" CodeLength="10">
+  <DItem DValue="1" Text="10" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0511" CodeLength="10">
+  <DItem DValue="1" Text="10" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0512" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0513" CodeLength="10">
+  <DItem DValue="1" Text="10" Listorder="0" Visible="1"/>
+</DItems>
+
+<DItems D_Name="增扣分数" DValue="a0601" CodeLength="10">
+  <DItem DValue="1" Text="4" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0602" CodeLength="10">
+  <DItem DValue="1" Text="5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0603" CodeLength="10">
+  <DItem DValue="1" Text="5.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0604" CodeLength="10">
+  <DItem DValue="1" Text="4" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0605" CodeLength="10">
+  <DItem DValue="1" Text="4.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0606" CodeLength="10">
+  <DItem DValue="1" Text="2.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0607" CodeLength="10">
+  <DItem DValue="1" Text="5.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0608" CodeLength="10">
+  <DItem DValue="1" Text="8.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0609" CodeLength="10">
+  <DItem DValue="1" Text="2" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0610" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0611" CodeLength="10">
+  <DItem DValue="1" Text="0.2" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0612" CodeLength="10">
+  <DItem DValue="1" Text="0.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0613" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0614" CodeLength="10">
+  <DItem DValue="1" Text="4" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0615" CodeLength="10">
+  <DItem DValue="1" Text="8" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0616" CodeLength="10">
+  <DItem DValue="1" Text="15" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0617" CodeLength="10">
+  <DItem DValue="1" Text="0.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0618" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0619" CodeLength="10">
+  <DItem DValue="1" Text="2" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0620" CodeLength="10">
+  <DItem DValue="1" Text="3" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0621" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0622" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0623" CodeLength="10">
+  <DItem DValue="1" Text="2" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0624" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0625" CodeLength="10">
+  <DItem DValue="1" Text="0.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0626" CodeLength="10">
+  <DItem DValue="1" Text="3" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0627" CodeLength="10">
+  <DItem DValue="1" Text="2" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0628" CodeLength="10">
+  <DItem DValue="1" Text="2" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0629" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0630" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0631" CodeLength="10">
+  <DItem DValue="1" Text="10-30" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0632" CodeLength="10">
+  <DItem DValue="1" Text="4-6" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0633" CodeLength="10">
+  <DItem DValue="1" Text="2.5-4" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0634" CodeLength="10">
+  <DItem DValue="1" Text="1-2.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0635" CodeLength="10">
+  <DItem DValue="1" Text="0.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0636" CodeLength="10">
+  <DItem DValue="1" Text="1" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0637" CodeLength="10">
+  <DItem DValue="1" Text="1.5" Listorder="0" Visible="1"/>
+</DItems>
+<DItems D_Name="增扣分数" DValue="a0638" CodeLength="10">
+  <DItem DValue="1" Text="2" Listorder="0" Visible="1"/>
+</DItems>
+  </root>

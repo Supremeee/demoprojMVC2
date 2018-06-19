@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="hynustuaffModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ActionInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="SubTime" Type="datetime" Nullable="false" />
+          <Property Name="ModfiedOn" Type="datetime" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="64" />
+          <Property Name="DelFlag" Type="smallint" Nullable="false" />
+          <Property Name="Url" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="HttpMethd" Type="nvarchar" MaxLength="32" />
+          <Property Name="ActionName" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="IsMenu" Type="bit" Nullable="false" />
+          <Property Name="MenuIcon" Type="nvarchar" MaxLength="512" />
+          <Property Name="Sort" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="acts">
+          <Key>
+            <PropertyRef Name="act_id" />
+          </Key>
+          <Property Name="act_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="act_tarids" Type="varchar" MaxLength="50" />
+          <Property Name="act_tartablename" Type="varchar" MaxLength="25" />
+          <Property Name="act_userIP" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="act_username" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="act_useraction" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="act_sqlstr" Type="varchar" MaxLength="200" />
+          <Property Name="act_datetime" Type="datetime" />
+          <Property Name="act_deptname" Type="varchar" MaxLength="70" Nullable="false" />
+          <Property Name="act_userrolename" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="act_DETAIL" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="application_list">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="application_program" Type="varchar" MaxLength="10" />
+          <Property Name="school_code" Type="varchar" MaxLength="10" />
+          <Property Name="school_year" Type="varchar" MaxLength="10" />
+          <Property Name="application_start_data" Type="datetime" />
+          <Property Name="application_end_data" Type="datetime" />
+          <Property Name="application_status" Type="varchar" MaxLength="10" />
+          <Property Name="prize_level" Type="varchar" MaxLength="10" />
+          <Property Name="is_difficult_stu" Type="bit" />
+          <Property Name="score_kao_ping_lowest" Type="varchar" MaxLength="10" />
+          <Property Name="nianji_score_rank" Type="varchar" MaxLength="10" />
+          <Property Name="banji_score_rank" Type="varchar" MaxLength="10" />
+          <Property Name="danke_lowest" Type="varchar" MaxLength="10" />
+          <Property Name="pinjun_lowest" Type="varchar" MaxLength="10" />
+          <Property Name="is_fail_a_exam" Type="bit" />
+          <Property Name="is_punishment" Type="bit" />
+          <Property Name="once_is_punishment" Type="bit" />
+          <Property Name="suitable_object" Type="varchar" MaxLength="50" />
+          <Property Name="project_intro" Type="varchar(max)" />
+          <Property Name="instructor_audit" Type="bit" />
+          <Property Name="instructor" Type="varchar" MaxLength="10" />
+          <Property Name="xuegong_audit" Type="bit" />
+          <Property Name="xuegong" Type="varchar" MaxLength="10" />
+          <Property Name="dept_approver" Type="varchar" MaxLength="10" />
+          <Property Name="dept_audit" Type="bit" />
+          <Property Name="is_instructor_audit" Type="bit" />
+          <Property Name="is_dept_audit" Type="bit" />
+          <Property Name="audit" Type="bit" Nullable="false" />
+          <Property Name="lock" Type="bit" />
+        </EntityType>
+        <EntityType Name="Departments">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="dept_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="dept_code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="subject_code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="connect_user" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="dept_director" Type="varchar" MaxLength="16" Nullable="false" />
+          <Property Name="found_time" Type="datetime" />
+          <Property Name="email" Type="varchar" MaxLength="25" />
+          <Property Name="tel" Type="varchar" MaxLength="20" />
+          <Property Name="website" Type="varchar" MaxLength="50" />
+          <Property Name="introduction" Type="nvarchar(max)" />
+          <Property Name="numofyanjiusheng" Type="int" />
+          <Property Name="numofboshisheng" Type="int" />
+          <Property Name="numofCNBooks" Type="int" />
+          <Property Name="numofFLBooks" Type="int" />
+          <Property Name="numofCNQikan" Type="int" />
+          <Property Name="numofFLQikan" Type="int" />
+          <Property Name="update_time" Type="datetime" />
+          <Property Name="audit" Type="bit" />
+          <Property Name="lock" Type="tinyint" />
+          <Property Name="Lab_equipment_count" Type="int" />
+          <Property Name="address" Type="varchar" MaxLength="30" />
+          <Property Name="Lab_equipment_property" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="admit_unit" Type="varchar" MaxLength="30" />
+          <Property Name="numstaff" Type="int" />
+          <Property Name="numproject" Type="int" />
+          <Property Name="numarchievement" Type="int" />
+          <Property Name="numaward" Type="int" />
+          <Property Name="numreflection" Type="int" />
+        </EntityType>
+        <EntityType Name="R_UserInfo_ActionInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="HasPermission" Type="bit" Nullable="false" />
+          <Property Name="UserInfoID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="ActionInfoID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="DelFlag" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RoleInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="SubTime" Type="datetime" Nullable="false" />
+          <Property Name="ModfiedOn" Type="datetime" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="64" />
+          <Property Name="DelFlag" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RoleInfoActionInfo">
+          <Key>
+            <PropertyRef Name="RoleInfoActionInfo_ActionInfo_ID" />
+            <PropertyRef Name="ActionInfo_ID" />
+          </Key>
+          <Property Name="RoleInfoActionInfo_ActionInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="ActionInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RoleInfoUserInfo">
+          <Key>
+            <PropertyRef Name="RoleInfoUserInfo_UserInfo_ID" />
+            <PropertyRef Name="UserInfo_ID" />
+          </Key>
+          <Property Name="RoleInfoUserInfo_UserInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="UserInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_App">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="app_code" Type="varchar" MaxLength="8" />
+          <Property Name="app_name" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="app_nameEn" Type="varchar" MaxLength="50" />
+          <Property Name="app_type" Type="varchar" MaxLength="4" />
+          <Property Name="dept_Code" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="proc_name" Type="varchar" MaxLength="30" />
+          <Property Name="host_url" Type="varchar" MaxLength="50" />
+          <Property Name="audit" Type="bit" />
+          <Property Name="listorder" Type="int" />
+          <Property Name="parent_appcode" Type="varchar" MaxLength="8" />
+        </EntityType>
+        <EntityType Name="T_Roles">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="role_name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="role_AuthorRights" Type="int" Nullable="false" />
+          <Property Name="DataScale" Type="varchar" MaxLength="10" />
+          <Property Name="audit" Type="bit" />
+          <Property Name="ntime" Type="datetime" />
+          <Property Name="sitemap" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="T_Users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="varchar" MaxLength="13" Nullable="false" />
+          <Property Name="user_code" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="user_name" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="user_realname" Type="varchar" MaxLength="12" />
+          <Property Name="user_roles_code" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="user_dept_code" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="user_telphone" Type="varchar" MaxLength="50" />
+          <Property Name="user_password" Type="varchar" MaxLength="32" Nullable="false" />
+          <Property Name="regdatetime" Type="datetime" />
+          <Property Name="lastApp" Type="varchar" MaxLength="60" />
+          <Property Name="authApps" Type="varchar(max)" />
+          <Property Name="authRights" Type="varchar(max)" />
+          <Property Name="lastLoginDatetime" Type="datetime" />
+          <Property Name="lastLoginIP" Type="varchar" MaxLength="30" />
+          <Property Name="useRolesitemap" Type="bit" />
+          <Property Name="lock" Type="smallint" />
+          <Property Name="audit" Type="bit" />
+        </EntityType>
+        <EntityType Name="td_students">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="school_code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="student_name" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="grade" Type="varchar" MaxLength="10" />
+          <Property Name="dept" Type="varchar" MaxLength="10" />
+          <Property Name="major" Type="varchar" MaxLength="10" />
+          <Property Name="banji" Type="varchar" MaxLength="10" />
+          <Property Name="gender" Type="varchar" MaxLength="2" />
+          <Property Name="nation" Type="varchar" MaxLength="10" />
+          <Property Name="born_date" Type="datetime" />
+          <Property Name="telephone" Type="varchar" MaxLength="14" />
+          <Property Name="politicstatus" Type="varchar" MaxLength="6" />
+          <Property Name="ID_card" Type="varchar" MaxLength="18" />
+          <Property Name="native_place" Type="varchar" MaxLength="20" />
+          <Property Name="address" Type="varchar" MaxLength="100" />
+          <Property Name="home_telephone" Type="varchar" MaxLength="14" />
+          <Property Name="rollin_date" Type="datetime" />
+          <Property Name="dormitory" Type="varchar" MaxLength="10" />
+          <Property Name="imageurl" Type="varchar" MaxLength="50" />
+          <Property Name="audit" Type="bit" />
+          <Property Name="lock" Type="bit" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="UName" Type="nvarchar" MaxLength="32" />
+          <Property Name="Pwd" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="ShowName" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="DelFlag" Type="smallint" Nullable="false" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="64" />
+          <Property Name="ModfiedOn" Type="datetime" Nullable="false" />
+          <Property Name="SubTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ActionInfoR_UserInfo_ActionInfo">
+          <End Role="ActionInfo" Type="Self.ActionInfo" Multiplicity="1" />
+          <End Role="R_UserInfo_ActionInfo" Type="Self.R_UserInfo_ActionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActionInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="R_UserInfo_ActionInfo">
+              <PropertyRef Name="ActionInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RoleInfoActionInfo_ActionInfo">
+          <End Role="ActionInfo" Type="Self.ActionInfo" Multiplicity="1" />
+          <End Role="RoleInfoActionInfo" Type="Self.RoleInfoActionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActionInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="RoleInfoActionInfo">
+              <PropertyRef Name="ActionInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RoleInfoActionInfo_RoleInfo">
+          <End Role="RoleInfo" Type="Self.RoleInfo" Multiplicity="1" />
+          <End Role="RoleInfoActionInfo" Type="Self.RoleInfoActionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RoleInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="RoleInfoActionInfo">
+              <PropertyRef Name="RoleInfoActionInfo_ActionInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RoleInfoUserInfo_RoleInfo">
+          <End Role="RoleInfo" Type="Self.RoleInfo" Multiplicity="1" />
+          <End Role="RoleInfoUserInfo" Type="Self.RoleInfoUserInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RoleInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="RoleInfoUserInfo">
+              <PropertyRef Name="RoleInfoUserInfo_UserInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RoleInfoUserInfo_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="RoleInfoUserInfo" Type="Self.RoleInfoUserInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="RoleInfoUserInfo">
+              <PropertyRef Name="UserInfo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoR_UserInfo_ActionInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="R_UserInfo_ActionInfo" Type="Self.R_UserInfo_ActionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="R_UserInfo_ActionInfo">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="hynustuaffModelStoreContainer">
+          <EntitySet Name="ActionInfo" EntityType="Self.ActionInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="acts" EntityType="Self.acts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="application_list" EntityType="Self.application_list" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="R_UserInfo_ActionInfo" EntityType="Self.R_UserInfo_ActionInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RoleInfo" EntityType="Self.RoleInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RoleInfoActionInfo" EntityType="Self.RoleInfoActionInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RoleInfoUserInfo" EntityType="Self.RoleInfoUserInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T_App" EntityType="Self.T_App" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T_Roles" EntityType="Self.T_Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T_Users" EntityType="Self.T_Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="td_students" EntityType="Self.td_students" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ActionInfoR_UserInfo_ActionInfo" Association="Self.FK_ActionInfoR_UserInfo_ActionInfo">
+            <End Role="ActionInfo" EntitySet="ActionInfo" />
+            <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RoleInfoActionInfo_ActionInfo" Association="Self.FK_RoleInfoActionInfo_ActionInfo">
+            <End Role="ActionInfo" EntitySet="ActionInfo" />
+            <End Role="RoleInfoActionInfo" EntitySet="RoleInfoActionInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RoleInfoActionInfo_RoleInfo" Association="Self.FK_RoleInfoActionInfo_RoleInfo">
+            <End Role="RoleInfo" EntitySet="RoleInfo" />
+            <End Role="RoleInfoActionInfo" EntitySet="RoleInfoActionInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RoleInfoUserInfo_RoleInfo" Association="Self.FK_RoleInfoUserInfo_RoleInfo">
+            <End Role="RoleInfo" EntitySet="RoleInfo" />
+            <End Role="RoleInfoUserInfo" EntitySet="RoleInfoUserInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RoleInfoUserInfo_UserInfo" Association="Self.FK_RoleInfoUserInfo_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="RoleInfoUserInfo" EntitySet="RoleInfoUserInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoR_UserInfo_ActionInfo" Association="Self.FK_UserInfoR_UserInfo_ActionInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="hynustuaffModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="act">
+          <Key>
+            <PropertyRef Name="act_id" />
+          </Key>
+          <Property Name="act_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="act_tarids" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="act_tartablename" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="act_userIP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="act_username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="act_useraction" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="act_sqlstr" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="act_datetime" Type="DateTime" Precision="3" />
+          <Property Name="act_deptname" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="act_userrolename" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="act_DETAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="application_list">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="application_program" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="school_code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="school_year" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="application_start_data" Type="DateTime" Precision="3" />
+          <Property Name="application_end_data" Type="DateTime" Precision="3" />
+          <Property Name="application_status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="prize_level" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="is_difficult_stu" Type="Boolean" />
+          <Property Name="score_kao_ping_lowest" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="nianji_score_rank" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="banji_score_rank" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="danke_lowest" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="pinjun_lowest" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="is_fail_a_exam" Type="Boolean" />
+          <Property Name="is_punishment" Type="Boolean" />
+          <Property Name="once_is_punishment" Type="Boolean" />
+          <Property Name="suitable_object" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="project_intro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="instructor_audit" Type="Boolean" />
+          <Property Name="instructor" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="xuegong_audit" Type="Boolean" />
+          <Property Name="xuegong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="dept_approver" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="dept_audit" Type="Boolean" />
+          <Property Name="is_instructor_audit" Type="Boolean" />
+          <Property Name="is_dept_audit" Type="Boolean" />
+          <Property Name="audit" Type="Boolean" Nullable="false" />
+          <Property Name="lock" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dept_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dept_code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="subject_code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="connect_user" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dept_director" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="found_time" Type="DateTime" Precision="3" />
+          <Property Name="email" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="tel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="website" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="introduction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="numofyanjiusheng" Type="Int32" />
+          <Property Name="numofboshisheng" Type="Int32" />
+          <Property Name="numofCNBooks" Type="Int32" />
+          <Property Name="numofFLBooks" Type="Int32" />
+          <Property Name="numofCNQikan" Type="Int32" />
+          <Property Name="numofFLQikan" Type="Int32" />
+          <Property Name="update_time" Type="DateTime" Precision="3" />
+          <Property Name="audit" Type="Boolean" />
+          <Property Name="lock" Type="Byte" />
+          <Property Name="Lab_equipment_count" Type="Int32" />
+          <Property Name="address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Lab_equipment_property" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="admit_unit" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="numstaff" Type="Int32" />
+          <Property Name="numproject" Type="Int32" />
+          <Property Name="numarchievement" Type="Int32" />
+          <Property Name="numaward" Type="Int32" />
+          <Property Name="numreflection" Type="Int32" />
+        </EntityType>
+        <EntityType Name="T_App">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="app_code" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="app_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="app_nameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="app_type" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="dept_Code" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="proc_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="host_url" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="audit" Type="Boolean" />
+          <Property Name="listorder" Type="Int32" />
+          <Property Name="parent_appcode" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="T_Roles">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="role_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="role_AuthorRights" Type="Int32" Nullable="false" />
+          <Property Name="DataScale" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="audit" Type="Boolean" />
+          <Property Name="ntime" Type="DateTime" Precision="3" />
+          <Property Name="sitemap" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="T_Users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_code" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_realname" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="user_roles_code" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_dept_code" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="user_telphone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="user_password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="regdatetime" Type="DateTime" Precision="3" />
+          <Property Name="lastApp" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="authApps" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="authRights" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lastLoginDatetime" Type="DateTime" Precision="3" />
+          <Property Name="lastLoginIP" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="useRolesitemap" Type="Boolean" />
+          <Property Name="lock" Type="Int16" />
+          <Property Name="audit" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="td_students">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="school_code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="student_name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="grade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="dept" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="major" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="banji" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="gender" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="nation" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="born_date" Type="DateTime" Precision="3" />
+          <Property Name="telephone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="politicstatus" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="ID_card" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="native_place" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="home_telephone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="rollin_date" Type="DateTime" Precision="3" />
+          <Property Name="dormitory" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="imageurl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="audit" Type="Boolean" />
+          <Property Name="lock" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="acts" EntityType="Self.act" />
+          <EntitySet Name="application_list" EntityType="Self.application_list" />
+          <EntitySet Name="Departments" EntityType="Self.Department" />
+          <EntitySet Name="T_App" EntityType="Self.T_App" />
+          <EntitySet Name="T_Roles" EntityType="Self.T_Roles" />
+          <EntitySet Name="T_Users" EntityType="Self.T_Users" />
+          <EntitySet Name="td_students" EntityType="Self.td_students" />
+          <EntitySet Name="ActionInfo" EntityType="hynustuaffModel.ActionInfo" />
+          <EntitySet Name="R_UserInfo_ActionInfo" EntityType="hynustuaffModel.R_UserInfo_ActionInfo" />
+          <EntitySet Name="RoleInfo" EntityType="hynustuaffModel.RoleInfo" />
+          <EntitySet Name="UserInfo" EntityType="hynustuaffModel.UserInfo" />
+          <AssociationSet Name="FK_ActionInfoR_UserInfo_ActionInfo" Association="hynustuaffModel.FK_ActionInfoR_UserInfo_ActionInfo">
+            <End Role="ActionInfo" EntitySet="ActionInfo" />
+            <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfoR_UserInfo_ActionInfo" Association="hynustuaffModel.FK_UserInfoR_UserInfo_ActionInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+          </AssociationSet>
+          <AssociationSet Name="RoleInfoActionInfo" Association="hynustuaffModel.RoleInfoActionInfo">
+            <End Role="ActionInfo" EntitySet="ActionInfo" />
+            <End Role="RoleInfo" EntitySet="RoleInfo" />
+          </AssociationSet>
+          <AssociationSet Name="RoleInfoUserInfo" Association="hynustuaffModel.RoleInfoUserInfo">
+            <End Role="RoleInfo" EntitySet="RoleInfo" />
+            <End Role="UserInfo" EntitySet="UserInfo" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="ActionInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="SubTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModfiedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Remark" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="DelFlag" Type="Int16" Nullable="false" />
+          <Property Name="Url" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="HttpMethd" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="ActionName" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="IsMenu" Type="Boolean" Nullable="false" />
+          <Property Name="MenuIcon" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="Sort" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="R_UserInfo_ActionInfo" Relationship="hynustuaffModel.FK_ActionInfoR_UserInfo_ActionInfo" FromRole="ActionInfo" ToRole="R_UserInfo_ActionInfo" />
+          <NavigationProperty Name="RoleInfo" Relationship="hynustuaffModel.RoleInfoActionInfo" FromRole="ActionInfo" ToRole="RoleInfo" />
+        </EntityType>
+        <EntityType Name="R_UserInfo_ActionInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="HasPermission" Type="Boolean" Nullable="false" />
+          <Property Name="UserInfoID" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="ActionInfoID" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="DelFlag" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="ActionInfo" Relationship="hynustuaffModel.FK_ActionInfoR_UserInfo_ActionInfo" FromRole="R_UserInfo_ActionInfo" ToRole="ActionInfo" />
+          <NavigationProperty Name="UserInfo" Relationship="hynustuaffModel.FK_UserInfoR_UserInfo_ActionInfo" FromRole="R_UserInfo_ActionInfo" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="RoleInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="SubTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModfiedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Remark" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="DelFlag" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="ActionInfo" Relationship="hynustuaffModel.RoleInfoActionInfo" FromRole="RoleInfo" ToRole="ActionInfo" />
+          <NavigationProperty Name="UserInfo" Relationship="hynustuaffModel.RoleInfoUserInfo" FromRole="RoleInfo" ToRole="UserInfo" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="UName" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="Pwd" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="ShowName" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="DelFlag" Type="Int16" Nullable="false" />
+          <Property Name="Remark" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="ModfiedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SubTime" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="R_UserInfo_ActionInfo" Relationship="hynustuaffModel.FK_UserInfoR_UserInfo_ActionInfo" FromRole="UserInfo" ToRole="R_UserInfo_ActionInfo" />
+          <NavigationProperty Name="RoleInfo" Relationship="hynustuaffModel.RoleInfoUserInfo" FromRole="UserInfo" ToRole="RoleInfo" />
+        </EntityType>
+        <Association Name="FK_ActionInfoR_UserInfo_ActionInfo">
+          <End Type="hynustuaffModel.ActionInfo" Role="ActionInfo" Multiplicity="1" />
+          <End Type="hynustuaffModel.R_UserInfo_ActionInfo" Role="R_UserInfo_ActionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActionInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="R_UserInfo_ActionInfo">
+              <PropertyRef Name="ActionInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfoR_UserInfo_ActionInfo">
+          <End Type="hynustuaffModel.UserInfo" Role="UserInfo" Multiplicity="1" />
+          <End Type="hynustuaffModel.R_UserInfo_ActionInfo" Role="R_UserInfo_ActionInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="R_UserInfo_ActionInfo">
+              <PropertyRef Name="UserInfoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RoleInfoActionInfo">
+          <End Type="hynustuaffModel.ActionInfo" Role="ActionInfo" Multiplicity="*" />
+          <End Type="hynustuaffModel.RoleInfo" Role="RoleInfo" Multiplicity="*" />
+        </Association>
+        <Association Name="RoleInfoUserInfo">
+          <End Type="hynustuaffModel.RoleInfo" Role="RoleInfo" Multiplicity="*" />
+          <End Type="hynustuaffModel.UserInfo" Role="UserInfo" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hynustuaffModelStoreContainer" CdmEntityContainer="DataModelContainer">
+    <EntitySetMapping Name="acts">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.act)">
+        <MappingFragment StoreEntitySet="acts">
+          <ScalarProperty Name="act_id" ColumnName="act_id" />
+          <ScalarProperty Name="act_tarids" ColumnName="act_tarids" />
+          <ScalarProperty Name="act_tartablename" ColumnName="act_tartablename" />
+          <ScalarProperty Name="act_userIP" ColumnName="act_userIP" />
+          <ScalarProperty Name="act_username" ColumnName="act_username" />
+          <ScalarProperty Name="act_useraction" ColumnName="act_useraction" />
+          <ScalarProperty Name="act_sqlstr" ColumnName="act_sqlstr" />
+          <ScalarProperty Name="act_datetime" ColumnName="act_datetime" />
+          <ScalarProperty Name="act_deptname" ColumnName="act_deptname" />
+          <ScalarProperty Name="act_userrolename" ColumnName="act_userrolename" />
+          <ScalarProperty Name="act_DETAIL" ColumnName="act_DETAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="application_list">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.application_list)">
+        <MappingFragment StoreEntitySet="application_list">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="application_program" ColumnName="application_program" />
+          <ScalarProperty Name="school_code" ColumnName="school_code" />
+          <ScalarProperty Name="school_year" ColumnName="school_year" />
+          <ScalarProperty Name="application_start_data" ColumnName="application_start_data" />
+          <ScalarProperty Name="application_end_data" ColumnName="application_end_data" />
+          <ScalarProperty Name="application_status" ColumnName="application_status" />
+          <ScalarProperty Name="prize_level" ColumnName="prize_level" />
+          <ScalarProperty Name="is_difficult_stu" ColumnName="is_difficult_stu" />
+          <ScalarProperty Name="score_kao_ping_lowest" ColumnName="score_kao_ping_lowest" />
+          <ScalarProperty Name="nianji_score_rank" ColumnName="nianji_score_rank" />
+          <ScalarProperty Name="banji_score_rank" ColumnName="banji_score_rank" />
+          <ScalarProperty Name="danke_lowest" ColumnName="danke_lowest" />
+          <ScalarProperty Name="pinjun_lowest" ColumnName="pinjun_lowest" />
+          <ScalarProperty Name="is_fail_a_exam" ColumnName="is_fail_a_exam" />
+          <ScalarProperty Name="is_punishment" ColumnName="is_punishment" />
+          <ScalarProperty Name="once_is_punishment" ColumnName="once_is_punishment" />
+          <ScalarProperty Name="suitable_object" ColumnName="suitable_object" />
+          <ScalarProperty Name="project_intro" ColumnName="project_intro" />
+          <ScalarProperty Name="instructor_audit" ColumnName="instructor_audit" />
+          <ScalarProperty Name="instructor" ColumnName="instructor" />
+          <ScalarProperty Name="xuegong_audit" ColumnName="xuegong_audit" />
+          <ScalarProperty Name="xuegong" ColumnName="xuegong" />
+          <ScalarProperty Name="dept_approver" ColumnName="dept_approver" />
+          <ScalarProperty Name="dept_audit" ColumnName="dept_audit" />
+          <ScalarProperty Name="is_instructor_audit" ColumnName="is_instructor_audit" />
+          <ScalarProperty Name="is_dept_audit" ColumnName="is_dept_audit" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.Department)">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dept_name" ColumnName="dept_name" />
+          <ScalarProperty Name="dept_code" ColumnName="dept_code" />
+          <ScalarProperty Name="subject_code" ColumnName="subject_code" />
+          <ScalarProperty Name="connect_user" ColumnName="connect_user" />
+          <ScalarProperty Name="dept_director" ColumnName="dept_director" />
+          <ScalarProperty Name="found_time" ColumnName="found_time" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="introduction" ColumnName="introduction" />
+          <ScalarProperty Name="numofyanjiusheng" ColumnName="numofyanjiusheng" />
+          <ScalarProperty Name="numofboshisheng" ColumnName="numofboshisheng" />
+          <ScalarProperty Name="numofCNBooks" ColumnName="numofCNBooks" />
+          <ScalarProperty Name="numofFLBooks" ColumnName="numofFLBooks" />
+          <ScalarProperty Name="numofCNQikan" ColumnName="numofCNQikan" />
+          <ScalarProperty Name="numofFLQikan" ColumnName="numofFLQikan" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+          <ScalarProperty Name="Lab_equipment_count" ColumnName="Lab_equipment_count" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="Lab_equipment_property" ColumnName="Lab_equipment_property" />
+          <ScalarProperty Name="admit_unit" ColumnName="admit_unit" />
+          <ScalarProperty Name="numstaff" ColumnName="numstaff" />
+          <ScalarProperty Name="numproject" ColumnName="numproject" />
+          <ScalarProperty Name="numarchievement" ColumnName="numarchievement" />
+          <ScalarProperty Name="numaward" ColumnName="numaward" />
+          <ScalarProperty Name="numreflection" ColumnName="numreflection" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_App">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.T_App)">
+        <MappingFragment StoreEntitySet="T_App">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="app_code" ColumnName="app_code" />
+          <ScalarProperty Name="app_name" ColumnName="app_name" />
+          <ScalarProperty Name="app_nameEn" ColumnName="app_nameEn" />
+          <ScalarProperty Name="app_type" ColumnName="app_type" />
+          <ScalarProperty Name="dept_Code" ColumnName="dept_Code" />
+          <ScalarProperty Name="proc_name" ColumnName="proc_name" />
+          <ScalarProperty Name="host_url" ColumnName="host_url" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="listorder" ColumnName="listorder" />
+          <ScalarProperty Name="parent_appcode" ColumnName="parent_appcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Roles">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.T_Roles)">
+        <MappingFragment StoreEntitySet="T_Roles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="role_AuthorRights" ColumnName="role_AuthorRights" />
+          <ScalarProperty Name="DataScale" ColumnName="DataScale" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="ntime" ColumnName="ntime" />
+          <ScalarProperty Name="sitemap" ColumnName="sitemap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Users">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.T_Users)">
+        <MappingFragment StoreEntitySet="T_Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_code" ColumnName="user_code" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_realname" ColumnName="user_realname" />
+          <ScalarProperty Name="user_roles_code" ColumnName="user_roles_code" />
+          <ScalarProperty Name="user_dept_code" ColumnName="user_dept_code" />
+          <ScalarProperty Name="user_telphone" ColumnName="user_telphone" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+          <ScalarProperty Name="regdatetime" ColumnName="regdatetime" />
+          <ScalarProperty Name="lastApp" ColumnName="lastApp" />
+          <ScalarProperty Name="authApps" ColumnName="authApps" />
+          <ScalarProperty Name="authRights" ColumnName="authRights" />
+          <ScalarProperty Name="lastLoginDatetime" ColumnName="lastLoginDatetime" />
+          <ScalarProperty Name="lastLoginIP" ColumnName="lastLoginIP" />
+          <ScalarProperty Name="useRolesitemap" ColumnName="useRolesitemap" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="td_students">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.td_students)">
+        <MappingFragment StoreEntitySet="td_students">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="school_code" ColumnName="school_code" />
+          <ScalarProperty Name="student_name" ColumnName="student_name" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="dept" ColumnName="dept" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="banji" ColumnName="banji" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="nation" ColumnName="nation" />
+          <ScalarProperty Name="born_date" ColumnName="born_date" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="politicstatus" ColumnName="politicstatus" />
+          <ScalarProperty Name="ID_card" ColumnName="ID_card" />
+          <ScalarProperty Name="native_place" ColumnName="native_place" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="home_telephone" ColumnName="home_telephone" />
+          <ScalarProperty Name="rollin_date" ColumnName="rollin_date" />
+          <ScalarProperty Name="dormitory" ColumnName="dormitory" />
+          <ScalarProperty Name="imageurl" ColumnName="imageurl" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+          <EntitySetMapping Name="ActionInfo">
+            <EntityTypeMapping TypeName="hynustuaffModel.ActionInfo">
+              <MappingFragment StoreEntitySet="ActionInfo">
+                <ScalarProperty Name="Sort" ColumnName="Sort" />
+                <ScalarProperty Name="MenuIcon" ColumnName="MenuIcon" />
+                <ScalarProperty Name="IsMenu" ColumnName="IsMenu" />
+                <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+                <ScalarProperty Name="HttpMethd" ColumnName="HttpMethd" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="ModfiedOn" ColumnName="ModfiedOn" />
+                <ScalarProperty Name="SubTime" ColumnName="SubTime" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="R_UserInfo_ActionInfo">
+            <EntityTypeMapping TypeName="hynustuaffModel.R_UserInfo_ActionInfo">
+              <MappingFragment StoreEntitySet="R_UserInfo_ActionInfo">
+                <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+                <ScalarProperty Name="ActionInfoID" ColumnName="ActionInfoID" />
+                <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+                <ScalarProperty Name="HasPermission" ColumnName="HasPermission" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RoleInfo">
+            <EntityTypeMapping TypeName="hynustuaffModel.RoleInfo">
+              <MappingFragment StoreEntitySet="RoleInfo">
+                <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="ModfiedOn" ColumnName="ModfiedOn" />
+                <ScalarProperty Name="SubTime" ColumnName="SubTime" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInfo">
+            <EntityTypeMapping TypeName="hynustuaffModel.UserInfo">
+              <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="SubTime" ColumnName="SubTime" />
+                <ScalarProperty Name="ModfiedOn" ColumnName="ModfiedOn" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+                <ScalarProperty Name="ShowName" ColumnName="ShowName" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+                <ScalarProperty Name="UName" ColumnName="UName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="RoleInfoActionInfo" TypeName="hynustuaffModel.RoleInfoActionInfo" StoreEntitySet="RoleInfoActionInfo">
+            <EndProperty Name="RoleInfo">
+              <ScalarProperty Name="ID" ColumnName="RoleInfoActionInfo_ActionInfo_ID" />
+            </EndProperty>
+            <EndProperty Name="ActionInfo">
+              <ScalarProperty Name="ID" ColumnName="ActionInfo_ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="RoleInfoUserInfo" TypeName="hynustuaffModel.RoleInfoUserInfo" StoreEntitySet="RoleInfoUserInfo">
+            <EndProperty Name="UserInfo">
+              <ScalarProperty Name="ID" ColumnName="UserInfo_ID" />
+            </EndProperty>
+            <EndProperty Name="RoleInfo">
+              <ScalarProperty Name="ID" ColumnName="RoleInfoUserInfo_UserInfo_ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+    </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

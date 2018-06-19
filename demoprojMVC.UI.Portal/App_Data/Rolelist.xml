@@ -1,0 +1,10 @@
+<!--l version="1.0" encoding="gb2312"-->
+<Roles>
+  <Role ID="rol001000" Role_Name="总管理员" AuthRights="8191" RoleSitemap="kymanage.sitemap" RoleDatascale="3" />
+  <Role ID="rol002000" Role_Name="系统管理员" AuthRights="65535" RoleSitemap="kyadmin.sitemap" RoleDatascale="3" />
+  <Role ID="rol003000" Role_Name="校级领导" AuthRights="5170" RoleSitemap="kyallviewer.sitemap" RoleDatascale="3" />
+  <Role ID="rol004000" Role_Name="院级领导" AuthRights="5170" RoleSitemap="kyallviewer.sitemap" RoleDatascale="2" />
+  <Role ID="rol005000" Role_Name="学院辅导员" AuthRights="7679" RoleSitemap="kydeptmanage.sitemap" RoleDatascale="2" />
+  <Role ID="rol006000" Role_Name="学生干部" AuthRights="7871" RoleSitemap="kyteacher.sitemap" RoleDatascale="1" />
+  <Role ID="rol007000" Role_Name="学生" AuthRights="3775" RoleSitemap="xgstudent.sitemap" RoleDatascale="" />
+</Roles>

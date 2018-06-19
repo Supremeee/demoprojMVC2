@@ -1,0 +1,59 @@
+<!--l version="1.0" encoding="gb2312"-->
+<ProcedureAuthorized>
+  <App value="A0000" text="系统维护" url="#" app_type="1200" auth_r="4095">
+    <App value="A0001" text="应用程序管理" url="/admin/appproc.aspx?init=1" app_type="A0000" auth_r="4095" />
+    <App value="A0002" text="角色管理" url="/admin/roles.aspx" app_type="A0000" auth_r="4095" />
+    <App value="A0003" text="用户管理" url="/admin/users.aspx" app_type="A0000" auth_r="4095" />
+    <App value="A0004" text="权限配置" url="/admin/user_auth.aspx" app_type="A0000" auth_r="4095" />
+    <App value="A0005" text="密码维护" url="/admin/userpwd.aspx" app_type="A0000" auth_r="4095" />
+    <App value="A0006" text="选项数据维护" url="/admin/simpledata.aspx" app_type="A0000" auth_r="4095" />
+    <App value="A0007" text="数据备份" url="/admin/databackup.aspx" app_type="A0000" auth_r="4095" />
+    <App value="A0008" text="数据导出" url="/admin/dataexport.aspx" app_type="A0000" auth_r="4095" />
+  </App>
+  <App value="A0010" text="学生信息管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0011" text="学生基本信息" controller="Student" action="List" app_type="A0010" auth_r="4095" />
+    <App value="A0012" text="学生家庭信息" url="/pubproc/familyInfo.aspx" app_type="A0010" auth_r="4095" />
+    <App value="A0013" text="个人荣誉" url="/pubproc/honor.aspx" app_type="A0010" auth_r="4095" />
+    <App value="A0014" text="社会工作" url="/pubproc/socialjob.aspx" app_type="A0010" auth_r="4095" />
+    <App value="A0015" text="证书考试" url="/pubproc/certificateExam.aspx" app_type="A0010" auth_r="4095" />
+    <App value="A0111" text="学生基本信息" url="/tp-pubproc/students.aspx" app_type="A0010" auth_r="4095" />
+    <App value="A0111" text="-学生基本信息" url="/tp-pubproc/students.aspx?init=1" app_type="1200" auth_r="8191" />
+    <App value="A0112" text="-学生家庭信息" url="/tp-pubproc/familyInfo.aspx?init=1" app_type="1200" auth_r="8191" />
+    <App value="A0113" text="-个人荣誉" url="/tp-pubproc/honor.aspx?init=1" app_type="1200" auth_r="8191" />
+    <App value="A0114" text="-社会工作" url="/tp-pubproc/socialjob.aspx?init=1" app_type="1200" auth_r="8191" />
+    <App value="A0115" text="-证书考试" url="/tp-pubproc/certificateExam.aspx?init=1" app_type="1200" auth_r="8191" />
+    <App value="A0116" text="-学生信息新增" url="/tp-pubproc/students_detail.aspx?act=addnew" app_type="1200" auth_r="8191" />
+  </App>
+  <App value="A0020" text="班级管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0021" text="班级管理信息" url="/pubproc/banji.aspx" app_type="A0020" auth_r="4095" />
+  </App>
+  <App value="A0030" text="请销假管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0031" text="请假管理" url="/pubproc/leave.aspx" app_type="A0030" auth_r="4095" />
+  </App>
+  <App value="A0040" text="奖惩管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0041" text="奖励列表" url="/pubproc/prize.aspx" app_type="A0040" auth_r="4095" />
+    <App value="A0042" text="违纪列表" url="/pubproc/punishment.aspx" app_type="A0040" auth_r="4095" />
+    <App value="A0043" text="科技成果" url="/pubproc/achievement.aspx" app_type="A0040" auth_r="4095" />
+  </App>
+  <App value="A0050" text="资助管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0051" text="贫困生申请" url="/pubproc/poorapplication.aspx" app_type="A0050" auth_r="4095" />
+    <App value="A0052" text="资助列表" url="/pubproc/sponsor.aspx" app_type="A0050" auth_r="4095" />
+    <App value="A0053" text="奖助优申请表" url="/pubproc/application.aspx" app_type="A0050" auth_r="4095" />
+    <App value="A0054" text="贷款报表" url="/pubproc/loan.aspx" app_type="A0050" auth_r="4095" />
+  </App>
+  <App value="A0060" text="综合测评管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0061" text="KPI管理" url="/pubproc/assessment.aspx" app_type="A0060" auth_r="4095" />
+    <App value="A0062" text="课程学习成绩" url="/pubproc/coursescore.aspx" app_type="A0060" auth_r="4095" />
+    <App value="A0063" text="培养计划" url="/pubproc/traplan.aspx" app_type="A0060" auth_r="4095" />
+  </App>
+  <App value="A0070" text="团委管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0071" text="学团干部" url="/pubproc/stu_officer.aspx" app_type="A0070" auth_r="4095" />
+    <App value="A0073" text="社团信息" url="/pubproc/CommunityInfo.aspx" app_type="A0070" auth_r="4095" />
+    <App value="A0073" text="活动信息" url="/pubproc/activityInfo.aspx" app_type="A0070" auth_r="4095" />
+  </App>
+  <App value="A0080" text="辅导员管理" url="#" app_type="1200" auth_r="4095">
+    <App value="A0071" text="辅导员信息" url="/pubproc/instructors.aspx" app_type="A0080" auth_r="4095" />
+    <App value="A0073" text="社团信息" url="/pubproc/CommunityInfo.aspx" app_type="A0080" auth_r="4095" />
+    <App value="A0073" text="活动信息" url="/pubproc/activityInfo.aspx" app_type="A0080" auth_r="4095" />
+  </App>
+</ProcedureAuthorized>

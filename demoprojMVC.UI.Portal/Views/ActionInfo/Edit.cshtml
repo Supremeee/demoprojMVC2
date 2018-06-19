@@ -1,0 +1,68 @@
+﻿@model demoprojMVC.Model.ActionInfo
+
+@{
+    ViewBag.Title = "权限信息编辑页面";
+}
+
+@if (Model == null)
+{
+  Response.Redirect(url: Url.Action("Index"));
+    return;
+}
+ <div class="panel">
+    <div class="panel-heading">
+        <h3>权限信息编辑页面</h3>
+    </div>
+    @if (TempData["Errmsg"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Errmsg"]</div>
+    }
+    @using (Html.BeginForm("Edit", "ActionInfo", FormMethod.Post, new { enctype = "mutipart/form-data" }))
+    {
+        <div class="panel-body">
+            @Html.Hidden("actionInfoId", Model.ID?? null)
+            @Html.HiddenFor(u=>u.SubTime)
+            @Html.HiddenFor(u=>u.ModfiedOn)
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">权限名称：</label>
+                        @Html.TextBox("ActionName", Model.ActionName?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("ActionName")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">Url：</label>
+                        
+                        @Html.TextBox("Url", Model.Url ?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("Url")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">Http方法：</label>
+                        
+                        @Html.DropDownList("HttpMethd", new List<SelectListItem> {new SelectListItem {Text = "Get",Value = "Get",Selected = (Model.HttpMethd != null && Model.HttpMethd == "Get") } , new SelectListItem { Text = "Post", Value = "Post", Selected = (Model.HttpMethd != null && Model.HttpMethd == "Post") } },"--请选择--", new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("HttpMethd")
+                    </div>
+                </div>
+            </div>
+            <div class="form-group container">
+                <div class="row  form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">是否是菜单：</label>
+                        @Html.CheckBoxFor(u=>u.IsMenu)
+                        @*@Html.CheckBox("IsMenu",Model.IsMenu)*@
+                        @Html.ValidationMessage("IsMenu")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">排序：</label>
+                        @Html.TextBoxFor(u=>u.Sort)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <input type="submit" class="btn btn-primary btn-sm" value="保存" />
+        </div>
+    }
+</div>
+
+

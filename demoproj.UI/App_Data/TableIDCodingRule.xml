@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--规定项目用表记录的自动编码方案  ex fullcode: Codepref+autoInc+ 毫秒数后3位- hyprj00001223 -->
+<TableIDCodingRule>
+  <Item Tablename="hynustaff" Codepref="staf" AutoCodeLength="5"  Timestamp="3" />
+  <Item Tablename="td_assessment" Codepref="asse" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_certificate_exam" Codepref="cert" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="honor" Codepref="xxgc" AutoCodeLength="4"   Timestamp="3" />
+  <Item Tablename="stu_officer" Codepref="xxgc" AutoCodeLength="4"   Timestamp="3" />
+  <Item Tablename="sponsor" Codepref="spon" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="prize" Codepref="priz" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="banji" Codepref="banj" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="application_list" Codepref="appl" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="loan" Codepref="loan" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_punishment" Codepref="pun" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_poorapplication" Codepref="poor" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_students" Codepref="stud" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_instructors" Codepref="ins" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_social_job" Codepref="tsjb" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_communityinfo" Codepref="tcom" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="familyinfo" Codepref="fami" AutoCodeLength="5"  Timestamp="3" />
+  <Item Tablename="leave" Codepref="leav" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="trainplan" Codepref="plan" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="couscore" Codepref="cous" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_activityinfo" Codepref="acti" AutoCodeLength="2"   Timestamp="3" />
+  <Item Tablename="td_sci_achievement" Codepref="ach" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_sci_project" Codepref="pro" AutoCodeLength="4"   Timestamp="3" />
+  <Item Tablename="td_activityinfo" Codepref="acti" AutoCodeLength="2"   Timestamp="3" />
+  <Item Tablename="td_sci_achievement" Codepref="ach" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="td_sci_project" Codepref="pro" AutoCodeLength="4"   Timestamp="3" />
+	<Item Tablename="t_app" Codepref="APP" AutoCodeLength="3" Timestamp="3" />
+	<Item Tablename="t_border" Codepref="boder" AutoCodeLength="4"   Timestamp="3" />
+	<Item Tablename="t_roles" Codepref="rol" AutoCodeLength="3"   Timestamp="3" />
+	<Item Tablename="t_users" Codepref="usr" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="stu_grow" Codepref="grow" AutoCodeLength="5"   Timestamp="3" />
+  <Item Tablename="meetrecord" Codepref="meet" AutoCodeLength="5"   Timestamp="3" />
+</TableIDCodingRule>

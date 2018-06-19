@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<DD>
+  <DItems D_Name="角色影响范围" DValue="roledatascale" CodeLength="1">
+    <DItem DValue="0" Text="None"  Listorder="0"  Visible="1"  />
+    <DItem DValue="1" Text="SelfOnly"  Listorder="0"  Visible="1" />
+    <DItem DValue="2" Text="Dep"  Listorder="0"  Visible="1"  />
+    <DItem DValue="3" Text="All"  Listorder="0"  Visible="1" />
+  </DItems>
+  <DItems D_Name="应用程序类型" DValue="apptype" CodeLength="4">
+    <DItem DValue="1200" Text="管理模块" Listorder="0"  Visible="1" />
+    <DItem DValue="L000" Text="站群下挂网站" Listorder="0"  Visible="1" />
+    <DItem DValue="1100" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+
+  <DItems D_Name="政治面貌" DValue="political" CodeLength="4">
+    <DItem DValue="PF001" Text="中共党员"  Listorder="0"  Visible="1"/>
+    <DItem DValue="PF002" Text="共青团员"  Listorder="0"  Visible="1" />
+    <DItem DValue="PF003" Text="少先队员"  Listorder="0"  Visible="1" />
+    <DItem DValue="PF004" Text="群众"  Listorder="0"  Visible="1" />  
+    <DItem DValue="PF005" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="二值是否" DValue="yesno" CodeLength="1">
+    <DItem DValue="1" Text="是"  Listorder="0"  Visible="1"  />
+    <DItem DValue="0" Text="否"  Listorder="0"  Visible="1" />
+  </DItems> 
+  
+  <DItems D_Name="开设学期" DValue="openterm" CodeLength ="4">
+    <DItem DValue="opt01" Text="1"  Listorder="0" Visible="1"/>
+    <DItem DValue="opt02" Text="2"  Listorder="0" Visible="1"/>
+    <DItem DValue="opt03" Text="3"  Listorder="0" Visible="1"/>
+    <DItem DValue="opt04" Text="4"  Listorder="0" Visible="1"/>
+    <DItem DValue="opt05" Text="5"  Listorder="0" Visible="1"/>
+    <DItem DValue="opt06" Text="6"  Listorder="0" Visible="1"/>
+    <DItem DValue="opt07" Text="7"  Listorder="0" Visible="1"/>
+    <DItem DValue="opt08" Text="8"  Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="活动类别" DValue="activity_type" Codelength="10">
+    <DItem DValue="acitp01" Text="班级活动" Listorder="0" Visible="1"/>
+    <DItem DValue="acitp02" Text="社团活动" Listorder="0" Visible="1"/>
+    <DItem DValue="acitp03" Text="院系活动" Listorder="0" Visible="1"/>
+    <DItem DValue="acitp04" Text="校级活动" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="活动状态" DValue="activity_status" CodeLength="10">
+    <DItem DValue="acists01" Text="未开始" Listorder="0" Visible="1"/>
+    <DItem DValue="acists02" Text="进行中" Listorder="0" Visible="1"/>
+    <DItem DValue="acists03" Text="已完成" Listorder="0" Visible="1"/>     
+  </DItems>
+
+  <DItems D_Name="活动类型" DValue="hdlx" CodeLength="12">
+    <DItem DValue="hdlx01" Text="学术类活动" Listorder="0" Visible="1"/>
+    <DItem DValue="hdlx02" Text="公益类活动" Listorder="0" Visible="1"/>
+    <DItem DValue="hdlx03" Text="文体类活动" Listorder="0" Visible="1"/>
+  </DItems>
+  
+ <DItems D_Name="与本人关系" DValue="relationgship" CodeLength="50">
+   <DItem DValue="gx01" Text="姐姐" Listorder="0" Visible="1"/>
+   <DItem DValue="gx02" Text="妹妹" Listorder="0" Visible="1"/>
+   <DItem DValue="gx03" Text="哥哥" Listorder="0" Visible="1"/>
+   <DItem DValue="gx04" Text="弟弟" Listorder="0" Visible="1"/>
+   <DItem DValue="gx05" Text="爷爷" Listorder="0" Visible="1"/>
+   <DItem DValue="gx06" Text="奶奶" Listorder="0" Visible="1"/>
+ </DItems>   
+    <DItems D_Name="角色影响范围" DValue="roledatascale" CodeLength="1">
+    <DItem DValue="0" Text="None"  Listorder="0"  Visible="1"  />
+    <DItem DValue="1" Text="SelfOnly"  Listorder="0"  Visible="1" />
+    <DItem DValue="2" Text="Dep"  Listorder="0"  Visible="1"  />
+    <DItem DValue="3" Text="All"  Listorder="0"  Visible="1" />
+  </DItems>
+  <DItems D_Name="应用程序类型" DValue="apptype" CodeLength="4">
+    <DItem DValue="1200" Text="管理模块" Listorder="0"  Visible="1" />
+    <DItem DValue="L000" Text="站群下挂网站" Listorder="0"  Visible="1" />
+    <DItem DValue="1100" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="二值性别" DValue="gender" CodeLength="1">
+    <DItem DValue="男" Text="男"  Listorder="0"  Visible="1"  />
+    <DItem DValue="女" Text="女"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="年级" DValue="grade" CodeLength="4">
+    <DItem DValue="GD01" Text="2015级" Listorder="0" Visible="1"/>
+    <DItem DValue="GD02" Text="2016级" Listorder="0" Visible="1"/>
+    <DItem DValue="GD03" Text="2017级" Listorder="0" Visible="1"/>
+    <DItem DValue="GD04" Text="2018级" Listorder="0" Visible="1"/>
+    <DItem DValue="GD05" Text="2019级" Listorder="0" Visible="1"/>
+    <DItem DValue="GD06" Text="2020级" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="班级"  DValue="banji" CodeLength="4">
+    <DItem DValue="151902" Text="2015级-计科1班" Listorder="0" Visible="1"/>
+    <DItem DValue="151903" Text="2015级-计科2班" Listorder="0" Visible="1"/>
+    <DItem DValue="153601" Text="2015级-电信1班" Listorder="0" Visible="1"/>
+    <DItem DValue="153602" Text="2015级-电信2班" Listorder="0" Visible="1"/>
+    <DItem DValue="161902" Text="2016级-计科1班" Listorder="0" Visible="1"/>
+    <DItem DValue="161903" Text="2016级-计科2班" Listorder="0" Visible="1"/>
+    <DItem DValue="163601" Text="2016级-电信1班" Listorder="0" Visible="1"/>
+    <DItem DValue="163602" Text="2016级-电信2班" Listorder="0" Visible="1"/>
+    <DItem DValue="176901" Text="2017级-计科1班" Listorder="0" Visible="1"/>
+    <DItem DValue="176902" Text="2017级-计科2班" Listorder="0" Visible="1"/>
+    <DItem DValue="173601" Text="2017级-电信1班" Listorder="0" Visible="1"/>
+    <DItem DValue="173602" Text="2017级-电信2班" Listorder="0" Visible="1"/>
+    <DItem DValue="000000" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="班级名" DValue="banji_name" CodeLength="4">
+    <DItem DValue="jk01" Text="计算机科学与技术1班"   Listorder="0"  Visible="1" />
+    <DItem DValue="jk02" Text="计算机科学与技术2班"   Listorder="0"  Visible="1" />
+    <DItem DValue="dz03" Text="电子信息工程1班"   Listorder="0"  Visible="1" />
+    <DItem DValue="dz04" Text="电子信息工程2班"   Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name ="班主任" DValue="head_teacher" CodeLength="6">
+    <DItem DValue="htch01" Text="孙文静"   Listorder="0"  Visible="1" />
+    <DItem DValue="htch02" Text="罗素媛"   Listorder="0"  Visible="1" />
+    <DItem DValue="htch03" Text="资禹剑"   Listorder="0"  Visible="1" />
+    <DItem DValue="htch04" Text="曹金凤"   Listorder="0"  Visible="1" />
+    <DItem DValue="htch05" Text="喻蕾"   Listorder="0"  Visible="1" />
+    <DItem DValue="htch06" Text="余莹"   Listorder="0"  Visible="1" />
+    <DItem DValue="htch07" Text="谢平峰"   Listorder="0"  Visible="1" />
+    <DItem DValue="htch08" Text="欧阳陈华"   Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name ="班长" DValue="monitor" CodeLength="10">
+    <DItem DValue="mon01" Text="邓粟方"   Listorder="0"  Visible="1" />
+    <DItem DValue="mon02" Text="彭海波"   Listorder="0"  Visible="1" />
+    <DItem DValue="mon03" Text="徐志豪"   Listorder="0"  Visible="1" />
+    <DItem DValue="mon04" Text="李向秀"   Listorder="0"  Visible="1" />
+    <DItem DValue="mon05" Text="段伟景"   Listorder="0"  Visible="1" />
+    <DItem DValue="mon06" Text="刘陈"   Listorder="0"  Visible="1" />
+    <DItem DValue="mon07" Text="贺迪"   Listorder="0"  Visible="1" />
+    <DItem DValue="mon08" Text="李红洁"   Listorder="0"  Visible="1" />
+  </DItems>  
+  
+  <DItems D_Name ="排名" DValue="rank" CodeLength="1">
+    <DItem DValue="1" Text="第一名"   Listorder="0"  Visible="1" />
+    <DItem DValue="2" Text="第二名"   Listorder="0"  Visible="1" />
+    <DItem DValue="3" Text="第三名"   Listorder="0"  Visible="1" />
+    <DItem DValue="4" Text="第四名"   Listorder="0"  Visible="1" />
+    <DItem DValue="5" Text="第五名"   Listorder="0"  Visible="1" />
+    <DItem DValue="6" Text="第六名"   Listorder="0"  Visible="1" />
+    <DItem DValue="7" Text="其它"   Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name ="辅导员" DValue="instructor" CodeLength="6">
+    <DItem DValue="inst01" Text="谢平峰"   Listorder="0"  Visible="1" />
+    <DItem DValue="inst02" Text="肖璐璐"   Listorder="0"  Visible="1" />
+  </DItems>
+
+  <DItems D_Name="教师职务" DValue="jszw" CodeLength="200">
+    <DItem DValue="jszw01" Text="普通辅导员" Listorder="0" Visible="1"/>
+    <DItem DValue="jszw02" Text="辅导员（享受副处级待遇）" Listorder="0" Visible="1"/>
+  </DItems>
+
+  <DItems D_Name="教师职称" DValue="jszc" CodeLength="20">
+    <DItem DValue="jszc01" Text="助教" Listorder="0"  Visible="1"/>
+    <DItem DValue="jszc02" Text="讲师" Listorder="0"  Visible="1"/>
+    <DItem DValue="jszc03" Text="副教授" Listorder="0"  Visible="1"/>
+    <DItem DValue="jszc04" Text="教授" Listorder="0"  Visible="1"/>
+    <DItem DValue="jszc05" Text="其他" Listorder="0"  Visible="1"/>
+  </DItems>
+ 
+  <DItems D_Name="学生职务类别" DValue="zwlb" CodeLength="4">
+     <DItem DValue="01" Text="班级干部"  Listorder="0" Visible="1" />          
+     <DItem DValue="02" Text="学院干部"  Listorder="0" Visible="1"/>           
+     <DItem DValue="03" Text="校学生会干部"  Listorder="0" Visible="1"/>   
+     <DItem DValue="04" Text="学生社团联合会干部"  Listorder="0" Visible="1"/>                     
+  </DItems>
+  
+  <DItems D_Name="学生职务名称"  DValue="01" CodeLength="10">
+       <DItem DValue="0101" Text="班长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0102" Text="团支书" Listorder="0" Visible="1"/>    
+       <DItem DValue="0103" Text="学习委员" Listorder="0" Visible="1"/>    
+       <DItem DValue="0104" Text="生活委员" Listorder="0" Visible="1"/>         
+       <DItem DValue="0105" Text="素拓委员" Listorder="0" Visible="1"/>       
+       <DItem DValue="0107" Text="其他" Listorder="0" Visible="1"/>    
+  </DItems>
+  
+  <DItems D_Name="学生职务名称"  DValue="02" CodeLength="10">
+       <DItem DValue="0201" Text="分团委常务副书记" Listorder="0" Visible="1"/>
+       <DItem DValue="0202" Text="分团委副书记" Listorder="0" Visible="1"/>
+       <DItem DValue="0203" Text="学生分会主席" Listorder="0" Visible="1"/>
+       <DItem DValue="0204" Text="学生分会副主席" Listorder="0" Visible="1"/>
+       <DItem DValue="0205" Text="办公室主任" Listorder="0" Visible="1"/>
+       <DItem DValue="0206" Text="办公室副主任" Listorder="0" Visible="1"/>   
+       <DItem DValue="0207" Text="学习部部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0208" Text="学习部副部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0209" Text="宿管部部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0210" Text="宿管部副部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0211" Text="组织部部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0212" Text="宣传部部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0213" Text="素拓部部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0214" Text="文娱部部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0215" Text="体育部部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0216" Text="组织部副部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0217" Text="宣传部副部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0218" Text="素拓部副部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0219" Text="文娱部副部长" Listorder="0" Visible="1"/>    
+       <DItem DValue="0220" Text="体育部副部长" Listorder="0" Visible="1"/>      
+       <DItem DValue="0221" Text="办公室助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0222" Text="学习部助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0223" Text="宿管部助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0224" Text="组织部助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0225" Text="宣传部助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0226" Text="素拓部助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0227" Text="文娱部助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0228" Text="体育部助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0229" Text="分团委副书记助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0230" Text="分团委常务副书记助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0231" Text="年级长" Listorder="0" Visible="1"/>
+       <DItem DValue="0232" Text="学生分会主席助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0233" Text="学生分会副主席助理" Listorder="0" Visible="1"/>
+       <DItem DValue="0234" Text="班导" Listorder="0" Visible="1"/>
+  </DItems>
+   
+  <DItems D_Name="学生职务名称"  DValue="03" CodeLength="10">
+    <DItem DValue="0301" Text="主席团"  Listorder="0" Visible="1"/>
+    <DItem DValue="0302" Text="部长"  Listorder="0" Visible="1"/>
+    <DItem DValue="0303" Text="副部长"  Listorder="0" Visible="1"/>
+    <DItem DValue="0304" Text="助理"  Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="学生职务名称" DValue="04" CodeLength="10">
+    <DItem DValue="0401" Text="主席团" Listorder="0"  Visible="1"/>
+    <DItem DValue="0402" Text="部长" Listorder="0"  Visible="1"/>
+    <DItem DValue="0403" Text="副部长" Listorder="0"  Visible="1"/>
+    <DItem DValue="0404" Text="联合会干事" Listorder="0"  Visible="1"/>
+    <DItem DValue="0405" Text="协会会长" Listorder="0"  Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="贫困类型" DValue="poor_type" CodeLength="10">
+    <DItem DValue="ptp01" Text="一般困难" Listorder="0" Visible="1"/>
+    <DItem DValue="ptp02" Text="特别困难" Listorder="0" Visible="1"/>
+    <DItem DValue="ptp03" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="收入来源" DValue="income_source" CodeLength="10">
+    <DItem DValue="ics01" Text="工资收入" Listorder="0" Visible="1"/>
+    <DItem DValue="ics02" Text="务工收入" Listorder="0" Visible="1"/>
+    <DItem DValue="ics03" Text="务农收入" Listorder="0" Visible="1"/>
+    <DItem DValue="ics04" Text="自主经营收入" Listorder="0" Visible="1"/>
+    <DItem DValue="ics01" Text="其他收入" Listorder="0" Visible="1"/>     
+  </DItems>
+  
+  <DItems D_Name="家庭贫困类型" DValue="family_poor_type" CodeLength="10">
+    <DItems DValue="fmptp01" Text="城市低保" Listorder="0" Visible="1"/>
+    <DItems DValue="fmptp02" Text="父母年老（65岁以上）且无活动能力" Listorder="0" Visible="1"/>
+    <DItems DValue="fmptp03" Text="教育受困" Listorder="0" Visible="1"/>
+    <DItems DValue="fmptp04" Text="疾病致困" Listorder="0" Visible="1"/>
+    <DItems DValue="fmptp05" Text="单亲家庭（烈士子女，孤残子女）" Listorder="0" Visible="1"/>   
+    <DItems DValue="fmptp06" Text="因灾受困" Listorder="0" Visible="1"/>
+    <DItems DValue="fmptp01" Text="政府认定的贫困户" Listorder="0" Visible="1"/>  
+  </DItems>
+  
+  <DItems D_Name="处分名称"  DValue="punish_name" CodeLength="10">
+    <DItem DValue="phn01" Text="警告" Listorder="0" Visible="1"/>
+    <DItem DValue="phn02" Text="严重警告" Listorder="0" Visible="1"/>
+    <DItem DValue="phn03" Text="记过" Listorder="0" Visible="1"/>
+    <DItem DValue="phn04" Text="留校察看" Listorder="0" Visible="1"/>
+    <DItem DValue="phn05" Text="开除学籍" Listorder="0" Visible="1"/>   
+  </DItems>
+  
+  <DItems D_Name="处分等级"  DValue="punish_level" CodeLength="10">
+    <DItem DValue="phl01" Text="校级" Listorder="0" Visible="1"/>
+    <DItem DValue="phl02" Text="院级" Listorder="0" Visible="1"/>    
+    <DItem DValue="phl03" Text="其他" Listorder="0" Visible="1"/>         
+  </DItems>
+  
+  <DItems D_Name="申请等级" DValue="application_level" CodeLength="10">
+    <DItem DValue="apl01" Text="一等" Listorder="0" Visible="1"/>
+    <DItem DValue="apl02" Text="二等" Listorder="0" Visible="1"/>
+    <DItem DValue="apl03" Text="三等" Listorder="0" Visible="1"/>
+    <DItem DValue="apl04" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+
+  <DItems D_Name="申请项目"  DValue="sqxm"  CodeLength="10">
+    <DItem DValue="sqxm01" Text="一等助学金" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm02" Text="二等助学金" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm03" Text="三等助学金" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm04" Text="国家奖学金" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm05" Text="励志奖学金" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm06" Text="临时困难补助" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm07" Text="春华秋实奖学金" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm08" Text="优秀团员" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm09" Text="优秀团干" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm10" Text="先进团支部书记" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm11" Text="优秀党支部书记" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm12" Text="三好学生" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm13" Text="优秀学生干部" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm14" Text="优秀党员" Listorder="0" Visible="1"/>
+    <DItem DValue="sqxm15" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+
+  <DItems D_Name="状态"  DValue="sqzt"  CodeLength="10">
+    <DItem DValue="sqzt01"  Text="已受审" Listorder="0" Visible="1"/>
+    <DItem DValue="sqzt02"  Text="审核通过" Listorder="0" Visible="1"/>
+    <DItem DValue="sqzt03"  Text="审核中" Listorder="0" Visible="1"/>
+    <DItem DValue="sqzt04"  Text="审核不通过" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="荣誉等级" DValue="honor_level" CodeLength="10">
+    <DItem DValue="hrl01" Text="特等奖" Listorder="0" Visible="1"/>
+    <DItem DValue="hrl02" Text="一等奖" Listorder="0" Visible="1"/>
+    <DItem DValue="hrl03" Text="二等奖" Listorder="0" Visible="1"/>
+    <DItem DValue="hrl04" Text="三等奖" Listorder="0" Visible="1"/>
+    <DItem DValue="hrl05" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+    
+  <DItems D_Name="学年" DValue="slyr"  CodeLength="10">
+    <DItem DValue="1" Text="2015-2016" Listorder="0" Visible="1"/>
+    <DItem DValue="2" Text="2016-2017" Listorder="0" Visible="1"/>
+    <DItem DValue="3" Text="2017-2018" Listorder="0" Visible="1"/>
+    <DItem DValue="4" Text="2018-2019" Listorder="0" Visible="1"/>
+    <DItem DValue="5" Text="2019-2020" Listorder="0" Visible="1"/>
+    <DItem DValue="6" Text="2020-2021" Listorder="0" Visible="1"/>
+    <DItem DValue="7" Text="2021-2022" Listorder="0" Visible="1"/>
+    <DItem DValue="8" Text="2022-2023" Listorder="0" Visible="1"/>
+    <DItem DValue="9" Text="2023-2024" Listorder="0" Visible="1"/>
+    <DItem DValue="10" Text="2024-2025" Listorder="0" Visible="1"/>
+    <DItem DValue="11" Text="2025-2026" Listorder="0" Visible="1"/>
+    <DItem DValue="12" Text="2026-2027" Listorder="0" Visible="1"/>
+    <DItem DValue="13" Text="2027-2028" Listorder="0" Visible="1"/>
+    <DItem DValue="14" Text="2028-2029" Listorder="0" Visible="1"/>
+    <DItem DValue="15" Text="2029-2030" Listorder="0" Visible="1"/>
+    <DItem DValue="16" Text="2030-2031" Listorder="0" Visible="1"/>
+    <DItem DValue="17" Text="2031-2032" Listorder="0" Visible="1"/>
+    <DItem DValue="18" Text="2032-2033" Listorder="0" Visible="1"/>
+    <DItem DValue="19" Text="2033-2034" Listorder="0" Visible="1"/>         
+  </DItems>
+  
+  <DItems D_Name="学期" DValue="sltm" CodeLength="10">
+    <DItem DValue="sltm01"  Text="上学期"  Listorder="0" Visible="1"/>
+    <DItem DValue="sltm02"  Text="下学期"  Listorder="0" Visible="1"/>   
+  </DItems>
+        
+  <DItems D_Name="学位" DValue="degree" CodeLength="4">
+    <DItem DValue="AL01" Text="博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL02" Text="硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL03" Text="学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL04" Text="哲学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL05" Text="哲学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL06" Text="哲学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL07" Text="经济学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL08" Text="经济学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL09" Text="经济学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL10" Text="法学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL11" Text="法学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL12" Text="法学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL13" Text="教育学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL14" Text="教育学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL15" Text="教育学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL16" Text="文学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL17" Text="文学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL18" Text="文学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL19" Text="历史学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL20" Text="历史学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL21" Text="历史学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL22" Text="理学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL23" Text="理学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL24" Text="理学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL25" Text="工学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL26" Text="工学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL27" Text="工学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL28" Text="农学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL29" Text="农学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL30" Text="农学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL31" Text="医学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL32" Text="医学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL33" Text="医学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL34" Text="工学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL35" Text="工学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL36" Text="工学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL37" Text="军事学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL38" Text="军事学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL39" Text="军事学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL40" Text="管理学博士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL41" Text="管理学硕士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL42" Text="管理学学士"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL99" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+
+  <DItems D_Name="学历" DValue="edu_level" CodeLength="4">
+    <DItem DValue="EL01" Text="中专"  Listorder="0"  Visible="1" />
+    <DItem DValue="EL02" Text="大专"  Listorder="0"  Visible="1" />
+    <DItem DValue="EL03" Text="本科"  Listorder="0"  Visible="1" />
+    <DItem DValue="EL04" Text="硕士研究生"  Listorder="0"  Visible="1" />
+    <DItem DValue="EL05" Text="博士研究生"  Listorder="0"  Visible="1" />
+  </DItems>
+
+  <DItems D_Name="完成情况" DValue="achistatus" CodeLength="10">
+    <DItem DValue="achista01" Text="未完成" Listorder="0" Visible="1"/>
+    <DItem DValue="achista02" Text="已完成" Listorder="0" Visible="1"/>
+    <DItem DValue="achista03" Text="正在进行" Listorder="0" Visible="1"/>
+  </DItems>
+
+  <DItems D_Name="资助类型" DValue="sponsor_type"  CodeLength="10">
+    <DItem DValue="spstp01" Text="助学金" Listorder="0" Visible="1"/>
+    <DItem DValue="spstp02" Text="励志奖学金" Listorder="0" Visible="1"/>
+    <DItem DValue="spstp03" Text="春华秋实奖学金" Listorder="0" Visible="1"/>
+    <DItem DValue="spstp04" Text="临时困难补助" Listorder="0" Visible="1"/>
+    <DItem DValue="spstp05" Text="勤工俭学" Listorder="0" Visible="1"/>
+    <DItem DValue="spstp06" Text="其他" Listorder="0" Visible="1"/>  
+  </DItems>
+  
+  <DItems D_Name="考试类型" DValue="exam_type" CodeLength="10">
+    <DItem DValue="extp01" Text="正常考试" Listorder="0" Visible="1"/>
+    <DItem DValue="extp02" Text="缺考" Listorder="0" Visible="1"/>
+    <DItem DValue="extp03" Text="休学" Listorder="0" Visible="1"/>
+    <DItem DValue="extp04" Text="缓考" Listorder="0" Visible="1"/>
+  </DItems>
+  
+ <DItems D_Name="项目经费支出类别" DValue="fundusedtype" CodeLength="1">
+    <DItem DValue="fdi01" Text="+ 资助研发费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdi02" Text="+ 单位配套费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdi03" Text="+ 项目补助费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdi04" Text="+ 项目奖励费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdi05" Text="+ 其他项目进账"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo01" Text="- 资料费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo02" Text="- 数据采集费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo03" Text="- 差旅费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo04" Text="- 会议费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo05" Text="- 合作交流费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo06" Text="- 设备费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo07" Text="- 咨询费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo08" Text="- 劳务费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo09" Text="- 印刷费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo10" Text="- 计算机使用费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo11" Text="- 消耗材料费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo12" Text="- 测试化验加工费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo13" Text="- 出版费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo14" Text="- 成果鉴定费"  Listorder="0"  Visible="1"  />
+    <DItem DValue="fdo15" Text="- 其他支出费用"  Listorder="0"  Visible="1"  />
+  </DItems>
+
+  <DItems D_Name="合同年限"  DValue="htnx" CodeLength="10">
+    <DItem DValue="htnx01" Text="1年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx02" Text="2年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx03" Text="3年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx04" Text="4年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx05" Text="5年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx06" Text="6年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx07" Text="7年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx08" Text="8年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx09" Text="9年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx10" Text="10年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx11" Text="11年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx12" Text="12年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx13" Text="13年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx14" Text="14年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx15" Text="15年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx16" Text="16年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx17" Text="17年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx18" Text="18年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx19" Text="19年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx20" Text="20年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx21" Text="21年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx22" Text="22年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx23" Text="23年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx24" Text="24年" Listorder="0" Visible="1"/>
+    <DItem DValue="htnx25" Text="25年" Listorder="0" Visible="1"/>
+
+
+  </DItems>
+
+  <DItems D_Name="合同状态" DValue="htzt" CodeLength="10">
+    <DItem DValue="htzt01" Text="已上报，待审核" Listorder="0" Visible="1"/>
+    <DItem DValue="htzt02" Text="已审批，待发放" Listorder="0" Visible="1"/>
+    <DItem DValue="htzt03" Text="已发放" Listorder="0" Visible="1"/>
+    <DItem DValue="htzt04" Text="已报销" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="社团名称" DValue="community_name" CodeLength="20">
+    <DItem DValue="01" Text="篮球协会"  Listorder="0"  Visible="1"  />
+    <DItem DValue="02" Text="风语者轮滑协会" Listorder="0"  Visible="1"  />
+    <DItem DValue="03" Text="羽毛球协会"  Listorder="0"  Visible="1"  />
+    <DItem DValue="04" Text="乒乓球协会"  Listorder="0"  Visible="1"  />
+    <DItem DValue="05" Text="网球协会"  Listorder="0"  Visible="1"  />
+    <DItem DValue="06" Text="缘奕社"  Listorder="0"  Visible="1"  />
+    <DItem DValue="07" Text="大学生结艺协会"  Listorder="0"  Visible="1"  />
+    <DItem DValue="08" Text="长风书法协会"  Listorder="0"  Visible="1"  />
+    <DItem DValue="09" Text="原创手工社"  Listorder="0"  Visible="1"  />
+    <DItem DValue="10" Text="电子竞技协会" Listorder="0" Visible="1"/>
+    <DItem DValue="11" Text="台球协会"    Listorder="0"  Visible="1"/>
+    <DItem DValue="12" Text="快乐夜跑"   Listorder="0"   Visible="1"/>
+    <DItem DValue="13" Text="花样踢毽协会" Listorder="0" Visible="1"/>
+    <DItem DValue="14" Text="穷途户外爱好者协会" Listorder="0" Visible="1"/>
+    <DItem DValue="15" Text="天之翼足球协会" Listorder="0" Visible="1"/>
+    <DItem DValue="16" Text="滑板社" Listorder="0" Visible="1"/>
+    <DItem DValue="17" Text="LAB街球社" Listorder="0" Visible="1"/>
+    <DItem DValue="18" Text="新动漫研究社" Listorder="0" Visible="1"/>
+    <DItem DValue="19" Text="SDU街舞联盟" Listorder="0" Visible="1"/>
+    <DItem DValue="20" Text="天之舞联盟" Listorder="0" Visible="1"/>
+    <DItem DValue="21" Text="吉他协会" Listorder="0" Visible="1"/>
+    <DItem DValue="22" Text="计算机协会" Listorder="0" Visible="1"/>
+    <DItem DValue="23" Text="天文爱好者协会" Listorder="0" Visible="1"/>
+    <DItem DValue="24" Text="电子科技协会" Listorder="0" Visible="1"/>
+    <DItem DValue="25" Text="JY影视协会" Listorder="0" Visible="1"/>
+    <DItem DValue="26" Text="SDS话剧社" Listorder="0" Visible="1"/>
+    <DItem DValue="27" Text="天雁剧团" Listorder="0" Visible="1"/>
+    <DItem DValue="28" Text="国际舞研究协会" Listorder="0" Visible="1"/>
+    <DItem DValue="29" Text="数学建模协会" Listorder="0" Visible="1"/>
+    <DItem DValue="30" Text="汉风汉文化研究社" Listorder="0" Visible="1"/>
+    <DItem DValue="31" Text="美术之翼协会" Listorder="0" Visible="1"/>
+    <DItem DValue="32" Text="尤克里里协会" Listorder="0" Visible="1"/>
+    <DItem DValue="33" Text="Hn摄影协会" Listorder="0" Visible="1"/>
+    <DItem DValue="34" Text="馨锐民乐社" Listorder="0" Visible="1"/>
+    <DItem DValue="35" Text="侦探推理协会" Listorder="0" Visible="1"/>
+    <DItem DValue="36" Text="第一推动大学生科普协会" Listorder="0" Visible="1"/>
+    <DItem DValue="37" Text="多媒体软件应用协会" Listorder="0" Visible="1"/>
+    <DItem DValue="38" Text="HSS曳舞社" Listorder="0" Visible="1"/>
+    <DItem DValue="39" Text="青鸟志愿者协会" Listorder="0" Visible="1"/>
+    <DItem DValue="40" Text="创业联盟" Listorder="0" Visible="1"/>
+    <DItem DValue="41" Text="花开无声手语协会" Listorder="0" Visible="1"/>
+    <DItem DValue="42" Text="法律协会" Listorder="0" Visible="1"/>
+    <DItem DValue="43" Text="心理协会" Listorder="0" Visible="1"/>
+    <DItem DValue="44" Text="模拟联合国协会" Listorder="0" Visible="1"/>
+    <DItem DValue="45" Text="王船山研究协会" Listorder="0" Visible="1"/>
+    <DItem DValue="46" Text="山石诗社" Listorder="0" Visible="1"/>
+    <DItem DValue="47" Text="雁回文学社" Listorder="0" Visible="1"/>
+    <DItem DValue="48" Text="英语协会" Listorder="0" Visible="1"/>
+    <DItem DValue="49" Text="演讲与口才协会" Listorder="0" Visible="1"/>
+    <DItem DValue="50" Text="国学社" Listorder="0" Visible="1"/>
+    <DItem DValue="51" Text="粤语协会" Listorder="0" Visible="1"/>
+    <DItem DValue="52" Text="彩虹之梦朗诵协会" Listorder="0" Visible="1"/>
+    <DItem DValue="53" Text="疯狂美语俱乐部" Listorder="0" Visible="1"/>
+    <DItem DValue="54" Text="日语协会" Listorder="0" Visible="1"/>
+    <DItem DValue="55" Text="纵横天下历史协会" Listorder="0" Visible="1"/>
+    <DItem DValue="56" Text="风云时政交友协会" Listorder="0" Visible="1"/>
+    <DItem DValue="57" Text="英语演讲协会" Listorder="0" Visible="1"/>
+    <DItem DValue="58" Text="韩语协会" Listorder="0" Visible="1"/>
+    <DItem DValue="59" Text="言值思辨社" Listorder="0" Visible="1"/>
+  </DItems> 
+             
+  <DItems D_Name="分类状态" DValue="certitype" CodeLength="10">
+    <DItem DValue="certp01" Text="英语证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp02" Text="计算机证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp03" Text="学校证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp04" Text="第二外语证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp05" Text="财务类证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp06" Text="专业资格证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp07" Text="兼职实习证明" Listorder="0" Visible="1"/>
+    <DItem DValue="certp08" Text="发表论文，专利证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp09" Text="竞赛获奖证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp10" Text="毕业证" Listorder="0" Visible="1"/>
+    <DItem DValue="certp11" Text="学位证" Listorder="0" Visible="1"/>
+    <DItem DValue="certp12" Text="第二学位" Listorder="0" Visible="1"/>
+    <DItem DValue="certp13" Text="教师资格证" Listorder="0" Visible="1"/>
+    <DItem DValue="certp14" Text="普通话证书" Listorder="0" Visible="1"/>
+    <DItem DValue="certp15" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="课程属性"  DValue="course_type" CodeLength="10">
+    <DItem DValue="cstp01" Text="必修" Listorder="0" Visible="1"/>
+    <DItem DValue="cstp02" Text="限选" Listorder="0" Visible="1"/>
+    <DItem DValue="cstp03" Text="任选" Listorder="0" Visible="1"/>
+  </DItems>
+
+  <DItems D_Name="课时" DValue="cours_time" CodeLength="30">
+    <DItem DValue="7:20AM" Text="早自习" Listorder="0" Visible="1"/>
+    <DItem DValue="8:30AM" Text="第一节" Listorder="0" Visible="1"/>
+    <DItem DValue="9:25AM" Text="第二节" Listorder="0" Visible="1"/>
+    <DItem DValue="10:30AM" Text="第三节" Listorder="0" Visible="1"/>
+    <DItem DValue="11:25AM" Text="第四节" Listorder="0" Visible="1"/>
+    <DItem DValue="2:30PM" Text="第五节" Listorder="0" Visible="1"/>
+    <DItem DValue="3:25PM" Text="第六节" Listorder="0" Visible="1"/>
+    <DItem DValue="4:30PM" Text="第七节" Listorder="0" Visible="1"/>
+    <DItem DValue="5:25PM" Text="第八节" Listorder="0" Visible="1"/>
+    <DItem DValue="7:30PM" Text="晚自习" Listorder="0" Visible="1"/>
+  </DItems>
+  <DItems D_Name="成果级别" DValue="archieve_level" CodeLength="4">
+    <DItem DValue="AL01" Text="省级"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL02" Text="核心"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL14" Text="A类"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL15" Text="国家级"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL16" Text="一级"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL17" Text="外文期刊"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL18" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="成果来源" DValue="archieve_from" CodeLength="4"> 
+    <DItem DValue="AF01" Text="国家社科基金项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF02" Text="国家自然科学基金项目"  Listorder="0"  Visible="1" /> 
+    <DItem DValue="AF03" Text="教育部人文社科研究项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF04" Text="全国教育科学规划项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF05" Text="高校古籍整理研究项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF06" Text="湖南省社科规划项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF07" Text="湖南省社科联项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF08" Text="湖南省教育厅项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF09" Text="湖南省科技计划项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF10" Text="湖南省自然科学基金项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF11" Text="衡阳市科技计划项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF12" Text="衡阳市社科规划项目"  Listorder="0"  Visible="1" /> 
+    <DItem DValue="AF13" Text="衡阳师范学院基金项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF14" Text="其他研究项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="AF15" Text="无依托项目研究成果"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="成果类型" DValue="archieve_type" CodeLength="4">
+    <DItem DValue="AT01" Text="论文"  Listorder="0"  Visible="1" />
+    <DItem DValue="AT02" Text="作品"  Listorder="0"  Visible="1" />
+    <DItem DValue="AT03" Text="译文"  Listorder="0"  Visible="1" />
+    <DItem DValue="AT04" Text="会议论文"  Listorder="0"  Visible="1" />
+    <DItem DValue="AT05" Text="专著"  Listorder="0"  Visible="1" />
+    <DItem DValue="AT06" Text="编著"  Listorder="0"  Visible="1" />
+    <DItem DValue="AT07" Text="译著"  Listorder="0"  Visible="1" />
+    <DItem DValue="AT08" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="获奖级别" DValue="award_grade" CodeLength="4">
+    <DItem DValue="AG01" Text="国家级"  Listorder="0"  Visible="1" />
+    <DItem DValue="AG02" Text="省部级"  Listorder="0"  Visible="1" />
+    <DItem DValue="AG03" Text="地市级"  Listorder="0"  Visible="1" />
+    <DItem DValue="AG04" Text="院校级"  Listorder="0"  Visible="1" />
+    <DItem DValue="AG05" Text="其它"  Listorder="0"  Visible="1" />
+  </DItems>
+
+  <DItems D_Name="奖项等级" DValue="award_level" CodeLength="4">
+    <DItem DValue="AL01" Text="未评"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL02" Text="特等"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL03" Text="一等"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL04" Text="二等"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL05" Text="三等"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL06" Text="四等"  Listorder="0"  Visible="1" />
+    <DItem DValue="AL07" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="奖励等级" DValue="prize_level" CodeLength="4">
+    <DItem DValue="prizele001" Text="未评"  Listorder="0"  Visible="1" />
+    <DItem DValue="prizele002" Text="特等"  Listorder="0"  Visible="1" />
+    <DItem DValue="prizele003" Text="一等"  Listorder="0"  Visible="1" />
+    <DItem DValue="prizele004" Text="二等"  Listorder="0"  Visible="1" />
+    <DItem DValue="prizele005" Text="三等"  Listorder="0"  Visible="1" />
+    <DItem DValue="prizele006" Text="四等"  Listorder="0"  Visible="1" />
+    <DItem DValue="prizele007" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+   
+  <DItems D_Name="项目属性" DValue="project_attr" CodeLength="4">
+    <DItem DValue="PA01" Text="重点项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA02" Text="青年项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA03" Text="一般项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA04" Text="启动项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA05" Text="成果收购项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA06" Text="配套奖励项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA07" Text="联合基金项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA08" Text="出版资助项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA09" Text="科技计划项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA10" Text="基金项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA11" Text="“百人工程”项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA12" Text="思想政治教育项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA13" Text="子课题"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA14" Text="委托项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA15" Text="横向项目"  Listorder="0"  Visible="1" />
+    <DItem DValue="PA16" Text="立项不资助项目"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="项目来源" DValue="project_from" CodeLength="30">
+    <DItem DValue="PF01" Text="衡阳师范学院团委"  Listorder="0"  Visible="1" />
+    <DItem DValue="PF02" Text="省教育厅"  Listorder="0"  Visible="1" />
+    <DItem DValue="PF03" Text="中兴通讯信息工程学院"  Listorder="0"  Visible="1" />
+    <DItem DValue="PF04" Text="其它项目"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="项目状态" DValue="project_status" CodeLength="12">
+    <DItem DValue="PS00" Text="申请中"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS01" Text="已上报"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS02" Text="待上报"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS03" Text="已立项"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS04" Text="在研"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS05" Text="已结项"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS06" Text="中途放弃"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS07" Text="延期"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS08" Text="销项"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS09" Text="已上报"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS10" Text="待上报"  Listorder="0"  Visible="1" />
+    <DItem DValue="PS99" Text="其它"  Listorder="0"  Visible="1" />
+  </DItems>
+  
+  <DItems D_Name="项目类型" DValue="project_type" CodeLength="10">
+    <DItem DValue="PT01" Text="基础研究"  Listorder="0"  Visible="1" />
+    <DItem DValue="PT02" Text="应用研究"  Listorder="0"  Visible="1" />
+    <DItem DValue="PT99" Text="其他"  Listorder="0"  Visible="1" />
+  </DItems>
+   
+  <DItems D_Name="经费状态" DValue="fund_condition" CodeLength="12">
+    <DItem DValue="jfzt01" Text="已立项" Listorder="0" Visible="1"/>
+    <DItem DValue="jfzt02" Text="已结项" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="获奖状态" DValue="reward_status" CodeLength="12">
+    <DItems DValue="rds01" Text="已获奖" Listorder="0" Visible="1"/>
+    <DItems DValue="rds02" Text="未获奖" Listorder="0" Visible="1"/>
+    <DItems DValue="rds03" Text="待评定" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="审核状态" DValue="app_status" CodeLength="4">
+    <DItem DValue="AT01" Text="未审核" Listorder="0" Visible="1"/>
+    <DItem DValue="AT02" Text="辅导员审核" Listorder="0" Visible="1"/>
+    <DItem DValue="AT03" Text="学工处审核" Listorder="0" Visible="1"/>
+    <DItem DValue="AT04" Text="院系审核" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="授予单位" DValue="given_unit" CodeLength="30">
+    <DItem DValue="sydw01" Text="衡阳师范学院" Listorder="0" Visible="1"/>
+    <DItem DValue="sydw02" Text="省教育厅" Listorder="0" Visible="1"/>
+    <DItem DValue="sydw03" Text="信息工程学院" Listorder="0" Visible="1"/>   
+    <DItem DValue="sydw04" Text="其他" Listorder="0" Visible="1"/> 
+  </DItems>
+
+  <DItems D_Name="授予单位等级" DValue="unitrank" CodeLength="3">
+    <DItem DValue="sydwdj01" Text="国家级" Listorder="0" Visible="1"/>
+    <DItem DValue="sydwdj02" Text="省级" Listorder="0" Visible="1"/>
+    <DItem DValue="sydwdj03" Text="市级" Listorder="0" Visible="1"/>
+    <DItem DValue="sydwdj04" Text="校级" Listorder="0" Visible="1"/>
+    <DItem DValue="sydwdj05" Text="院级" Listorder="0" Visible="1"/>
+    <DItem DValue="sydwdj06" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="所属部门" DValue="sdept" CodeLength="3">
+    <DItem DValue="sdept01" Text="测试" Listorder="0" Visible="1"/>
+    <DItem DValue="sdept02" Text="省级" Listorder="0" Visible="1"/>
+    <DItem DValue="sdept03" Text="市级" Listorder="0" Visible="1"/>
+    <DItem DValue="sdept04" Text="校级" Listorder="0" Visible="1"/>
+    <DItem DValue="sdept05" Text="院级" Listorder="0" Visible="1"/>
+    <DItem DValue="sdept06" Text="其他" Listorder="0" Visible="1"/>
+  </DItems>
+  <DItems D_Name="记录类别" DValue="record_type" CodeLength="3">
+    <DItem DValue="rety01" Text="测试" Listorder="0" Visible="1"/>
+    <DItem DValue="rety02" Text="测试" Listorder="0" Visible="1"/>
+    <DItem DValue="rety03" Text="测试" Listorder="0" Visible="1"/>
+    <DItem DValue="rety04" Text="测试" Listorder="0" Visible="1"/>
+    <DItem DValue="rety05" Text="测试" Listorder="0" Visible="1"/>
+    <DItem DValue="rety06" Text="测试" Listorder="0" Visible="1"/>
+  </DItems>
+  <DItems D_Name="批量操作角色" DValue="match_permission" CodeLength="3">
+    <DItem DValue="mp01" Text="总管理员" ShowCode="3" Visible="1"/>
+    <DItem DValue="mp02" Text="系统管理员" ShowCode="3"  Visible="1"/>
+    <DItem DValue="mp03" Text="学院辅导员" ShowCode="3" Visible="1"/>
+    <DItem DValue="mp04" Text="学生干部" ShowCode="2" Visible="1"/>
+    <DItem DValue="mp05" Text="学生" ShowCode="1" Visible="1"/>
+  </DItems>
+  <DItems  D_Name="民族" DValue="nation" CodeLength="3">
+    <DItem DValue="N01" Text="汉族" Listorder="0"  Visible="1" />
+    <DItem DValue="N02" Text="蒙古族" Listorder="0"  Visible="1" />
+    <DItem DValue="N03" Text="回族" Listorder="0"  Visible="1" />
+    <DItem DValue="N04" Text="藏族" Listorder="0"  Visible="1" />
+    <DItem DValue="N05" Text="维吾尔族" Listorder="0"  Visible="1" />
+    <DItem DValue="N06" Text="苗族" Listorder="0"  Visible="1" />
+    <DItem DValue="N07" Text="彝族" Listorder="0"  Visible="1" />
+    <DItem DValue="N08" Text="壮族" Listorder="0"  Visible="1" />
+    <DItem DValue="N09" Text="布依族" Listorder="0"  Visible="1" />
+    <DItem DValue="N10" Text="朝鲜族" Listorder="0"  Visible="1" />
+    <DItem DValue="N11" Text="满族" Listorder="0"  Visible="1" />
+    <DItem DValue="N12" Text="侗族" Listorder="0"  Visible="1" />
+    <DItem DValue="N13" Text="瑶族" Listorder="0"  Visible="1" />
+    <DItem DValue="N14" Text="白族" Listorder="0"  Visible="1" />
+    <DItem DValue="N15" Text="土家族" Listorder="0"  Visible="1" />
+    <DItem DValue="N16" Text="哈尼族" Listorder="0"  Visible="1" />
+    <DItem DValue="N17" Text="哈萨克族" Listorder="0"  Visible="1" />
+    <DItem DValue="N18" Text="傣族" Listorder="0"  Visible="1" />
+    <DItem DValue="N19" Text="黎族" Listorder="0"  Visible="1" />
+    <DItem DValue="N20" Text="傈僳族" Listorder="0"  Visible="1" />
+    <DItem DValue="N21" Text="佤族" Listorder="0"  Visible="1" />
+    <DItem DValue="N22" Text="畲族" Listorder="0"  Visible="1" />
+    <DItem DValue="N23" Text="高山族" Listorder="0"  Visible="1" />
+    <DItem DValue="N24" Text="拉祜族" Listorder="0"  Visible="1" />
+    <DItem DValue="N25" Text="水族" Listorder="0"  Visible="1" />
+    <DItem DValue="N26" Text="东乡族" Listorder="0"  Visible="1" />
+    <DItem DValue="N27" Text="纳西族" Listorder="0"  Visible="1" />
+    <DItem DValue="N28" Text="景颇族" Listorder="0"  Visible="1" />
+    <DItem DValue="N29" Text="柯尔克孜族" Listorder="0"  Visible="1" />
+    <DItem DValue="N30" Text="土族" Listorder="0"  Visible="1" />
+    <DItem DValue="N31" Text="达斡尔族" Listorder="0"  Visible="1" />
+    <DItem DValue="N32" Text="仫佬族" Listorder="0"  Visible="1" />
+    <DItem DValue="N33" Text="羌族" Listorder="0"  Visible="1" />
+    <DItem DValue="N34" Text="布朗族" Listorder="0"  Visible="1" />
+    <DItem DValue="N35" Text="撒拉族" Listorder="0"  Visible="1" />
+    <DItem DValue="N36" Text="毛难族" Listorder="0"  Visible="1" />
+    <DItem DValue="N37" Text="仡佬族" Listorder="0"  Visible="1" />
+    <DItem DValue="N38" Text="锡伯族" Listorder="0"  Visible="1" />
+    <DItem DValue="N39" Text="阿昌族" Listorder="0"  Visible="1" />
+    <DItem DValue="N40" Text="普米族" Listorder="0"  Visible="1" />
+    <DItem DValue="N41" Text="塔吉克族" Listorder="0"  Visible="1" />
+    <DItem DValue="N42" Text="怒族" Listorder="0"  Visible="1" />
+    <DItem DValue="N43" Text="乌孜别克族" Listorder="0"  Visible="1" />
+    <DItem DValue="N44" Text="俄罗斯族" Listorder="0"  Visible="1" />
+    <DItem DValue="N45" Text="鄂温克族" Listorder="0"  Visible="1" />
+    <DItem DValue="N46" Text="德昂族" Listorder="0"  Visible="1" />
+    <DItem DValue="N47" Text="保安族" Listorder="0"  Visible="1" />
+    <DItem DValue="N48" Text="裕固族" Listorder="0"  Visible="1" />
+    <DItem DValue="N49" Text="京族" Listorder="0"  Visible="1" />
+    <DItem DValue="N50" Text="塔塔尔族" Listorder="0"  Visible="1" />
+    <DItem DValue="N51" Text="独龙族" Listorder="0"  Visible="1" />
+    <DItem DValue="N52" Text="鄂伦春族" Listorder="0"  Visible="1" />
+    <DItem DValue="N53" Text="赫哲族" Listorder="0"  Visible="1" />
+    <DItem DValue="N54" Text="门巴族" Listorder="0"  Visible="1" />
+    <DItem DValue="N55" Text="珞巴族" Listorder="0"  Visible="1" />
+    <DItem DValue="N56" Text="基诺族" Listorder="0"  Visible="1" />
+  </DItems> 
+</DD>

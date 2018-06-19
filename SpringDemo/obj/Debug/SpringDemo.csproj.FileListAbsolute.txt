@@ -1,0 +1,10 @@
+I:\Project\demoprojMVC2\SpringDemo\bin\Debug\SpringDemo.exe.config
+I:\Project\demoprojMVC2\SpringDemo\bin\Debug\SpringDemo.exe
+I:\Project\demoprojMVC2\SpringDemo\bin\Debug\SpringDemo.pdb
+I:\Project\demoprojMVC2\SpringDemo\bin\Debug\Common.Logging.dll
+I:\Project\demoprojMVC2\SpringDemo\bin\Debug\Spring.Core.dll
+I:\Project\demoprojMVC2\SpringDemo\bin\Debug\Spring.Core.pdb
+I:\Project\demoprojMVC2\SpringDemo\bin\Debug\Spring.Core.xml
+I:\Project\demoprojMVC2\SpringDemo\obj\Debug\SpringDemo.csprojResolveAssemblyReference.cache
+I:\Project\demoprojMVC2\SpringDemo\obj\Debug\SpringDemo.exe
+I:\Project\demoprojMVC2\SpringDemo\obj\Debug\SpringDemo.pdb

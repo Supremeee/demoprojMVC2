@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Majors>
+  <DItems D_Name="专业" DValue="A31" Codelength="10">
+    <DItem DValue="MK01" Text="马克思主义学院" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A37" Codelength="10">
+    <DItem DValue="WY01" Text="翻译" Listorder="0" Visible="1"/>
+    <DItem DValue="WY02" Text="商务英语" Listorder="0" Visible="1"/>
+    <DItem DValue="WY03" Text="英语" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A42" Codelength="10">
+    <DItem DValue="CL01" Text="旅游管理" Listorder="0" Visible="1"/>
+    <DItem DValue="CL02" Text="地理信息科学" Listorder="0" Visible="1"/>
+    <DItem DValue="CL03" Text="人文地理与城乡规划" Listorder="0" Visible="1"/>
+    <DItem DValue="CL04" Text="地理科学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A47" Codelength="10">
+    <DItem DValue="SK01" Text="环境工程" Listorder="0" Visible="1"/>
+    <DItem DValue="SK02" Text="食品科学与工程" Listorder="0" Visible="1"/>
+    <DItem DValue="SK03" Text="生物科学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A33" Codelength="10">
+    <DItem DValue="JG01" Text="财务管理" Listorder="0" Visible="1"/>
+    <DItem DValue="JG02" Text="国际经济与贸易" Listorder="0" Visible="1"/>
+    <DItem DValue="JG03" Text="经济学" Listorder="0" Visible="1"/>
+    <DItem DValue="JG04" Text="电子商务" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A38" Codelength="10">
+    <DItem DValue="ST01" Text="统计学" Listorder="0" Visible="1"/>
+    <DItem DValue="ST02" Text="信息与计算科学" Listorder="0" Visible="1"/>
+    <DItem DValue="ST03" Text="数学与应用数学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A43" Codelength="10">
+    <DItem DValue="WD01" Text="电子信息科学与技术" Listorder="0" Visible="1"/>
+    <DItem DValue="WD02" Text="物理学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A49" Codelength="10">
+    <DItem DValue="CJ01" Text="初等教育学院" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A34" Codelength="10">
+    <DItem DValue="FX01" Text="知识产权" Listorder="0" Visible="1"/>
+    <DItem DValue="FX02" Text="历史学" Listorder="0" Visible="1"/>
+    <DItem DValue="FX03" Text="思想政治教育" Listorder="0" Visible="1"/>
+    <DItem DValue="FX04" Text="法学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A39" Codelength="10">
+    <DItem DValue="TK01" Text="运动训练" Listorder="0" Visible="1"/>
+    <DItem DValue="TK02" Text="体育教育" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A44" Codelength="10">
+    <DItem DValue="HC01" Text="高分子材料与科学" Listorder="0" Visible="1"/>
+    <DItem DValue="HC02" Text="化学生物学" Listorder="0" Visible="1"/>
+    <DItem DValue="HC03" Text="应用化学" Listorder="0" Visible="1"/>
+    <DItem DValue="HC04" Text="化学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A51" Codelength="10">
+    <DItem DValue="ZX01" Text="计算机科学与技术（非师范）" Listorder="0" Visible="1"/>
+    <DItem DValue="ZX02" Text="电子信息工程" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A35" Codelength="10">
+    <DItem DValue="WX01" Text="编辑出版学" Listorder="0" Visible="1"/>
+    <DItem DValue="WX02" Text="汉语国际教育" Listorder="0" Visible="1"/>
+    <DItem DValue="WX03" Text="汉语言文学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A40" Codelength="10">
+    <DItem DValue="YX01" Text="舞蹈学" Listorder="0" Visible="1"/>
+    <DItem DValue="YX02" Text="音乐表演" Listorder="0" Visible="1"/>
+    <DItem DValue="YX03" Text="音乐学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A45" Codelength="10">
+    <DItem DValue="JK01" Text="软件工程" Listorder="0" Visible="1"/>
+    <DItem DValue="JK02" Text="网络工程" Listorder="0" Visible="1"/>
+    <DItem DValue="JK03" Text="物联网工程" Listorder="0" Visible="1"/>
+    <DItem DValue="JK04" Text="计算机科学与技术（师范）" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A48" Codelength="10">
+    <DItem DValue="NY01" Text="南岳学院" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A36" Codelength="10">
+    <DItem DValue="XC01" Text="广告学" Listorder="0" Visible="1"/>
+    <DItem DValue="XC02" Text="网络与新媒体" Listorder="0" Visible="1"/>
+    <DItem DValue="XC03" Text="新闻学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A41" Codelength="10">
+    <DItem DValue="MS01" Text="环境艺术设计" Listorder="0" Visible="1"/>
+    <DItem DValue="MS02" Text="视觉传达设计" Listorder="0" Visible="1"/>
+    <DItem DValue="MS03" Text="绘画" Listorder="0" Visible="1"/>
+    <DItem DValue="MS04" Text="美术学" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A46" Codelength="10">
+    <DItem DValue="ES01" Text="教育学" Listorder="0" Visible="1"/>
+    <DItem DValue="ES02" Text="应用心理学" Listorder="0" Visible="1"/>
+    <DItem DValue="ES03" Text="学前教育" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="专业" DValue="A50" Codelength="10">
+    <DItem DValue="JXES01" Text="继续教育与教师培训学院教师发展中心" Listorder="0" Visible="1"/>
+  </DItems>
+
+  <DItems D_Name="专业" DValue="A52" Codelength="10">
+    <DItem DValue="XT01" Text="协同创新中心" Listorder="0" Visible="1"/>
+  </DItems>
+  
+</Majors>

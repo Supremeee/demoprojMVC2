@@ -1,0 +1,210 @@
+﻿@model demoprojMVC.UI.Portal.Models.StudnetEditViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    string isEditCss = ViewBag.isEdit == false ? " disabled" : null;
+    ;string dropdownLable = "--请选择--";
+    string bornDate = Model.Student.born_date != null ?((DateTime)Model.Student.born_date).ToShortDateString() : null;
+    string rollinDate = Model.Student.rollin_date != null ? ((DateTime)Model.Student.rollin_date).ToShortDateString() : null;
+}
+@if (Model == null)
+{
+    Response.Redirect("/Student/List");
+}
+<script>
+    var w = window.devicePixelRatio;
+</script>
+<div class="panel">
+    <div class="panel-heading">
+        <h3>学生基本信息编辑页面</h3>
+    </div>
+    @if (TempData["Errmsg"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Errmsg"]</div>
+    }
+    @using (Html.BeginForm("Edit", "StudentInfo", FormMethod.Post, new { enctype = "mutipart/form-data" }))
+    {
+        <div class="panel-body">
+            @Html.Hidden("studentId", Model.Student.id)
+            @Html.Hidden("audit",Model.Student.audit ?? false)
+            @Html.Hidden("lock", Model.Student.@lock ?? false)
+            
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">学号：</label>
+                        @Html.TextBox("school_code", Model.Student.school_code ?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("school_code")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">姓名：</label>
+                        @Html.TextBox("student_name", Model.Student.student_name ?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("student_name")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">性别：</label>
+                        @Html.DropDownList("gender", Model.Genders ?? null, dropdownLable, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("gender")
+                    </div>
+                </div>
+            </div>
+            <div class="form-group container">
+                <div class="row  form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">年级：</label>
+                        @Html.DropDownList("grade", Model.Grades ?? null, dropdownLable, new { @class = "form-control input-sm", onchange = "GetBanjiData()" })
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">院系：</label>
+                        @Html.DropDownList("dept", Model.Depts ?? null, dropdownLable, new { @class = "form-control input-sm" ,onchange="GetMajor()"})
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">专业：</label>
+                        @Html.DropDownList("major", Model.Majors ?? null, dropdownLable, new { @class = "form-control input-sm", onchange = "GetBanjiData()" })
+                    </div>
+                </div>
+            </div>
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">班级：</label>
+                        @Html.DropDownList("banji", Model.Banjis ?? null, dropdownLable, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">民族：</label>
+                        @Html.DropDownList("nation", Model.Nation ?? null, dropdownLable, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">出生日期：</label>
+                        @Html.TextBox("born_date", bornDate , new { @class = "form-control input-sm ", type = "text",onclick="WdatePicker()",@readonly="readonly" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">政治面貌：</label>
+                        @Html.DropDownList("politicstatus", Model.Politicstatus ?? null, dropdownLable, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">手机号码：</label>
+                        @Html.TextBox("telephone", Model.Student.telephone ?? null, new { @class = "form-control input-sm", type = "text" })
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">身份证号：</label>
+                        @Html.TextBox("ID_card", Model.Student.ID_card ?? null, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">宿舍号码：</label>
+                        @Html.TextBox("dormitory", Model.Student.dormitory ?? null, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">入学时间：</label>
+                        @Html.TextBox("rollin_date", rollinDate, new { @class = "form-control input-sm ", type = "text",onclick="WdatePicker()",@readonly="readonly" })
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">家庭住址：</label>
+                        @Html.TextBox("address", Model.Student.address ?? null, new { @class = "form-control input-sm", type = "text" })
+                    </div>
+                </div>
+            </div>
+            <div class="form-inline form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-12">
+                        <label class="title">籍贯：</label>
+                        @Html.DropDownList("province", Model.Proviences ?? null, dropdownLable, new { @class = "form-control input-sm",onchange="GetCity()" })
+                        @Html.DropDownList("city", Model.Cities ?? null, dropdownLable, new { @class = "form-control input-sm",onchange="GetDistrict()" })
+                        @Html.DropDownList("district", Model.Districts ?? null, dropdownLable, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+            </div>
+            <div class="form-inline form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">家庭电话：</label>
+                        @Html.TextBox("home_telephone", Model.Student.home_telephone ?? null, new { @class = "form-control input-sm", type = "text" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <input type="submit" class="btn btn-primary btn-sm" value="保存"/>
+            @Html.ActionLink("返回", "List", null, new { @class = "btn btn-sm btn-info" })
+        </div>
+    }
+</div>
+<script>
+    function GetBanjiData() {
+        var grade = $("#grade option:selected").val();
+        if (grade !== "")
+            grade = $("#grade option:selected").text();
+        var major = $("#major option:selected").val();
+        if (major !== "")
+            major = $("#major option:selected").text();
+        $.ajax({
+            url: "/StudentInfo/GetJsonDataToBanji",
+            type: "get",
+            data: { gradeText: grade, majorText: major },
+            contentType: "application/json",
+            success: function (data) {
+                whenSuccess("banji", data);
+            }
+        });
+    }
+
+    function GetMajor() {
+        var dept = $('#dept option:selected').val();
+        var childName = "major";
+        AjaxUpdateData(dept, childName);
+    }
+    function GetCity() {
+        var province = $('#province option:selected').val();
+        var city = "city";
+        AjaxUpdateData(province, city);
+    }
+
+    function GetDistrict() {
+        var fahterValue = $('#city option:selected').val();
+        var childName = "district";
+        AjaxUpdateData(fahterValue, childName);
+
+    }
+
+    function AjaxUpdateData(fatherValue,childName) {
+        $.ajax({
+            url: "/StudentInfo/GetNativePlaceData",
+            type: "get",
+            data: { fatherElemValue: fatherValue, childElemName: childName },
+            contentType: "application/json",
+            success: function (data) {
+                whenSuccess(childName, data);
+            }
+        });
+    }
+    function whenSuccess(id, data) {
+        id = '#' + id;
+        $(id).html('');
+        var options = '';
+        options += '<option value="">--请选择--</option>';
+        if (data.length > 0) {
+            for (var i = 0; i < data.length; i++) {
+                options += '<option value="' + data[i].Value + '">' + data[i].Text + '</option>';
+            }
+        }
+        $(id).append(options);
+    }
+    function whenFail(id) {
+        id = '#' + id;
+        $(id).html('');
+        var options = '';
+        options += '<option value="">--请选择--</option>';
+        $(id).append(options);
+
+    }
+</script>

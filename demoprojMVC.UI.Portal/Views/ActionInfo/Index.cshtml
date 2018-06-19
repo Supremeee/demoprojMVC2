@@ -1,0 +1,81 @@
+﻿@model demoprojMVC.UI.Portal.Models.ActionInfoViewModel
+
+
+@{
+    ViewBag.Title = "权限信息管理";
+    AjaxOptions ajaxOpts = new AjaxOptions
+    {
+        UpdateTargetId = "actionInfo",
+        Url = Url.Action("GetActionInfoData")
+    };
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="text-center">权限信息管理</h3>
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-success">@TempData["Message"]</div>
+        }
+        <div class="form-group form-inline container">
+            @using (Ajax.BeginForm(ajaxOpts))
+            {
+                <div class="col-sm-2">
+                    @Html.ActionLink("新增", "Create", null, new { @class = "btn btn-primary btn-sm" })
+                </div>
+                <div class="col-sm-8 col-md-4">
+                    <label>查询条件:</label><input type="text" id="searchContext" name="searchContext" class="form-control input-sm" style="width: 120px;" />
+                </div>
+                <div class="col-sm-10 col-md-6">
+                    <label>查询方式:</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="type" checked="checked" value="ActionName"> 权限名
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="type" value="Url"> Url
+                    </label>
+                    <input type="submit" class="btn btn-primary btn-sm" value="查询" />
+                </div>
+            }
+        </div>
+    </div>
+    <div id="actionInfo" class="panel-body">
+        @Html.Action("GetActionInfoData")
+    </div>
+
+</div>
+
+<div id="setrole-dialog" title="设置权限角色">
+
+</div>
+<script>
+    function afterSetRoleUI(data) {
+        var dialogForm = $("#setrole-dialog");
+        dialogForm.html(data);
+        dialogForm.dialog({
+            width: 400,
+            height: 400,
+            autoOpen: false,
+            dialogClass: "col-md-6 col-sm-6 col-xs-12",
+            modal: true
+        });
+        $("#dialogCancel").click(function() {
+            $("#setrole-dialog").dialog("close");
+        });
+        dialogForm.dialog("open");
+    }
+
+    function afterSetRole(data) {
+        if (data === "ok")
+            $("#setrole-dialog").dialog("close");
+        else {
+            $("#errmsg").html(data);
+        }
+    }
+</script>
+
+
+
+
+
+
+

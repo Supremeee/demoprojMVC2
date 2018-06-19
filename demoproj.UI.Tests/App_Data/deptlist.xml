@@ -1,0 +1,23 @@
+<!--l version="1.0" encoding="gb2312"-->
+<Departments>
+  <Department Dept_code="A10" Dept_name="科技处" Website="" />
+  <Department Dept_code="A18" Dept_name="图书馆" Website="" />
+  <Department Dept_code="A31" Dept_name="马克思主义学院" Website="" />
+  <Department Dept_code="A33" Dept_name="经济与管理学院" Website="" />
+  <Department Dept_code="A34" Dept_name="法学院" Website="" />
+  <Department Dept_code="A35" Dept_name="文学院" Website="" />
+  <Department Dept_code="A36" Dept_name="新闻与传播学院" Website="http://www.hynu.edu.cn" />
+  <Department Dept_code="A37" Dept_name="外国语学院" Website="http://www.hynu.edu.cn/wyds/waiyuxi/jianjie.htm" />
+  <Department Dept_code="A38" Dept_name="数学统计学院" Website="" />
+  <Department Dept_code="A39" Dept_name="体育科学学院" Website="" />
+  <Department Dept_code="A40" Dept_name="音乐学院" Website="" />
+  <Department Dept_code="A41" Dept_name="美术学院" Website="" />
+  <Department Dept_code="A42" Dept_name="城市与旅游学院" Website="" />
+  <Department Dept_code="A43" Dept_name="物理与电子信息学院" Website="" />
+  <Department Dept_code="A44" Dept_name="化学材料学院" Website="" />
+  <Department Dept_code="A45" Dept_name="计算机科学学院" Website="" />
+  <Department Dept_code="A46" Dept_name="教育科学学院" Website="" />
+  <Department Dept_code="A47" Dept_name="生物科学院" Website="" />
+  <Department Dept_code="A51" Dept_name="中兴通讯信息工程学院" Website="" />
+  <Department Dept_code="A00" Dept_name="其他部门" Website="" />
+</Departments>

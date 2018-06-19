@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+  <DItems D_Name="大类别" DValue="assessment_type" CodeLength="10">
+    <DItem DValue="a01" Text="违纪" Listorder="0" Visible="1"/>
+    <DItem DValue="a02" Text="早晚自习" Listorder="0" Visible="1"/>
+    <DItem DValue="a03" Text="班级纪律与卫生" Listorder="0" Visible="1"/>
+    <DItem DValue="a04" Text="公物管理" Listorder="0" Visible="1"/>
+    <DItem DValue="a05" Text="宿舍管理" Listorder="0" Visible="1"/>
+    <DItem DValue="a06" Text="荣誉考核" Listorder="0" Visible="1"/>
+  </DItems>
+

@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<SUBJECTS>
+  <DItem DValue="01" Text="哲学">
+    <DItem DValue="0101" Text="哲学" >
+      <DItem DValue="010101" Text="马克思主义哲学" />
+      <DItem DValue="010102" Text="中国哲学" />
+      <DItem DValue="010103" Text="外国哲学" />
+      <DItem DValue="010104" Text="逻辑学" />
+      <DItem DValue="010105" Text="伦理学" />
+      <DItem DValue="010106" Text="美学" />
+      <DItem DValue="010107" Text="宗教学" />
+      <DItem DValue="010108" Text="科学技术哲学" />
+    </DItem>
+  </DItem>
+
+  <DItem DValue="02" Text="经济学">
+    <DItem DValue="0201" Text="理论经济学" >
+      <DItem DValue="020101" Text="政治经济学" />
+      <DItem DValue="020102" Text="经济思想史" />
+      <DItem DValue="020103" Text="经济史" />
+      <DItem DValue="020104" Text="西方经济学" />
+      <DItem DValue="020105" Text="世界经济" />
+      <DItem DValue="020106" Text="人口、资源与环境经济学" />
+    </DItem>
+    <DItem DValue="0202" Text="应用经济学" >
+      <DItem DValue="020201" Text="国民经济学" />
+      <DItem DValue="020202" Text="区域经济学" />
+      <DItem DValue="020203" Text="财政学（含：税收学）" />
+      <DItem DValue="020204" Text="金融学（含：保险学）" />
+      <DItem DValue="020205" Text="产业经济学" />
+      <DItem DValue="020206" Text="国际贸易学" />
+      <DItem DValue="020207" Text="劳动经济学" />
+      <DItem DValue="020208" Text="统计学" />
+      <DItem DValue="020209" Text="数量经济学" />
+      <DItem DValue="020210" Text="国防经济" />
+    </DItem>
+  </DItem>
+  <DItem DValue="03" Text="法学">
+    <DItem DValue="0301" Text="法学" >
+      <DItem DValue="030101" Text="法学理论" />
+      <DItem DValue="030102" Text="法律史" />
+      <DItem DValue="030103" Text="宪法学与行政法学" />
+      <DItem DValue="030104" Text="刑法学" />
+      <DItem DValue="030105" Text="民商法学(含：劳动法学、社会保障法学)" />
+      <DItem DValue="030106" Text="诉讼法学" />
+      <DItem DValue="030107" Text="经济法学" />
+      <DItem DValue="030108" Text="环境与资源保护法学" />
+      <DItem DValue="030109" Text="国际法学(含：国际公法、国际私法、国际经济法)" />
+      <DItem DValue="030110" Text="军事法学" />
+    </DItem>
+    <DItem DValue="0302" Text="政治学" >
+      <DItem DValue="030201" Text="政治学理论" />
+      <DItem DValue="030202" Text="中外政治制度" />
+      <DItem DValue="030203" Text="科学社会主义与国际共产主义运动" />
+      <DItem DValue="030204" Text="中共党史(含：党的学说与党的建设)" />
+      <DItem DValue="030206" Text="国际政治" />
+      <DItem DValue="030207" Text="国际关系" />
+      <DItem DValue="030208" Text="外交学" />
+    </DItem>
+    <DItem DValue="0303" Text="社会学" >
+      <DItem DValue="030301" Text="社会学" />
+      <DItem DValue="030302" Text="人口学" />
+      <DItem DValue="030303" Text="人类学" />
+      <DItem DValue="030304" Text="民俗学（含：中国民间文学）" />
+    </DItem>
+    <DItem DValue="0304" Text="民族学" >
+      <DItem DValue="030401" Text="民族学" />
+      <DItem DValue="030402" Text="马克思主义民族理论与政策 " />
+      <DItem DValue="030403" Text="中国少数民族经济 " />
+      <DItem DValue="030404" Text="中国少数民族史" />
+      <DItem DValue="030405" Text="中国少数民族艺术" />
+    </DItem>
+    <DItem DValue="0305" Text="马克思主义理论" >
+      <DItem DValue="030501" Text="马克思主义基本原理" />
+      <DItem DValue="030502" Text="马克思主义发展史" />
+      <DItem DValue="030503" Text="马克思主义中国化研究 " />
+      <DItem DValue="030504" Text="国外马克思主义研究" />
+      <DItem DValue="030505" Text="思想政治教育" />
+      <DItem DValue="030506" Text="中国近代史基本问题研究" />
+    </DItem>
+  </DItem>
+  <DItem DValue="04" Text="教育学">
+    <DItem DValue="0401" Text="教育学" >
+      <DItem DValue="040101" Text="教育学原理" />
+      <DItem DValue="040102" Text="课程与教学论" />
+      <DItem DValue="030103" Text="教育史" />
+      <DItem DValue="040104" Text="比较教育学" />
+      <DItem DValue="040105" Text="学前教育学" />
+      <DItem DValue="040106" Text="高等教育学" />
+      <DItem DValue="040107" Text="成人教育学" />
+      <DItem DValue="040108" Text="职业技术教育学" />
+      <DItem DValue="040109" Text="特殊教育学" />
+      <DItem DValue="040110" Text="教育技术学（可授教育学、理学学位）" />
+    </DItem>
+    <DItem DValue="0402" Text="心理学（可授教育学、理学学位）" >
+      <DItem DValue="040201" Text="基础心理学 " />
+      <DItem DValue="040202" Text="发展与教育心理学 " />
+      <DItem DValue="040203" Text="应用心理学" />
+    </DItem>
+    <DItem DValue="0403" Text="体育学" >
+      <DItem DValue="040301" Text="体育人文社会学" />
+      <DItem DValue="040302" Text="运动人体科学(可授教育学、理学、医学学位)" />
+      <DItem DValue="040303" Text="体育教育训练学" />
+      <DItem DValue="040304" Text="民族传统体育学" />
+    </DItem>
+  </DItem>
+  <DItem DValue="05" Text="文学">
+    <DItem DValue="0501" Text="中国语言文学" >
+      <DItem DValue="050101" Text="文艺学" />
+      <DItem DValue="050102" Text="语言学及应用语言学" />
+      <DItem DValue="050103" Text="汉语言文字学" />
+      <DItem DValue="050104" Text="中国古典文献学" />
+      <DItem DValue="050105" Text="中国古代文学" />
+      <DItem DValue="050106" Text="中国现当代文学" />
+      <DItem DValue="050107" Text="中国少数民族语言文学（分语族）" />
+      <DItem DValue="050108" Text="比较文学与世界文学" />
+    </DItem>
+    <DItem DValue="0502" Text="外国语言文学" >
+      <DItem DValue="050201" Text="英语语言文学 " />
+      <DItem DValue="050202" Text="俄语语言文学 " />
+      <DItem DValue="050203" Text="法语语言文学 " />
+      <DItem DValue="050204" Text="德语语言文学 " />
+      <DItem DValue="050205" Text="日语语言文学 " />
+      <DItem DValue="050206" Text="印度语言文学 " />
+      <DItem DValue="050207" Text="西班牙语语言文学" />
+      <DItem DValue="050208" Text="阿拉伯语语言文学" />
+      <DItem DValue="050209" Text="欧洲语言文学" />
+      <DItem DValue="050210" Text="亚非语言文学" />
+      <DItem DValue="050211" Text="外国语言学及应用语言学" />
+    </DItem>
+    <DItem DValue="0503" Text="新闻传播学" >
+      <DItem DValue="050301" Text="新闻学" />
+      <DItem DValue="050302" Text="传播学" />
+    </DItem>
+    <DItem DValue="0504" Text="艺术学" >
+      <DItem DValue="050401" Text="艺术学" />
+      <DItem DValue="050402" Text="音乐学" />
+      <DItem DValue="050403" Text="美术学" />
+      <DItem DValue="050404" Text="设计艺术学" />
+      <DItem DValue="050405" Text="戏剧戏曲学" />
+      <DItem DValue="050406" Text="电影学" />
+      <DItem DValue="050407" Text="广播电视艺术学" />
+      <DItem DValue="050408" Text="舞蹈学" />
+    </DItem>
+  </DItem>
+  <DItem DValue="06" Text="历史学">
+    <DItem DValue="0601" Text="历史学" >
+      <DItem DValue="060101" Text="史学理论及史学史" />
+      <DItem DValue="060102" Text="考古学及博物馆学" />
+      <DItem DValue="060103" Text="历史地理学" />
+      <DItem DValue="060104" Text="历史文献学(含：敦煌学、古文字学)" />
+      <DItem DValue="060105" Text="专门史" />
+      <DItem DValue="060106" Text="中国古代史" />
+      <DItem DValue="060107" Text="中国近现代史" />
+      <DItem DValue="060108" Text="世界史" />
+    </DItem>
+  </DItem>
+  <DItem DValue="07" Text="理学">
+    <DItem DValue="0701" Text="数学" >
+      <DItem DValue="070101" Text="基础数学 " />
+      <DItem DValue="070102" Text="计算数学 " />
+      <DItem DValue="070103" Text="概率论与数理统计 " />
+      <DItem DValue="070104" Text="应用数学" />
+      <DItem DValue="070105" Text="运筹学与控制论" />
+    </DItem>
+    <DItem DValue="0702" Text="物理学" >
+      <DItem DValue="070201" Text="理论物理" />
+      <DItem DValue="070202" Text="粒子物理与原子核物理" />
+      <DItem DValue="070203" Text="原子与分子物理" />
+      <DItem DValue="070204" Text="等离子体物理" />
+      <DItem DValue="070205" Text="凝聚态物理" />
+      <DItem DValue="070206" Text="声学" />
+      <DItem DValue="070207" Text="光学" />
+      <DItem DValue="070208" Text="无线电物理" />
+    </DItem>
+    <DItem DValue="0703" Text="化学" >
+      <DItem DValue="070301" Text="无机化学" />
+      <DItem DValue="070302" Text="分析化学" />
+      <DItem DValue="070303" Text="有机化学" />
+      <DItem DValue="070304" Text="物理化学(含：化学物理)" />
+      <DItem DValue="070305" Text="高分子化学与物理" />
+    </DItem>
+    <DItem DValue="0704" Text="天文学" >
+      <DItem DValue="070401" Text="天体物理" />
+      <DItem DValue="070402" Text="天体测量与天体力学" />
+    </DItem>
+    <DItem DValue="0705" Text="地理学" >
+      <DItem DValue="070501" Text="自然地理学" />
+      <DItem DValue="070502" Text="人文地理学" />
+      <DItem DValue="070503" Text="地图学与地理信息系统" />
+    </DItem>
+    <DItem DValue="0706" Text="大气科学" >
+      <DItem DValue="070601" Text="气象学" />
+      <DItem DValue="070602" Text="大气物理学与大气环境" />
+    </DItem>
+    <DItem DValue="0707" Text="海洋科学" >
+      <DItem DValue="070701" Text="物理海洋学" />
+      <DItem DValue="070702" Text="海洋化学" />
+      <DItem DValue="070703" Text="海洋生物学" />
+      <DItem DValue="070704" Text="海洋地质" />
+    </DItem>
+    <DItem DValue="0708" Text="地球物理学" >
+      <DItem DValue="070801" Text="固体地球物理学" />
+      <DItem DValue="070802" Text="空间物理学" />
+    </DItem>
+    <DItem DValue="0709" Text="地质学" >
+      <DItem DValue="070901" Text="矿物学、岩石学、矿床学" />
+      <DItem DValue="070902" Text="地球化学 " />
+      <DItem DValue="070903" Text="古生物学与地层学(含：古人类学)" />
+      <DItem DValue="070904" Text="构造地质学" />
+      <DItem DValue="070905" Text="第四纪地质学" />
+    </DItem>
+    <DItem DValue="0710" Text="生物学" >
+      <DItem DValue="071001" Text="植物学" />
+      <DItem DValue="071002" Text="动物学 " />
+      <DItem DValue="071003" Text="生理学" />
+      <DItem DValue="071004" Text="水生生物学" />
+      <DItem DValue="071005" Text="微生物学" />
+      <DItem DValue="071006" Text="神经生物学" />
+      <DItem DValue="071007" Text="遗传学 " />
+      <DItem DValue="071008" Text="发育生物学" />
+      <DItem DValue="071009" Text="细胞生物学" />
+      <DItem DValue="071010" Text="生物化学与分子生物学" />
+      <DItem DValue="071011" Text="生物物理学" />
+      <DItem DValue="071012" Text="生态学" />
+    </DItem>
+    <DItem DValue="0711" Text="系统科学" >
+      <DItem DValue="071101" Text="系统理论" />
+      <DItem DValue="071102" Text="系统分析与集成" />
+    </DItem>
+    <DItem DValue="0712" Text="科学技术史(分学科，可授理学、工学、农学、医学学位)" />
+  </DItem>
+  <DItem DValue="08" Text="工学">
+    <DItem DValue="0801" Text="力学（可授工学、理学学位）" >
+      <DItem DValue="080101" Text="一般力学与力学基础 " />
+      <DItem DValue="080102" Text="固体力学 " />
+      <DItem DValue="080103" Text="流体力学 " />
+      <DItem DValue="080104" Text="工程力学 " />
+    </DItem>
+    <DItem DValue="0802" Text="机械工程" >
+      <DItem DValue="080201" Text="机械制造及其自动化 " />
+      <DItem DValue="080202" Text="机械电子工程 " />
+      <DItem DValue="080203" Text="机械设计及理论 " />
+      <DItem DValue="080204" Text="车辆工程 " />
+    </DItem>
+    <DItem DValue="0803" Text="光学工程" >
+    </DItem>
+    <DItem DValue="0804" Text="仪器科学与技术" >
+      <DItem DValue="080401" Text="精密仪器及机械" />
+      <DItem DValue="080402" Text="测试计量技术及仪器" />
+    </DItem>
+    <DItem DValue="0805" Text="材料科学与工程" >
+      <DItem DValue="080501" Text="材料物理与化学" />
+      <DItem DValue="080502" Text="材料学" />
+      <DItem DValue="080503" Text="材料加工工程 " />
+    </DItem>
+    <DItem DValue="0806" Text="冶金工程" >
+      <DItem DValue="080601" Text="冶金物理化学" />
+      <DItem DValue="080602" Text="钢铁冶金" />
+      <DItem DValue="080603" Text="有色金属冶金" />
+    </DItem>
+    <DItem DValue="0807" Text="动力工程及工程热物理" >
+      <DItem DValue="080701" Text="工程热物理" />
+      <DItem DValue="080702" Text="热能工程" />
+      <DItem DValue="080703" Text="动力机械及工程 " />
+      <DItem DValue="080704" Text="流体机械及工程 " />
+      <DItem DValue="080705" Text="制冷及低温工程 " />
+      <DItem DValue="080706" Text="化工过程机械" />
+    </DItem>
+    <DItem DValue="0808" Text="电气工程" >
+      <DItem DValue="080801" Text="电机与电器"/>
+      <DItem DValue="080802" Text="电力系统及其自动化" />
+      <DItem DValue="080803" Text="高电压与绝缘技术" />
+      <DItem DValue="080804" Text="电力电子与电力传动" />
+      <DItem DValue="080805" Text="电工理论与新技术" />
+    </DItem>
+    <DItem DValue="0809" Text="电子科学与技术（可授工学、理学学位）" >
+      <DItem DValue="080901" Text="物理电子学"/>
+      <DItem DValue="080902" Text="电路与系统 " />
+      <DItem DValue="080903" Text="微电子学与固体电子学 " />
+      <DItem DValue="080904" Text="电磁场与微波技术 " />
+    </DItem>
+    <DItem DValue="0810" Text="信息与通信工程" >
+      <DItem DValue="081001" Text="通信与信息系统 "/>
+      <DItem DValue="081002" Text="信号与信息处理 " />
+    </DItem>
+    <DItem DValue="0811" Text="控制科学与工程" >
+      <DItem DValue="081101" Text="控制理论与控制工程 " />
+      <DItem DValue="081102" Text="检测技术与自动化装置 " />
+      <DItem DValue="081103" Text="系统工程" />
+      <DItem DValue="081104" Text="模式识别与智能系统 " />
+      <DItem DValue="081105" Text="导航、制导与控制" />
+    </DItem>
+    <DItem DValue="0812" Text="计算机科学与技术（可授工学、理学学位）" >
+      <DItem DValue="081201" Text="计算机系统结构" />
+      <DItem DValue="081202" Text="计算机软件与理论 " />
+      <DItem DValue="081203" Text="计算机应用技术" />
+    </DItem>
+    <DItem DValue="0813" Text="建筑学" >
+      <DItem DValue="081301" Text="建筑历史与理论" />
+      <DItem DValue="081302" Text="建筑设计及其理论" />
+      <DItem DValue="081303" Text="城市规划与设计(含：风景园林规划与设计）" />
+      <DItem DValue="081304" Text="建筑技术科学" />
+    </DItem>
+    <DItem DValue="0814" Text="土木工程" >
+      <DItem DValue="081401" Text="岩土工程" />
+      <DItem DValue="081402" Text="结构工程" />
+      <DItem DValue="081403" Text="市政工程" />
+      <DItem DValue="081404" Text="供热、供燃气、通风及空调工程" />
+      <DItem DValue="081405" Text="防灾减灾工程及防护工程" />
+      <DItem DValue="081406" Text="桥梁与隧道工程 " />
+    </DItem>
+    <DItem DValue="0815" Text="水利工程" >
+      <DItem DValue="081501" Text="水文学及水资源 " />
+      <DItem DValue="081502" Text="水力学及河流动力学 " />
+      <DItem DValue="081503" Text="水工结构工程 " />
+      <DItem DValue="081504" Text="水利水电工程" />
+      <DItem DValue="081505" Text="港口、海岸及近海工程" />
+    </DItem>
+    <DItem DValue="0816" Text="测绘科学与技术" >
+      <DItem DValue="081601" Text="大地测量学与测量工程" />
+      <DItem DValue="081602" Text="摄影测量与遥感" />
+      <DItem DValue="081603" Text="地图制图学与地理信息工程 " />
+    </DItem>
+    <DItem DValue="0817" Text="化学工程与技术" >
+      <DItem DValue="081701" Text="化学工程" />
+      <DItem DValue="081702" Text="化学工艺" />
+      <DItem DValue="081703" Text="生物化工" />
+      <DItem DValue="081704" Text="应用化学" />
+      <DItem DValue="081705" Text="工业催化" />
+    </DItem>
+    <DItem DValue="0818" Text="地质资源与地质工程" >
+      <DItem DValue="081801" Text="矿产普查与勘探" />
+      <DItem DValue="081802" Text="地球探测与信息技术" />
+      <DItem DValue="081803" Text="地质工程" />
+    </DItem>
+    <DItem DValue="0819" Text="矿业工程" >
+      <DItem DValue="081901" Text="采矿工程" />
+      <DItem DValue="081902" Text="矿物加工工程" />
+      <DItem DValue="081903" Text="安全技术及工程" />
+    </DItem>
+    <DItem DValue="0820" Text="石油与天然气工程" >
+      <DItem DValue="082001" Text="油气井工程" />
+      <DItem DValue="082002" Text="油气田开发工程" />
+      <DItem DValue="082003" Text="油气储运工程" />
+    </DItem>
+    <DItem DValue="0821" Text="纺织科学与工程" >
+      <DItem DValue="082101" Text="纺织工程" />
+      <DItem DValue="082102" Text="纺织材料与纺织品设计" />
+      <DItem DValue="082103" Text="纺织化学与染整工程" />
+      <DItem DValue="082104" Text="服装设计与工程" />
+    </DItem>
+    <DItem DValue="0822" Text="轻工技术与工程" >
+      <DItem DValue="082201" Text="制浆造纸工程" />
+      <DItem DValue="082202" Text="制糖工程" />
+      <DItem DValue="082203" Text="发酵工程" />
+      <DItem DValue="082204" Text="皮革化学与工程" />
+    </DItem>
+    <DItem DValue="0823" Text="交通运输工程" >
+      <DItem DValue="082301" Text="道路与铁道工程 " />
+      <DItem DValue="082302" Text="交通信息工程及控制 " />
+      <DItem DValue="082303" Text="交通运输规划与管理 " />
+      <DItem DValue="082304" Text="载运工具运用工程" />
+    </DItem>
+    <DItem DValue="0824" Text="船舶与海洋工程" >
+      <DItem DValue="082401" Text="船舶与海洋结构物设计制造 " />
+      <DItem DValue="082402" Text="轮机工程 " />
+      <DItem DValue="082403" Text="水声工程 " />
+    </DItem>
+    <DItem DValue="0825" Text="航空宇航科学与技术" >
+      <DItem DValue="082501" Text="飞行器设计 " />
+      <DItem DValue="082502" Text="航空宇航推进理论与工程 " />
+      <DItem DValue="082503" Text="航空宇航制造工程 " />
+      <DItem DValue="082504" Text="人机与环境工程" />
+    </DItem>
+    <DItem DValue="0826" Text="兵器科学与技术" >
+      <DItem DValue="082601" Text="武器系统与运用工程 " />
+      <DItem DValue="082602" Text="兵器发射理论与技术 " />
+      <DItem DValue="082603" Text="火炮、自动武器与弹药工程" />
+      <DItem DValue="082604" Text="军事化学与烟火技术" />
+    </DItem>
+    <DItem DValue="0827" Text="核科学与技术" >
+      <DItem DValue="082701" Text="核能科学与工程" />
+      <DItem DValue="082702" Text="核燃料循环与材料" />
+      <DItem DValue="082703" Text="核技术及应用" />
+      <DItem DValue="082704" Text="辐射防护及环境保护" />
+    </DItem>
+    <DItem DValue="0828" Text="农业工程" >
+      <DItem DValue="082801" Text="农业机械化工程" />
+      <DItem DValue="082802" Text="农业水土工程" />
+      <DItem DValue="082803" Text="农业生物环境与能源工程" />
+      <DItem DValue="082804" Text="农业电气化与自动化" />
+    </DItem>
+    <DItem DValue="0829" Text="林业工程" >
+      <DItem DValue="082901" Text="森林工程" />
+      <DItem DValue="082902" Text="木材科学与技术 " />
+      <DItem DValue="082903" Text="林产化学加工工程" />
+    </DItem>
+    <DItem DValue="0830" Text="环境科学与工程（可授工学、理学、农学学位）" >
+      <DItem DValue="083001" Text="环境科学" />
+      <DItem DValue="083002" Text="环境工程" />
+    </DItem>
+    <DItem DValue="0831" Text="生物医学工程（可授工学、理学、医学学位）" >
+    </DItem>
+    <DItem DValue="0832" Text="食品科学与工程（可授工学、农学学位）" >
+      <DItem DValue="083201" Text="食品科学" />
+      <DItem DValue="083202" Text="粮食、油脂及植物蛋白工程" />
+      <DItem DValue="083203" Text="农产品加工及贮藏工程 " />
+      <DItem DValue="083204" Text="水产品加工及贮藏工程 " />
+    </DItem>
+  </DItem>
+  <DItem DValue="09" Text="农学">
+    <DItem DValue="0901" Text="作物学" >
+      <DItem DValue="090101" Text="作物栽培学与耕作学 " />
+      <DItem DValue="090102" Text="作物遗传育种 " />
+    </DItem>
+    <DItem DValue="0902" Text="园艺学" >
+      <DItem DValue="090201" Text="果树学" />
+      <DItem DValue="090202" Text="蔬菜学" />
+      <DItem DValue="090203" Text="茶学" />
+    </DItem>
+    <DItem DValue="0903" Text="农业资源利用" >
+      <DItem DValue="090301" Text="土壤学 " />
+      <DItem DValue="090302" Text="植物营养学 " />
+    </DItem>
+    <DItem DValue="0904" Text="植物保护" >
+      <DItem DValue="090401" Text="植物病理学 " />
+      <DItem DValue="090402" Text="农业昆虫与害虫防治 " />
+      <DItem DValue="090403" Text="农药学（可授农学、理学学位）" />
+    </DItem>
+    <DItem DValue="0905" Text="畜牧学" >
+      <DItem DValue="090501" Text="动物遗传育种与繁殖 " />
+      <DItem DValue="090502" Text="动物营养与饲料科学 " />
+      <DItem DValue="090503" Text="草业科学 " />
+      <DItem DValue="090504" Text="特种经济动物饲养（含：蚕、蜂等）" />
+    </DItem>
+    <DItem DValue="0906" Text="兽医学" >
+      <DItem DValue="090601" Text="基础兽医学 " />
+      <DItem DValue="090602" Text="预防兽医学 " />
+      <DItem DValue="090603" Text="临床兽医学 " />
+    </DItem>
+    <DItem DValue="0907" Text="林学" >
+      <DItem DValue="090701" Text="林木遗传育种" />
+      <DItem DValue="090702" Text="森林培育" />
+      <DItem DValue="090703" Text="森林保护学" />
+      <DItem DValue="090704" Text="森林经理学" />
+      <DItem DValue="090705" Text="野生动植物保护与利 " />
+      <DItem DValue="090706" Text="园林植物与观赏园艺" />
+      <DItem DValue="090707" Text="水土保持与荒漠化防治" />
+    </DItem>
+    <DItem DValue="0908" Text="水产" >
+      <DItem DValue="090801" Text="水产养殖" />
+      <DItem DValue="090802" Text="捕捞学" />
+      <DItem DValue="090803" Text="渔业资源" />
+    </DItem>
+  </DItem>
+  <DItem DValue="10" Text="医学">
+    <DItem DValue="1001" Text="基础医学(可授医学、理学学位)" >
+      <DItem DValue="100101" Text="人体解剖与组织胚胎学" />
+      <DItem DValue="100102" Text="免疫学" />
+      <DItem DValue="100103" Text="病原生物学" />
+      <DItem DValue="100104" Text="病理学与病理生理学" />
+      <DItem DValue="100105" Text="法医学" />
+      <DItem DValue="100106" Text="放射医学" />
+      <DItem DValue="100107" Text="航空、航天与航海医学" />
+    </DItem>
+    <DItem DValue="1002" Text="临床医学" >
+      <DItem DValue="100201" Text="内科学(含：心血管病、血液病、呼吸系病、消化系病、内分泌与代谢病、肾病、风湿病、传染病)" />
+      <DItem DValue="100202" Text="儿科学 " />
+      <DItem DValue="100203" Text="老年医学" />
+      <DItem DValue="100204" Text="神经病学" />
+      <DItem DValue="100205" Text="精神病与精神卫生学" />
+      <DItem DValue="100206" Text="皮肤病与性病学" />
+      <DItem DValue="100207" Text="影像医学与核医学" />
+      <DItem DValue="100208" Text="临床检验诊断学" />
+      <DItem DValue="100209" Text="护理学" />
+      <DItem DValue="100210" Text="外科学(含：普外、骨外、泌尿外、胸心外、神外、整形、烧伤、野战外)" />
+      <DItem DValue="100211" Text="妇产科学" />
+      <DItem DValue="100212" Text="眼科学" />
+      <DItem DValue="100213" Text="耳鼻咽喉科学" />
+      <DItem DValue="100214" Text="肿瘤学" />
+      <DItem DValue="100215" Text="康复医学与理疗学" />
+      <DItem DValue="100216" Text="运动医学" />
+      <DItem DValue="100217" Text="麻醉学" />
+      <DItem DValue="100218" Text="急诊医学" />
+    </DItem>
+    <DItem DValue="1003" Text="口腔医学" >
+      <DItem DValue="100301" Text="口腔基础医学" />
+      <DItem DValue="100302" Text="口腔临床医学" />
+    </DItem>
+    <DItem DValue="1004" Text="公共卫生与预防医学(可授医学、理学学位)" >
+      <DItem DValue="100401" Text="流行病与卫生统计学" />
+      <DItem DValue="100402" Text="劳动卫生与环境卫生学" />
+      <DItem DValue="100403" Text="营养与食品卫生学" />
+      <DItem DValue="100404" Text="儿少卫生与妇幼保健学" />
+      <DItem DValue="100405" Text="卫生毒理学" />
+      <DItem DValue="100406" Text="军事预防医学" />
+    </DItem>
+    <DItem DValue="1005" Text="中医学" >
+      <DItem DValue="100501" Text="中医基础理论" />
+      <DItem DValue="100502" Text="中医临床基础" />
+      <DItem DValue="100503" Text="中医医史文献" />
+      <DItem DValue="100504" Text="方剂学" />
+      <DItem DValue="100505" Text="中医诊断学" />
+      <DItem DValue="100506" Text="中医内科学" />
+      <DItem DValue="100507" Text="中医外科学" />
+      <DItem DValue="100508" Text="中医骨伤科学" />
+      <DItem DValue="100509" Text="中医妇科学" />
+      <DItem DValue="100510" Text="中医儿科学" />
+      <DItem DValue="100511" Text="中医五官科学" />
+      <DItem DValue="100512" Text="针灸推拿学" />
+      <DItem DValue="100513" Text="民族医学(含：藏医学、蒙医学等)" />
+    </DItem>
+    <DItem DValue="1006" Text="中西医结合" >
+      <DItem DValue="100601" Text="中西医结合基础" />
+      <DItem DValue="100602" Text="中西医结合临床" />
+    </DItem>
+    <DItem DValue="1007" Text="药学(可授医学、理学学位)" >
+      <DItem DValue="100701" Text="药物化学 " />
+      <DItem DValue="100702" Text="药剂学" />
+      <DItem DValue="100703" Text="生药学" />
+      <DItem DValue="100704" Text="药物分析学" />
+      <DItem DValue="100705" Text="微生物与生化药学" />
+      <DItem DValue="100706" Text="药理学" />
+    </DItem>
+    <DItem DValue="1008" Text="中药学" >
+    </DItem>
+  </DItem>
+  <DItem DValue="11" Text="军事学">
+    <DItem DValue="1101" Text="军事思想及军事历史" >
+      <DItem DValue="110101" Text="军事思想" />
+      <DItem DValue="110102" Text="军事历史" />
+    </DItem>
+    <DItem DValue="1102" Text="战略学" >
+      <DItem DValue="110201" Text="军事战略学" />
+      <DItem DValue="110202" Text="战争动员学" />
+    </DItem>
+    <DItem DValue="1103" Text="战役学" >
+      <DItem DValue="110301" Text="联合战役学" />
+      <DItem DValue="110302" Text="军种战役学(含：第二炮兵战役学)" />
+    </DItem>
+    <DItem DValue="1104" Text="战术学" >
+      <DItem DValue="110401" Text="合同战术学" />
+      <DItem DValue="110402" Text="兵种战术学" />
+    </DItem>
+    <DItem DValue="1105" Text="军队指挥学" >
+      <DItem DValue="110501" Text="作战指挥学" />
+      <DItem DValue="110502" Text="军事运筹学" />
+      <DItem DValue="110503" Text="军事通信学" />
+      <DItem DValue="110504" Text="军事情报学" />
+      <DItem DValue="110505" Text="密码学" />
+      <DItem DValue="110506" Text="军事教育训练学(含：军事体育学)" />
+    </DItem>
+    <DItem DValue="1106" Text="军制学" >
+      <DItem DValue="110601" Text="军事组织编制学" />
+      <DItem DValue="110602" Text="军队管理学" />
+    </DItem>
+    <DItem DValue="1107" Text="军队政治工作学" >
+    </DItem>
+    <DItem DValue="1108" Text="军事后勤学与军事装备学" >
+      <DItem DValue="110801" Text="军事后勤学" />
+      <DItem DValue="110802" Text="后方专业勤务" />
+      <DItem DValue="110803" Text="军事装备学" />
+    </DItem>
+  </DItem>
+  <DItem DValue="12" Text="管理学">
+    <DItem DValue="1201" Text="管理科学与工程(可授管理学、工学学位)" />
+    <DItem DValue="1202" Text="工商管理" >
+      <DItem DValue="120201" Text="会计学" />
+      <DItem DValue="120202" Text="企业管理（含：财务管理、市场营销、人力资源管理）" />
+      <DItem DValue="120203" Text="旅游管理" />
+      <DItem DValue="120204" Text="技术经济及管理" />
+    </DItem>
+    <DItem DValue="1203" Text="农林经济管理" >
+      <DItem DValue="120301" Text="农业经济管理" />
+      <DItem DValue="120302" Text="林业经济管理" />
+    </DItem>
+    <DItem DValue="1204" Text="公共管理" >
+      <DItem DValue="120401" Text="行政管理" />
+      <DItem DValue="120402" Text="社会医学与卫生事业管理(可授管理学、医学学位)" />
+      <DItem DValue="120403" Text="教育经济与管理（可授管理学、教育学学位）" />
+      <DItem DValue="120404" Text="社会保障" />
+      <DItem DValue="120405" Text="土地资源管理" />
+    </DItem>
+    <DItem DValue="1205" Text="图书馆、情报与档案管理" >
+      <DItem DValue="120501" Text="图书馆学" />
+      <DItem DValue="120502" Text="情报学" />
+      <DItem DValue="120503" Text="档案学" />
+    </DItem>
+  </DItem>
+</SUBJECTS>

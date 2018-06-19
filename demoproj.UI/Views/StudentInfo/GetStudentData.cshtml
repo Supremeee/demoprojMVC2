@@ -1,0 +1,80 @@
+﻿
+@using demoprojMVC.UI.HtmlHelpers
+@model demoprojMVC.UI.Models.StudentListViewModel
+@{
+    AjaxOptions options = new AjaxOptions
+    {
+        UpdateTargetId = "studentInfo",
+        Url = Url.Action("Deal")
+    };
+
+}
+@if (TempData["ErrorMsg"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMsg"]</div>
+    return;
+}
+@if (TempData["DealErrMsg"] != null)
+{
+    <div class="alert alert-info">@TempData["DealErrMsg"]</div>
+}
+
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th class="text-center hidden-xs">学号</th>
+        <th class="text-center">姓名</th>
+        <th class="text-center hidden-xs">班级</th>
+        <th class="text-center">手机号码</th>
+        <th class="text-center hidden-xs">宿舍</th>
+        <th class="text-center hidden-xs hidden-sm">家庭联系电话</th>
+        <th class="text-center">操作</th>
+    </tr>
+    @foreach (var item in Model.Students)
+            {
+        <tr class="@(item.audit != true? "un-audit-color" : null)">
+            <td class="text-center hidden-xs">@item.school_code</td>
+            <td class="text-center">@Html.ActionLink(item.student_name, "Edit", new { item.id })</td>
+            <td class="text-center hidden-xs">@Html.CodeTransferToStr("banji", item.banji)</td>
+            <td class="text-center">@item.telephone</td>
+            <td class="text-center hidden-xs">@item.dormitory</td>
+            <td class="text-center hidden-xs hidden-sm">@item.home_telephone</td>
+            <td class="text-center">
+
+                @using (Ajax.BeginForm(options))
+                {
+                    @Html.Hidden("StudentID", item.id)
+                    @Html.ActionLink("编辑", "Edit", new { item.id, isEdit = true }, new { @class = "btn btn-primary btn-xs" + (item.audit == true ? " hidden" : null) })
+                    <input type="submit" class="btn btn-danger btn-xs @(item.audit == true ? "hidden" : null)" name="action" value="删除" />
+                    <input type="submit" class="btn btn-info hidden-xs btn-xs @(item.@lock == true ? "hidden" : null)" style="display: @(item.@lock == true ? "none" : "inline-block") !important" name="action" value="审核" />
+                    <input type="submit" class="btn btn-info hidden-xs btn-xs" style="display: inline-block !important" name="action" value="锁定" />
+                }
+
+
+            </td>
+        </tr>
+    }
+</table>
+<div class="panel-footer">
+    <label>当前第 @Model.PagingInfo.CurrentPage 页</label>
+    <label>共 @Model.PagingInfo.TotalPages 页</label>
+    <label> 共 @Model.PagingInfo.TotalItems 条数据</label>
+    @Html.PageLinks(Model.PagingInfo, x => x.ToString())
+</div>
+@* 异步刷新翻页 *@
+<script>
+    $('#pageTo').change(function () {
+
+        $.ajax({
+            url: '/Student/GetStudentData',
+            type: 'post',
+            async: true,
+            data: { page: $('#pageTo').val(), type: $('input[name="type"]:checked').val(), searchContext: $('#searchContext').val() },
+            timeout: 5000,
+            dataType: 'html',
+            success: function(data) {
+                $('#studentInfo').html(data);
+            }
+        });
+    });
+
+</script>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eb4a988fc5f44d74abb9c4c158d8d278" Name="Diagram1">
+        <EntityTypeShape EntityType="hynustuaffModel.act" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hynustuaffModel.application_list" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hynustuaffModel.Department" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hynustuaffModel.T_App" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hynustuaffModel.T_Roles" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hynustuaffModel.T_Users" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hynustuaffModel.td_students" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hynustuaffModel.ActionInfo" Width="1.5" PointX="9.125" PointY="9.875" />
+        <EntityTypeShape EntityType="hynustuaffModel.R_UserInfo_ActionInfo" Width="1.5" PointX="5.75" PointY="9.375" />
+        <EntityTypeShape EntityType="hynustuaffModel.RoleInfo" Width="1.5" PointX="5.75" PointY="11.75" />
+        <EntityTypeShape EntityType="hynustuaffModel.UserInfo" Width="1.5" PointX="2.5" PointY="10" />
+        <AssociationConnector Association="hynustuaffModel.FK_ActionInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="hynustuaffModel.FK_UserInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="hynustuaffModel.RoleInfoActionInfo" />
+        <AssociationConnector Association="hynustuaffModel.RoleInfoUserInfo" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

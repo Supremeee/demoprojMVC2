@@ -1,0 +1,10 @@
+﻿@model List<demoprojMVC.Model.ActionInfo>
+
+<div class="">
+    @{
+        foreach (var actionInfo in Model)
+        {
+            <a href="@actionInfo.Url" class="btn btn-block btn-default">@actionInfo.ActionName</a>
+        }
+    }
+</div>

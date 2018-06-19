@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="DItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="DItem">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element maxOccurs="unbounded" name="DItem">
+                      <xs:complexType>
+                        <xs:attribute name="DValue" type="xs:string" use="required" />
+                        <xs:attribute name="Text" type="xs:string" use="optional" />
+                        <xs:attribute name="Listorder" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="Visible" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="text" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="DValue" type="xs:string" use="required" />
+                  <xs:attribute name="Text" type="xs:string" use="optional" />
+                  <xs:attribute name="Listorder" type="xs:unsignedByte" use="optional" />
+                  <xs:attribute name="Visible" type="xs:unsignedByte" use="optional" />
+                  <xs:attribute name="selected" type="xs:string" use="optional" />
+                  <xs:attribute name="text" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="D_Name" type="xs:string" use="required" />
+            <xs:attribute name="DValue" type="xs:string" use="required" />
+            <xs:attribute name="CodeLength" type="xs:unsignedByte" use="optional" />
+            <xs:attribute name="COdeLength" type="xs:unsignedByte" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

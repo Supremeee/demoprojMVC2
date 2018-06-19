@@ -1,0 +1,46 @@
+﻿@model demoprojMVC.Model.RoleInfo
+
+@{
+    ViewBag.Title = "角色信息编辑页面";
+}
+
+@if (Model == null)
+{
+    Response.Redirect(url: Url.Action("Index"));
+    return;
+}
+<div class="panel">
+    <div class="panel-heading">
+        <h3>角色信息编辑页面</h3>
+    </div>
+    @if (TempData["Errmsg"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Errmsg"]</div>
+    }
+    @using (Html.BeginForm("Edit", "RoleInfo", FormMethod.Post, new { enctype = "mutipart/form-data" }))
+    {
+        <div class="panel-body">
+            @Html.Hidden("roleInfoId", Model.ID ?? null)
+            @Html.HiddenFor(u => u.SubTime)
+            @Html.HiddenFor(u => u.ModfiedOn)
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">角色名称：</label>
+                        @Html.TextBox("RoleName", Model.RoleName ?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("RoleName")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">备注：</label>
+
+                        @Html.TextBox("Remark", Model.Remark ?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("Remark")
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <input type="submit" class="btn btn-primary btn-sm" value="保存" />
+        </div>
+    }
+</div>

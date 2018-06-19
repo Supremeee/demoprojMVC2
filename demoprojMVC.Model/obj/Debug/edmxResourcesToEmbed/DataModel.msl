@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hynustuaffModelStoreContainer" CdmEntityContainer="DataModelContainer">
+    <EntitySetMapping Name="acts">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.act)">
+        <MappingFragment StoreEntitySet="acts">
+          <ScalarProperty Name="act_id" ColumnName="act_id" />
+          <ScalarProperty Name="act_tarids" ColumnName="act_tarids" />
+          <ScalarProperty Name="act_tartablename" ColumnName="act_tartablename" />
+          <ScalarProperty Name="act_userIP" ColumnName="act_userIP" />
+          <ScalarProperty Name="act_username" ColumnName="act_username" />
+          <ScalarProperty Name="act_useraction" ColumnName="act_useraction" />
+          <ScalarProperty Name="act_sqlstr" ColumnName="act_sqlstr" />
+          <ScalarProperty Name="act_datetime" ColumnName="act_datetime" />
+          <ScalarProperty Name="act_deptname" ColumnName="act_deptname" />
+          <ScalarProperty Name="act_userrolename" ColumnName="act_userrolename" />
+          <ScalarProperty Name="act_DETAIL" ColumnName="act_DETAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="application_list">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.application_list)">
+        <MappingFragment StoreEntitySet="application_list">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="application_program" ColumnName="application_program" />
+          <ScalarProperty Name="school_code" ColumnName="school_code" />
+          <ScalarProperty Name="school_year" ColumnName="school_year" />
+          <ScalarProperty Name="application_start_data" ColumnName="application_start_data" />
+          <ScalarProperty Name="application_end_data" ColumnName="application_end_data" />
+          <ScalarProperty Name="application_status" ColumnName="application_status" />
+          <ScalarProperty Name="prize_level" ColumnName="prize_level" />
+          <ScalarProperty Name="is_difficult_stu" ColumnName="is_difficult_stu" />
+          <ScalarProperty Name="score_kao_ping_lowest" ColumnName="score_kao_ping_lowest" />
+          <ScalarProperty Name="nianji_score_rank" ColumnName="nianji_score_rank" />
+          <ScalarProperty Name="banji_score_rank" ColumnName="banji_score_rank" />
+          <ScalarProperty Name="danke_lowest" ColumnName="danke_lowest" />
+          <ScalarProperty Name="pinjun_lowest" ColumnName="pinjun_lowest" />
+          <ScalarProperty Name="is_fail_a_exam" ColumnName="is_fail_a_exam" />
+          <ScalarProperty Name="is_punishment" ColumnName="is_punishment" />
+          <ScalarProperty Name="once_is_punishment" ColumnName="once_is_punishment" />
+          <ScalarProperty Name="suitable_object" ColumnName="suitable_object" />
+          <ScalarProperty Name="project_intro" ColumnName="project_intro" />
+          <ScalarProperty Name="instructor_audit" ColumnName="instructor_audit" />
+          <ScalarProperty Name="instructor" ColumnName="instructor" />
+          <ScalarProperty Name="xuegong_audit" ColumnName="xuegong_audit" />
+          <ScalarProperty Name="xuegong" ColumnName="xuegong" />
+          <ScalarProperty Name="dept_approver" ColumnName="dept_approver" />
+          <ScalarProperty Name="dept_audit" ColumnName="dept_audit" />
+          <ScalarProperty Name="is_instructor_audit" ColumnName="is_instructor_audit" />
+          <ScalarProperty Name="is_dept_audit" ColumnName="is_dept_audit" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.Department)">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dept_name" ColumnName="dept_name" />
+          <ScalarProperty Name="dept_code" ColumnName="dept_code" />
+          <ScalarProperty Name="subject_code" ColumnName="subject_code" />
+          <ScalarProperty Name="connect_user" ColumnName="connect_user" />
+          <ScalarProperty Name="dept_director" ColumnName="dept_director" />
+          <ScalarProperty Name="found_time" ColumnName="found_time" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="introduction" ColumnName="introduction" />
+          <ScalarProperty Name="numofyanjiusheng" ColumnName="numofyanjiusheng" />
+          <ScalarProperty Name="numofboshisheng" ColumnName="numofboshisheng" />
+          <ScalarProperty Name="numofCNBooks" ColumnName="numofCNBooks" />
+          <ScalarProperty Name="numofFLBooks" ColumnName="numofFLBooks" />
+          <ScalarProperty Name="numofCNQikan" ColumnName="numofCNQikan" />
+          <ScalarProperty Name="numofFLQikan" ColumnName="numofFLQikan" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+          <ScalarProperty Name="Lab_equipment_count" ColumnName="Lab_equipment_count" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="Lab_equipment_property" ColumnName="Lab_equipment_property" />
+          <ScalarProperty Name="admit_unit" ColumnName="admit_unit" />
+          <ScalarProperty Name="numstaff" ColumnName="numstaff" />
+          <ScalarProperty Name="numproject" ColumnName="numproject" />
+          <ScalarProperty Name="numarchievement" ColumnName="numarchievement" />
+          <ScalarProperty Name="numaward" ColumnName="numaward" />
+          <ScalarProperty Name="numreflection" ColumnName="numreflection" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_App">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.T_App)">
+        <MappingFragment StoreEntitySet="T_App">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="app_code" ColumnName="app_code" />
+          <ScalarProperty Name="app_name" ColumnName="app_name" />
+          <ScalarProperty Name="app_nameEn" ColumnName="app_nameEn" />
+          <ScalarProperty Name="app_type" ColumnName="app_type" />
+          <ScalarProperty Name="dept_Code" ColumnName="dept_Code" />
+          <ScalarProperty Name="proc_name" ColumnName="proc_name" />
+          <ScalarProperty Name="host_url" ColumnName="host_url" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="listorder" ColumnName="listorder" />
+          <ScalarProperty Name="parent_appcode" ColumnName="parent_appcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Roles">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.T_Roles)">
+        <MappingFragment StoreEntitySet="T_Roles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="role_AuthorRights" ColumnName="role_AuthorRights" />
+          <ScalarProperty Name="DataScale" ColumnName="DataScale" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="ntime" ColumnName="ntime" />
+          <ScalarProperty Name="sitemap" ColumnName="sitemap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Users">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.T_Users)">
+        <MappingFragment StoreEntitySet="T_Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_code" ColumnName="user_code" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_realname" ColumnName="user_realname" />
+          <ScalarProperty Name="user_roles_code" ColumnName="user_roles_code" />
+          <ScalarProperty Name="user_dept_code" ColumnName="user_dept_code" />
+          <ScalarProperty Name="user_telphone" ColumnName="user_telphone" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+          <ScalarProperty Name="regdatetime" ColumnName="regdatetime" />
+          <ScalarProperty Name="lastApp" ColumnName="lastApp" />
+          <ScalarProperty Name="authApps" ColumnName="authApps" />
+          <ScalarProperty Name="authRights" ColumnName="authRights" />
+          <ScalarProperty Name="lastLoginDatetime" ColumnName="lastLoginDatetime" />
+          <ScalarProperty Name="lastLoginIP" ColumnName="lastLoginIP" />
+          <ScalarProperty Name="useRolesitemap" ColumnName="useRolesitemap" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="td_students">
+      <EntityTypeMapping TypeName="IsTypeOf(hynustuaffModel.td_students)">
+        <MappingFragment StoreEntitySet="td_students">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="school_code" ColumnName="school_code" />
+          <ScalarProperty Name="student_name" ColumnName="student_name" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="dept" ColumnName="dept" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="banji" ColumnName="banji" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="nation" ColumnName="nation" />
+          <ScalarProperty Name="born_date" ColumnName="born_date" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="politicstatus" ColumnName="politicstatus" />
+          <ScalarProperty Name="ID_card" ColumnName="ID_card" />
+          <ScalarProperty Name="native_place" ColumnName="native_place" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="home_telephone" ColumnName="home_telephone" />
+          <ScalarProperty Name="rollin_date" ColumnName="rollin_date" />
+          <ScalarProperty Name="dormitory" ColumnName="dormitory" />
+          <ScalarProperty Name="imageurl" ColumnName="imageurl" />
+          <ScalarProperty Name="audit" ColumnName="audit" />
+          <ScalarProperty Name="lock" ColumnName="lock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActionInfo">
+      <EntityTypeMapping TypeName="hynustuaffModel.ActionInfo">
+        <MappingFragment StoreEntitySet="ActionInfo">
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="MenuIcon" ColumnName="MenuIcon" />
+          <ScalarProperty Name="IsMenu" ColumnName="IsMenu" />
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="HttpMethd" ColumnName="HttpMethd" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ModfiedOn" ColumnName="ModfiedOn" />
+          <ScalarProperty Name="SubTime" ColumnName="SubTime" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_UserInfo_ActionInfo">
+      <EntityTypeMapping TypeName="hynustuaffModel.R_UserInfo_ActionInfo">
+        <MappingFragment StoreEntitySet="R_UserInfo_ActionInfo">
+          <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+          <ScalarProperty Name="ActionInfoID" ColumnName="ActionInfoID" />
+          <ScalarProperty Name="UserInfoID" ColumnName="UserInfoID" />
+          <ScalarProperty Name="HasPermission" ColumnName="HasPermission" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleInfo">
+      <EntityTypeMapping TypeName="hynustuaffModel.RoleInfo">
+        <MappingFragment StoreEntitySet="RoleInfo">
+          <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ModfiedOn" ColumnName="ModfiedOn" />
+          <ScalarProperty Name="SubTime" ColumnName="SubTime" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfo">
+      <EntityTypeMapping TypeName="hynustuaffModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="SubTime" ColumnName="SubTime" />
+          <ScalarProperty Name="ModfiedOn" ColumnName="ModfiedOn" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DelFlag" ColumnName="DelFlag" />
+          <ScalarProperty Name="ShowName" ColumnName="ShowName" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+          <ScalarProperty Name="UName" ColumnName="UName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="RoleInfoActionInfo" TypeName="hynustuaffModel.RoleInfoActionInfo" StoreEntitySet="RoleInfoActionInfo">
+      <EndProperty Name="RoleInfo">
+        <ScalarProperty Name="ID" ColumnName="RoleInfoActionInfo_ActionInfo_ID" />
+      </EndProperty>
+      <EndProperty Name="ActionInfo">
+        <ScalarProperty Name="ID" ColumnName="ActionInfo_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RoleInfoUserInfo" TypeName="hynustuaffModel.RoleInfoUserInfo" StoreEntitySet="RoleInfoUserInfo">
+      <EndProperty Name="UserInfo">
+        <ScalarProperty Name="ID" ColumnName="UserInfo_ID" />
+      </EndProperty>
+      <EndProperty Name="RoleInfo">
+        <ScalarProperty Name="ID" ColumnName="RoleInfoUserInfo_UserInfo_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

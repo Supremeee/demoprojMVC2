@@ -1,0 +1,10 @@
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\bin\Debug\demoprojMVC.IDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\bin\Debug\demoprojMVC.IDAL.pdb
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\bin\Debug\demoprojMVC.Model.dll
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\bin\Debug\EntityFramework.dll
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\bin\Debug\demoprojMVC.Model.pdb
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\bin\Debug\EntityFramework.xml
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\obj\Debug\demoprojMVC.IDAL.csprojResolveAssemblyReference.cache
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\obj\Debug\demoprojMVC.IDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.IDAL\obj\Debug\demoprojMVC.IDAL.pdb

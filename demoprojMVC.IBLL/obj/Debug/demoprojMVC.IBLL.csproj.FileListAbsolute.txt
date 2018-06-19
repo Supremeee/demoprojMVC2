@@ -1,0 +1,10 @@
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\bin\Debug\demoprojMVC.IBLL.dll
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\bin\Debug\demoprojMVC.IBLL.pdb
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\bin\Debug\demoprojMVC.Model.dll
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\bin\Debug\EntityFramework.dll
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\bin\Debug\demoprojMVC.Model.pdb
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\bin\Debug\EntityFramework.xml
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\obj\Debug\demoprojMVC.IBLL.csprojResolveAssemblyReference.cache
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\obj\Debug\demoprojMVC.IBLL.dll
+I:\Project\demoprojMVC2\demoprojMVC.IBLL\obj\Debug\demoprojMVC.IBLL.pdb

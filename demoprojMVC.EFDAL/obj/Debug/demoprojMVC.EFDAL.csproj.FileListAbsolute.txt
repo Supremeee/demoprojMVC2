@@ -1,0 +1,16 @@
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\demoprojMVC.EFDAL.dll.config
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\demoprojMVC.EFDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\demoprojMVC.EFDAL.pdb
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\demoprojMVC.IDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\demoprojMVC.Model.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\EntityFramework.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\demoprojMVC.IDAL.pdb
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\demoprojMVC.Model.pdb
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\EntityFramework.xml
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\obj\Debug\demoprojMVC.EFDAL.csprojResolveAssemblyReference.cache
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\obj\Debug\demoprojMVC.EFDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\obj\Debug\demoprojMVC.EFDAL.pdb
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\EntityFramework.SqlServer.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\EntityFramework.SqlServer.xml
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

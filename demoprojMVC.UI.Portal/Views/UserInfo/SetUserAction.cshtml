@@ -1,0 +1,103 @@
+﻿@using demoprojMVC.Model
+@model demoprojMVC.Model.UserInfo
+
+@{
+    ViewBag.Title = "设置用户特殊权限";
+    List<ActionInfo> AllActions = ViewBag.AllActions;
+    Dictionary<string, bool> existActions = ViewBag.ExistActions;
+    string setUrl = @Url.Action("SetUserAction");
+    string delUrl = @Url.Action("DeleteUserAction");
+
+}
+@Html.ActionLink("设置完毕后返回", "Index", null, new { @class = "btn btn-success" })
+<h2 class="text-center">为用户 @Model.UName 设置特殊权限</h2>
+@if (TempData["ErrorMsg"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMsg"]</div>
+}
+<div class="alert alert-info" id="msg"></div>
+@Html.Hidden("userId", Model.ID)
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th class="text-center hidden-xs">权限名</th>
+        <th class="text-center">Url</th>
+        <th class="text-center hidden-xs">Http方法</th>
+        <th class="text-center">操作</th>
+    </tr>
+    @foreach (var action in AllActions)
+    {
+        string strId = "ra_" + action.ID;
+        <tr>
+            <td class="text-center">@action.ActionName</td>
+            <td class="text-center hidden-xs">@action.Url</td>
+            <td class="text-center">@action.HttpMethd</td>
+            <td class="text-center">
+                @{
+                    if (existActions.ContainsKey(action.ID))
+                    {
+                        bool hasPremisson;
+                        existActions.TryGetValue(action.ID, out hasPremisson);
+                        if (hasPremisson)
+                        {
+                            <span>允许</span>
+                            <input type="radio" checked="checked" name="@strId" value="1" data-actionId="@action.ID"/>
+                            <span>拒绝</span>
+                            <input type="radio" name="@strId" value="0" data-actionId="@action.ID"/>
+                        }
+                        else
+                        {
+                            <span>允许</span>
+                            <input type="radio" name="@strId" value="1" data-actionId="@action.ID"/>
+                            <span>拒绝</span>
+                            <input type="radio" checked="checked" name="@strId" value="0" data-actionId="@action.ID"/>
+                        }
+
+                    }
+                    else
+                    {
+                        <span>允许</span><input type="radio" name="@strId" value="1" data-actionId="@action.ID" />
+                        <span>拒绝</span><input type="radio" name="@strId" value="0" data-actionId="@action.ID" />
+                    }
+                }
+                
+                <input type="button" value="删除" class="btnDel btn btn-danger btn-xs" data-actionId="@action.ID"/>
+            </td>
+        </tr>
+    }
+</table>
+<script>
+    $(function () {
+        $("#msg").visible = false;
+        $(":radio").click(function () {
+            var userid = $("#userId").val();
+            var actionid = $(this).attr("data-actionId");
+            var Value = $(this).val();
+            $.post("@setUrl", { userId: userid, actionId: actionid, value: Value },
+                function (data) {
+                    if (data === "ok") {
+                        $("#msg").html("修改成功");
+                        $("#msg").show();
+                    }
+                    }
+                );
+        });
+        $(".btnDel").click(function () {
+            var thisRadios = $(this).siblings(":radio");
+            var userid = $("#userId").val();
+            var actionid = $(this).attr("data-actionId");
+            if ($(this).siblings(":checked").length > 0) {
+                $.post("@delUrl", { userId: userid, actionId: actionid }, function (data) {
+                    if (data === "ok") {
+                        $("#msg").html("删除成功");
+                        $("#msg").show();
+                        thisRadios.attr("checked", false);
+                    }
+                });
+                
+                
+            }
+        });
+    })
+</script>
+
+

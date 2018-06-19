@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Courses>
+  <DItems D_Name="课程名称" DValue="ZX01" CodeLength="30">
+    <DItem DValue="15401TS1001" Text="中国近现代史纲要" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1002" Text="思想道德修养与法律基础" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1003" Text="毛泽东思想和中国特色社会主义理论体系概论" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1004" Text="马克思主义基本原理" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TS1001" Text="大学英语Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TS1002" Text="大学英语Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1001" Text="大学体育Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1002" Text="大学体育Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1003" Text="大学体育Ⅲ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1004" Text="大学体育Ⅳ" Listorder="0" Visible="1"/>
+    <DItem DValue="15403TS1001" Text="普通话" Listorder="0" Visible="1"/>
+    <DItem DValue="15403TS1002" Text="大学语文" Listorder="0" Visible="1"/>
+    <DItem DValue="15414TS1001" Text="大学生心理健康教育" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1901" Text="企业文化进校园" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1902" Text="准职业人导向训练（一）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1903" Text="准职业人导向训练（二）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1904" Text="职业定位与发展（一）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1905" Text="职业定位与发展（二）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1906" Text="求职能力提升" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1005" Text="形势与政策" Listorder="0" Visible="1"/>
+    <DItem DValue="15420TS1001" Text="军事理论" Listorder="0" Visible="1"/>
+    <DItem DValue="15410TS1101" Text="计算机导论" Listorder="0" Visible="1"/>
+    <DItem DValue="15410TS1102" Text="面向对象程序设计" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TB2003" Text="大学英语Ⅲ" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TB3004" Text="大学英语Ⅳ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1102" Text="大学物理Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1103" Text="大学物理Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1104" Text="大学物理实验Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1105" Text="大学物理实验Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1101" Text="微积分（上）" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1102" Text="微积分（下）" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1103" Text="线性代数" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1104" Text="概率论与数理统计" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1105" Text="离散数学" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1203" Text="电路与模拟电子技术基础" Listorder="0" Visible="1"/>
+    <DItem DValue="15419XJ1101" Text="计算机学科概论" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZH1101" Text="数据结构" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZH1102" Text="数字逻辑" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZH1103" Text="计算机组成原理" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZH1901" Text="计算机网络与通信" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZH1902" Text="LINUX 系统应用" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2101" Text="数据库原理" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2102" Text="软件工程" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2103" Text="网络编程(java)" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2901" Text="云计算技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2902" Text="海量存储技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2903" Text="云计算部署与实施" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2904" Text="信息化系统开发与应用" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZT3210" Text="射频识别技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZT3211" Text="网络与信息安全" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZT3212" Text="多媒体与虚拟现实" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZT3213" Text="网络工程与智能综合布线 " Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ1103" Text="电路与模拟电子技术实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZJ1101" Text="数字逻辑实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZJ1102" Text="计算机组成原理实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZJ3201" Text="射频识别技术实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZJ3202" Text="网络与信息安全实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZJ3203" Text="多媒体与虚拟现实实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15410ZJ3204" Text="网络工程与智能综合布线实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15420JS1001" Text="军事训练" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS1102" Text="专业见习/专业考察" Listorder="0" Visible="1"/>
+    <DItem DValue="15410JS1103" Text="程序设计课程设计" Listorder="0" Visible="1"/>
+    <DItem DValue="15410JS1104" Text="数据结构课程设计" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS1904" Text="专业实习" Listorder="0" Visible="1"/>
+    <DItem DValue="15410JS1119" Text="毕业论文（设计）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3901" Text="科技制作/学科竞赛" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3902" Text="企业项目设计" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3903" Text="ICT 系统营销" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3904" Text="ICT 项目组织与管理" Listorder="0" Visible="1"/>
+  </DItems>
+  
+  <DItems D_Name="课程名称" DValue="ZX02" CodeLength="30">
+    <DItem DValue="15401TS1001" Text="中国近现代史纲要" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1002" Text="思想道德修养与法律基础" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1003" Text="毛泽东思想和中国特色社会主义理论体系概论" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1004" Text="马克思主义基本原理" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TS1001" Text="大学英语Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TS1002" Text="大学英语Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1001" Text="大学体育Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1002" Text="大学体育Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1003" Text="大学体育Ⅲ" Listorder="0" Visible="1"/>
+    <DItem DValue="15413TS1004" Text="大学体育Ⅳ" Listorder="0" Visible="1"/>
+    <DItem DValue="15403TS1001" Text="普通话" Listorder="0" Visible="1"/>
+    <DItem DValue="15403TS1002" Text="大学语文" Listorder="0" Visible="1"/>
+    <DItem DValue="15414TS1001" Text="大学生心理健康教育" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1901" Text="企业文化进校园" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1902" Text="准职业人导向训练（一）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1903" Text="准职业人导向训练（二）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1904" Text="职业定位与发展（一）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1905" Text="职业定位与发展（二）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419TS1906" Text="求职能力提升" Listorder="0" Visible="1"/>
+    <DItem DValue="15401TS1005" Text="形势与政策" Listorder="0" Visible="1"/>
+    <DItem DValue="15420TS1001" Text="军事理论" Listorder="0" Visible="1"/>
+    <DItem DValue="15410TS1101" Text="计算机导论" Listorder="0" Visible="1"/>
+    <DItem DValue="15410TS1102" Text="面向对象程序设计" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TB2003" Text="大学英语Ⅲ" Listorder="0" Visible="1"/>
+    <DItem DValue="15405TB3004" Text="大学英语Ⅳ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1102" Text="大学物理Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1103" Text="大学物理Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1104" Text="大学物理实验Ⅰ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1105" Text="大学物理实验Ⅱ" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1002" Text="电子信息学科概论" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1101" Text="微积分（上）" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1102" Text="微积分（下）" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1103" Text="线性代数" Listorder="0" Visible="1"/>
+    <DItem DValue="15406XJ1104" Text="概率论与数理统计" Listorder="0" Visible="1"/>
+    <DItem DValue="15407XJ1004" Text="电路分析基础及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZH1024" Text="信号与系统及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZH1017" Text="模拟电子技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ1201" Text="模拟电子技术实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZH1027" Text="通信原理及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZH1019" Text="数字电子技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ1106" Text="单片机应用技术及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2905" Text="数据通信技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZH1026" Text="微型计算机原理及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2907" Text="现代交换技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2906" Text="光传输技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3901" Text="科技制作/学科竞赛" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2908" Text="3G 移动通信技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2909" Text="4G 移动通信技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2910" Text="电信工程实施" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZF2911" Text="通信工程综合实训" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZT3053" Text="高频电子线路及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZT3905" Text="宽带接入技术" Listorder="0" Visible="1"/>
+    <DItem DValue="15419ZT3906" Text="移动网络规划与网络优化" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZT3052" Text="嵌入式系统开发与应用及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ1204" Text="数字电子技术实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ1106" Text="单片机应用技术及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ3102" Text="线路板设计及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ3104" Text="EDA技术及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15407ZJ3105" Text="高级程序设计C++及实验" Listorder="0" Visible="1"/>
+    <DItem DValue="15420JS1001" Text="军事训练" Listorder="0" Visible="1"/>
+    <DItem DValue="15407JS1205" Text="电子工艺实训" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS1102" Text="专业见习/专业考察" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS1904" Text="毕业实习" Listorder="0" Visible="1"/>
+    <DItem DValue="15407JS1106" Text="毕业论文（设计）" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3902" Text="企业项目设计" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3903" Text="ICT 系统营销" Listorder="0" Visible="1"/>
+    <DItem DValue="15419JS3904" Text="ICT 项目组织与管理" Listorder="0" Visible="1"/>
+  </DItems>
+</Courses>

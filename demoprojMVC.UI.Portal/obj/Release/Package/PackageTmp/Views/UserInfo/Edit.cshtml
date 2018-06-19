@@ -1,0 +1,60 @@
+﻿@model demoprojMVC.Model.UserInfo
+
+@{
+    ViewBag.Title = "用户信息编辑页面";
+}
+
+@if (Model == null)
+{
+    Response.Redirect(url: Url.Action("Index"));
+    return;
+}
+<div class="panel">
+    <div class="panel-heading">
+        <h3>用户信息编辑页面</h3>
+    </div>
+    @if (TempData["Errmsg"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Errmsg"]</div>
+    }
+    @using (Html.BeginForm("Edit", "UserInfo", FormMethod.Post, new { enctype = "mutipart/form-data" }))
+    {
+        <div class="panel-body">
+            @Html.Hidden("userInfoId", Model.ID ?? null)
+            @Html.HiddenFor(u => u.SubTime)
+            @Html.HiddenFor(u => u.ModfiedOn)
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">用户名：</label>
+                        @Html.TextBox("UName", Model.UName ?? null, null, new {@class = "form-control input-sm"})
+                        @Html.ValidationMessage("UName")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">密码：</label>
+                        @Html.TextBox("Pwd", Model.Pwd ?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("Pwd")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">显示名：</label>
+
+                        @Html.TextBox("ShowName", Model.ShowName ?? null, null, new { @class = "form-control input-sm" })
+                        @Html.ValidationMessage("UName")
+                    </div>
+
+                </div>
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">备注：</label>
+                        @Html.TextBox("Remark", Model.Remark ?? null, null, new { @class = "form-control input-sm", @type = "password" })
+                        @Html.ValidationMessage("Remark")
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <input type="submit" class="btn btn-primary btn-sm" value="保存" />
+        </div>
+    }
+</div>

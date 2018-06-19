@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <DItems D_Name="二级类别" DValue="a01" CodeLength="10">
+    <DItem DValue="a0101" Text="公共场所吸烟" Listorder="0" Visible="1"/>
+    <DItem DValue="a0102" Text="酗酒" Listorder="0" Visible="1"/>
+    <DItem DValue="a0103" Text="酒后闹事" Listorder="0" Visible="1"/>
+    <DItem DValue="a0104" Text="校内滋事" Listorder="0" Visible="1"/>
+    <DItem DValue="a0105" Text="打架、盗窃" Listorder="0" Visible="1"/>
+    <DItem DValue="a0106" Text="到校外惹是生非，有损学校声誉" Listorder="0" Visible="1"/>
+    <DItem DValue="a0107" Text="教学环境内大声喧哗" Listorder="0" Visible="1"/>
+  </DItems>
+  <DItems D_Name="二级类别" DValue="a02" CodeLength="10">
+    <DItem DValue="a0201" Text="大声喧哗、打闹" Listorder="0" Visible="1"/>
+    <DItem DValue="a0202" Text="迟到、早退（上下晚自习10分钟内）" Listorder="0" Visible="1"/>
+    <DItem DValue="a0203" Text="旷早晚自习（上下晚自习10分钟外）" Listorder="0" Visible="1"/>
+    <DItem DValue="a0204" Text="玩手机等电子娱乐设备以及玩游戏" Listorder="0" Visible="1"/>
+    <DItem DValue="a0205" Text="手机未静音" Listorder="0" Visible="1"/>
+    <DItem DValue="a0206" Text="睡觉" Listorder="0" Visible="1"/>
+    <DItem DValue="a0207" Text="在学院规定时间内未穿着工装者" Listorder="0" Visible="1"/>
+    <DItem DValue="a0208" Text="事假、病假（因公事假可不扣分，其他每学年事假不超过1次不扣分，病假不扣分）" Listorder="0" Visible="1"/>
+  </DItems>
+  <DItems D_Name="二级类别" DValue="a03" CodeLength="10">
+    <DItem DValue="a0301" Text="影响正常上课秩序" Listorder="0" Visible="1"/>
+    <DItem DValue="a0302" Text="迟到、早退（上下课10分钟内）" Listorder="0" Visible="1"/>
+    <DItem DValue="a0303" Text="旷课（上下课10分钟外）" Listorder="0" Visible="1"/>
+    <DItem DValue="a0304" Text="事假、病假（因公事假可不扣分，其他每学年事假不超过1次不扣分，病假不扣分）" Listorder="0" Visible="1"/>
+    <DItem DValue="a0305" Text="违反课堂纪律" Listorder="0" Visible="1"/>
+    <DItem DValue="a0306" Text="在学院规定时间内未穿着工装者" Listorder="0" Visible="1"/>
+    <DItem DValue="a0307" Text="玩手机等电子娱乐设备以及玩游戏" Listorder="0" Visible="1"/>
+  </DItems>
+  <DItems D_Name="二级类别" DValue="a04" CodeLength="10">
+    <DItem DValue="a0401" Text="故意损坏公物" Listorder="0" Visible="1"/>
+    <DItem DValue="a0402" Text="偷拿公物" Listorder="0" Visible="1"/>
+  </DItems>
+  <DItems D_Name="二级类别" DValue="a05" CodeLength="10">
+    <DItem DValue="a0501" Text="被褥不叠、叠放不整齐、铺面凌乱" Listorder="0" Visible="1"/>
+    <DItem DValue="a0502" Text="在宿舍内酗酒、赌博、传看非法、涉黄音像制品" Listorder="0" Visible="1"/>
+    <DItem DValue="a0503" Text="豢养宠物" Listorder="0" Visible="1"/>
+    <DItem DValue="a0504" Text="无正当理由晚回宿舍、晚熄灯" Listorder="0" Visible="1"/>
+    <DItem DValue="a0505" Text="未经允许夜不归宿、晚熄灯被学校通报" Listorder="0" Visible="1"/>
+    <DItem DValue="a0506" Text="校外租房" Listorder="0" Visible="1"/>
+    <DItem DValue="a0507" Text="物品摆放不整齐、桌面不干净、床头挂物" Listorder="0" Visible="1"/>
+    <DItem DValue="a0508" Text="将易燃易爆、有毒、腐蚀性等危险品带入（存放在）宿舍内" Listorder="0" Visible="1"/>
+    <DItem DValue="a0509" Text="私自动用或破坏消防、应急等安全设施" Listorder="0" Visible="1"/>
+    <DItem DValue="a0510" Text="室内私搭乱接电线" Listorder="0" Visible="1"/>
+    <DItem DValue="a0511" Text="宿舍内使用、违禁大功率电器" Listorder="0" Visible="1"/>
+    <DItem DValue="a0512" Text="地面不干净，有污物、痰迹、积水、烟灰" Listorder="0" Visible="1"/>
+    <DItem DValue="a0513" Text="在宿舍内使用明火（如：蜡烛、酒精炉、液化气罐等）" Listorder="0" Visible="1"/>
+    <DItem DValue="a0514" Text="未上早自习（大一、大二）" Listorder="0" Visible="1"/>
+  </DItems>
+
+  <DItems D_Name="二级类别" DValue="a06" CodeLength="10">
+    <DItem DValue="a0601" Text="大一、二年级通过英语四级" Listorder="0" Visible="1"/>
+    <DItem DValue="a0602" Text="大一、二年级通过英语六级" Listorder="0" Visible="1"/>
+    <DItem DValue="a0603" Text="大一、二年级以优秀成绩通过英语六级" Listorder="0" Visible="1"/>
+    <DItem DValue="a0604" Text="大三、四年级通过英语六级" Listorder="0" Visible="1"/>
+    <DItem DValue="a0605" Text="大三、四年级以优秀成绩通过英语六级" Listorder="0" Visible="1"/>
+    <DItem DValue="a0606" Text="参加科技创新比赛获得立项" Listorder="0" Visible="1"/>
+    <DItem DValue="a0607" Text="参加科技创新比赛获得立项资助" Listorder="0" Visible="1"/>
+    <DItem DValue="a0608" Text="参加科技创新比赛获得重点立项资助" Listorder="0" Visible="1"/>
+    <DItem DValue="a0609" Text="寝室文化艺术节参加寝室寝室长加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0610" Text="寝室文化艺术节其他人员加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0611" Text="参与义务献血" Listorder="0" Visible="1"/>
+    <DItem DValue="a0612" Text="受学校表扬" Listorder="0" Visible="1"/>
+    <DItem DValue="a0613" Text="受学校嘉奖" Listorder="0" Visible="1"/>
+    <DItem DValue="a0614" Text="受学校记功" Listorder="0" Visible="1"/>
+    <DItem DValue="a0615" Text="受学校记大功" Listorder="0" Visible="1"/>
+    <DItem DValue="a0616" Text="获得学院颁发荣誉称号" Listorder="0" Visible="1"/>
+    <DItem DValue="a0617" Text="获得学校颁发荣誉称号" Listorder="0" Visible="1"/>
+    <DItem DValue="a0618" Text="担任信息反馈员者并及时向学院反映教学情况" Listorder="0" Visible="1"/>
+    <DItem DValue="a0619" Text="信息反馈站站长加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0620" Text="荣获优秀信息反馈员称号者加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0621" Text="荣获优秀信息反馈站称号，该站反馈员加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0622" Text="荣获优秀信息反馈站称号，该站站长加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0623" Text="评为先进班集体或先进团支部，班长、团支书、学习委员加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0624" Text="评为其他干部" Listorder="0" Visible="1"/>
+    <DItem DValue="a0625" Text="校级“美丽宿舍”的寝室寝室长加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0626" Text="校级“美丽宿舍”的寝室其他人员加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0627" Text="评为其他院级荣誉称号的寝室寝室长加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0628" Text="评为其他院级荣誉称号的寝室其他人员加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0629" Text="通过选拔参加学院实践项目、赛前培训者，在项目参与期间、培训期间加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0630" Text="实践项目结项之后按照成果等级及个人在项目组中的贡献给予加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0631" Text="常委加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0632" Text="各部部长、班长、团支书、班导加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0633" Text="各班副部长、学习委员加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0634" Text="各部门助理、其他班委" Listorder="0" Visible="1"/>
+    <DItem DValue="a0635" Text="班级加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0636" Text="学院级加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0637" Text="学校级加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0638" Text="省市级及国家级加分" Listorder="0" Visible="1"/>
+    <DItem DValue="a0639" Text="参加志愿者服务每人每次" Listorder="0" Visible="1"/>
+  </DItems>
+</root>

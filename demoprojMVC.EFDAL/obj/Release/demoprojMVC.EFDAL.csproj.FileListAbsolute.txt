@@ -1,0 +1,16 @@
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\demoprojMVC.EFDAL.dll.config
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\demoprojMVC.EFDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\demoprojMVC.EFDAL.pdb
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\demoprojMVC.IDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\demoprojMVC.Model.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\EntityFramework.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\EntityFramework.SqlServer.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\demoprojMVC.IDAL.pdb
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\demoprojMVC.Model.pdb
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\EntityFramework.xml
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\EntityFramework.SqlServer.xml
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\zh-Hans\EntityFramework.resources.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\obj\Release\demoprojMVC.EFDAL.csprojResolveAssemblyReference.cache
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\obj\Release\demoprojMVC.EFDAL.dll
+I:\Project\demoprojMVC2\demoprojMVC.EFDAL\obj\Release\demoprojMVC.EFDAL.pdb

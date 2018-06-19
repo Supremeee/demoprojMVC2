@@ -1,0 +1,35 @@
+﻿@using demoprojMVC.Model
+@model demoprojMVC.Model.ActionInfo
+
+<h3>为用户 @Model.ActionName 设置角色</h3>
+<hr />
+@{
+    List<RoleInfo> roles = ViewBag.AllRoles;
+    List<string> existRoleID = ViewBag.ExistRoles;
+    using (Ajax.BeginForm("ProcessSetRole", new AjaxOptions { OnSuccess = "afterSetRole" }))
+    {
+        @Html.Hidden("ID", Model.ID)
+        foreach (var roleInfo in roles)
+        {
+            string str = "ckb_" + roleInfo.ID;
+            if (existRoleID.Contains(roleInfo.ID))
+            {
+                <input type="checkbox" class="checkbox-inline" checked="checked" value="@str" name="@str" />
+            }
+            else
+            {
+                <input type="checkbox" class="checkbox-inline" value="@str" name="@str" />
+            }
+
+            <label for="@str">@roleInfo.RoleName</label>
+        }
+        <hr />
+            <div class="text-right">
+                <input type="submit" value="保存" class="btn btn-success btn-sm" />
+                <input id="dialogCancel" type="button" value="取消" class="btn btn-default btn-sm" />
+            </div>
+            <div id="errmsg"></div>
+
+    }
+
+}

@@ -1,0 +1,90 @@
+﻿@model demoproj.WebUI.Models.StudnetEditViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    string isEditCss = ViewBag.isEdit == false ? " disabled" : null;
+    string dropdownLable = "--请选择--";
+
+}
+
+<script>
+    var w = window.devicePixelRatio;
+</script>
+<div class="panel">
+    <div class="panel-heading">
+        <h3>学生基本信息编辑页面--mobile</h3>
+    </div>
+    @using (Html.BeginForm("Edit", "Student", FormMethod.Post, new { enctype = "mutipart/form-data" }))
+    {
+        <div class="panel-body">
+            @Html.Hidden("studentId", Model.Student.Id)
+            <div class="form-inline form-group">
+                <label>学号：</label>
+                @Html.TextBox("student_code", Model.Student.school_code, null, new { @class = "form-control" })
+                @Html.ValidationMessage(Model.Student.school_code)
+                <label>姓名：</label>
+                @Html.TextBox("student_name", Model.Student.student_name, null, new { @class = "form-control" })
+                @Html.ValidationMessage(Model.Student.student_name)
+                
+            </div>
+            <div class="form-inline form-group">
+                <label>性别：</label>
+                @Html.DropDownList("gender", Model.Genders, dropdownLable, new { @class = "form-control" })
+                @Html.ValidationMessage(Model.Student.student_name)
+                <label>年级：</label>
+                @Html.DropDownList("grade", Model.Grades, dropdownLable, new { @class = "form-control input-sm" })
+            </div>
+            <div class="form-inline form-group">
+                
+            </div>
+            <div class="form-inline form-group">
+                <label>院系：</label>
+                @Html.DropDownList("dept", Model.Depts, dropdownLable, new { @class = "form-control input-sm" })
+                <label>专业：</label>
+                @Html.DropDownList("major", Model.Majors, dropdownLable, new { @class = "form-control input-sm" })
+            </div>
+            <div class="form-inline form-group">
+                <label>班级：</label>
+                @Html.DropDownList("banji", Model.Banjis, dropdownLable, new {@class = "form-control input-sm"})
+                <label>民族：</label>
+                @Html.DropDownList("nation", Model.Nation, dropdownLable, new {@class = "form-control input-sm"})
+               
+            </div>
+            <div class="form-inline form-group">
+                <label>出生日期：</label>
+                @Html.TextBox("born_date", Model.Student.born_date, new { @class = "form-control input-sm ", type = "date" })
+                <label>政治面貌：</label>
+                @Html.DropDownList("politicstatus", Model.Politicstatus, dropdownLable, new { @class = "form-control input-sm" })
+            </div>
+            <div class="form-inline form-group">
+                <label>手机号码：</label>
+                @Html.TextBox("telephone", Model.Student.telephone, new { @class = "form-control input-sm", type = "text" })
+                <label>身份证号码：</label>
+                @Html.TextBox("ID_card", Model.Student.ID_card, new { @class = "form-control input-sm" })
+            </div>
+            <div class="form-inline form-group">
+                <label>籍贯：</label>
+                    @Html.DropDownList("province", Model.Proviences, dropdownLable, new { @class = "form-control input-sm mini-select" })
+                    @Html.DropDownList("city", Model.Cities, dropdownLable, new { @class = "form-control mini-select" })
+                    @Html.DropDownList("district", Model.Districts, dropdownLable, new { @class = "form-control mini-select" })
+            </div>
+            <div class="form-inline form-group">
+                <label>家庭联系电话：</label>
+                @Html.TextBox("home_telephone", Model.Student.home_telephone, new { @class = "form-control input-sm", type = "text" })
+                <label>宿舍号：</label>
+                @Html.TextBox("dormitory", Model.Student.dormitory, new { @class = "form-control input-sm" })
+            </div>
+            <div class="form-inline form-group">
+                <label>入学时间：</label>
+                @Html.TextBox("rollin_date", Model.Student.rollin_date, new { @class = "form-control input-sm ", type = "date" })
+                <label>家庭住址：</label>
+                @Html.TextBox("address", Model.Student.address, new { @class = "form-control input-sm", type = "text" })
+            </div>
+        </div>
+        <div class="panel-footer">
+            <input type="submit" class="btn btn-primary btn-sm" value="保存" />
+        </div>
+    }
+
+
+</div>

@@ -1,0 +1,14 @@
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\demoprojMVC.Common.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\demoprojMVC.Common.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Memcached.ClientLibrary.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Ninject.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Spring.Core.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\log4net.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Common.Logging.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Memcached.ClientLibrary.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Ninject.xml
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Spring.Core.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Release\Spring.Core.xml
+I:\Project\demoprojMVC2\demoprojMVC.Common\obj\Release\demoprojMVC.Common.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\obj\Release\demoprojMVC.Common.pdb

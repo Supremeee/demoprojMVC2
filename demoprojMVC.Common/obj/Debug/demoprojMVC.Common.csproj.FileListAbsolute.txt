@@ -1,0 +1,15 @@
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\demoprojMVC.Common.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\demoprojMVC.Common.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Memcached.ClientLibrary.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Spring.Core.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\log4net.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Common.Logging.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Memcached.ClientLibrary.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Spring.Core.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Spring.Core.xml
+I:\Project\demoprojMVC2\demoprojMVC.Common\obj\Debug\demoprojMVC.Common.csprojResolveAssemblyReference.cache
+I:\Project\demoprojMVC2\demoprojMVC.Common\obj\Debug\demoprojMVC.Common.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\obj\Debug\demoprojMVC.Common.pdb
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Ninject.dll
+I:\Project\demoprojMVC2\demoprojMVC.Common\bin\Debug\Ninject.xml

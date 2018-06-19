@@ -1,0 +1,108 @@
+﻿@using demoprojMVC.UI.Portal.HtmlHelpers
+@model demoprojMVC.UI.Portal.Models.ActionInfoViewModel
+
+@{
+    AjaxOptions options = new AjaxOptions
+    {
+        UpdateTargetId = "actionInfo",
+        Url = Url.Action("Delete")
+    };
+    bool isFirst = Model.PagingInfo.CurrentPage == 1;
+    bool isLast = Model.PagingInfo.CurrentPage == Model.PagingInfo.TotalPages;
+
+}
+@if (TempData["ErrorMsg"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMsg"]</div>
+    return;
+}
+@if (TempData["DealErrMsg"] != null)
+{
+    <div class="alert alert-info">@TempData["DealErrMsg"]</div>
+}
+
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th class="text-center hidden-xs">权限名</th>
+        <th class="text-center">URL</th>
+        <th class="text-center hidden-xs">Http方法类型</th>
+        <th class="text-center">是否是菜单</th>
+        <th class="text-center hidden-xs">排序</th>
+        <th class="text-center">操作</th>
+    </tr>
+    @foreach (var item in Model.ActionInfos)
+            {
+        <tr @*class="@(item.DelFlag != true? "un-audit-color" : null)"*@>
+            <td class="text-center hidden-xs">@item.ActionName</td>
+            <td class="text-center">@Html.ActionLink(item.Url, "Show", new { item.ID })</td>
+            <td class="text-center hidden-xs">@item.HttpMethd</td>
+            <td class="text-center">@(item.IsMenu ? "是" : "否")</td>
+            <td class="text-center hidden-xs">@item.Sort</td>
+            <td class="text-center">
+                <span style="display: inline-block">
+                    @using (Ajax.BeginForm(options))
+                {
+                        @Html.Hidden("actionInfoId", item.ID)
+                        @Html.ActionLink("编辑", "Edit", new { item.ID, isEdit = true }, new
+                   {
+                       @class = "btn btn-primary btn-xs" @*+ (item.audit == true ? " hidden" : null)*@ })
+                        <input type="submit" class="btn btn-danger btn-xs" name="action" value="删除" />
+                        @*<input type="submit" class="btn btn-info hidden-xs btn-xs @(item.@lock == true ? "hidden" : null)" style="display: @(item.@lock == true ? "none" : "inline-block") !important" name="action" value="审核" />*@
+                        @*<input type="submit" class="btn btn-info hidden-xs btn-xs" style="display: inline-block !important" name="action" value="锁定" />*@
+                    }
+                </span>
+                <span style="display: inline-block">
+                    @using (Ajax.BeginForm("SetRoleUI", new AjaxOptions { OnSuccess = "afterSetRoleUI", HttpMethod = "Get" }))
+                {
+                        @Html.Hidden("ID", item.ID)
+                        <input type="submit" id="setRole" value="设置角色" class="btn btn-info btn-xs" />
+                    }
+                </span>
+
+            </td>
+        </tr>
+    }
+</table>
+<div class="panel-footer">
+    <label>当前第 @Model.PagingInfo.CurrentPage 页</label>
+    <label>共 @Model.PagingInfo.TotalPages 页</label>
+    <label> 共 @Model.PagingInfo.TotalItems 条数据</label>
+    <b>跳转到：@Html.PageLinks(Model.PagingInfo, x => x.ToString())</b>
+    <span class="btn btn-info btn-sm pageTurn @(isFirst ? " disabled": "")" title="1"> << </span>
+    <span class="btn btn-info btn-sm pageTurn  @(isFirst ? " disabled": "")" title="@(Model.PagingInfo.CurrentPage -1)"> < </span>
+    <span class="btn btn-info btn-sm pageTurn @(isLast ? " disabled": "")" title="@(Model.PagingInfo.CurrentPage +1)"> > </span>
+    <span class="btn btn-info btn-sm pageTurn @(isLast ? " disabled": "")" title="@Model.PagingInfo.TotalPages"> >> </span>
+</div>
+@* 异步刷新翻页 *@
+<script>
+    $('#pageTo').change(function () {
+
+        $.ajax({
+            url: '/ActionInfo/GetActionInfoData',
+            type: 'post',
+            async: true,
+            data: { page: $('#pageTo').val(), type: $('input[name="type"]:checked').val(), searchContext: $('#searchContext').val() },
+            timeout: 5000,
+            dataType: 'html',
+            success: function (data) {
+                $('#actionInfo').html(data);
+            }
+        });
+    });
+
+
+    $('.pageTurn').click(function () {
+        //var disabled = $(this).attr("data-disabled");
+        $.ajax({
+            url: '/ActionInfo/GetActionInfoData',
+            type: 'post',
+            async: true,
+            data: { page: $(this).attr("title"), type: $('input[name="type"]:checked').val(), searchContext: $('#searchContext').val() },
+            timeout: 5000,
+            dataType: 'html',
+            success: function (data) {
+                $('#actionInfo').html(data);
+            }
+        });
+    });
+</script>

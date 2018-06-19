@@ -1,0 +1,126 @@
+﻿@model demoprojMVC.Model.td_students
+
+@{
+    ViewBag.Title = "Show";
+}
+<div class="panel">
+    <div class="panel-heading text-center">
+        <h3>学生基本信息编辑页面</h3>
+    </div>
+    @if (TempData["Errmsg"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Errmsg"]</div>
+    }
+    @using (Html.BeginForm("Edit", "StudentInfo", FormMethod.Get, new { enctype = "mutipart/form-data" }))
+    {
+        <div class="panel-body">
+            @Html.Hidden("Id", Model.id)
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">学号：</label>
+                        @Model.school_code
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">姓名：</label>
+                        @Model.student_name
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">性别：</label>
+                        @Model.gender
+                    </div>
+                </div>
+            </div>
+            <div class="form-group container">
+                <div class="row  form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">年级：</label>
+                        @Model.grade
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">院系</label>
+                        @Model.dept
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">专业</label>
+                        @Model.major
+                    </div>
+                </div>
+            </div>
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">班级：</label>
+                        @Model.banji
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">民族：</label>
+                        @Model.nation
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">出生日期：</label>
+                        @(Model.born_date.HasValue ? Model.born_date.Value.ToShortDateString() : "")
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">政治面貌：</label>
+                        @Model.politicstatus
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">手机号码：</label>
+                        @(Model.telephone ?? "")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">身份证号码：</label>
+                        @(Model.ID_card ?? "")
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">宿舍号码：</label>
+                        @(Model.dormitory ?? "")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">入学时间：</label>
+                        @(Model.rollin_date.HasValue ? Model.rollin_date.Value.ToShortDateString() : "")
+
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">家庭住址：</label>
+                        @(Model.address ?? "")
+                    </div>
+                </div>
+            </div>
+            <div class="form-inline form-group container">
+                <div class="row form-horizontal">
+                    <div class="col-sm-4">
+                        <label class="title">籍贯：</label>
+                        @(Model.native_place ?? "")
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="title">家庭电话：</label>
+                        @(Model.home_telephone ?? "")
+                    </div>
+                </div>
+            </div>
+            <div class="form-inline form-group container">
+                <div class="row form-horizontal">
+
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <input type="submit" class="btn btn-primary btn-sm @(ViewBag.ShowEdit ? "" : "hidden")" value="编辑"/>
+            @Html.ActionLink("返回","List",null,new { @class="btn btn-sm btn-info"})
+        </div>
+
+    }
+</div>
+

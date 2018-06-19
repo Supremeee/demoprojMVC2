@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object name="td_studentsService" type="demoprojMVC.BLL.td_studentsService, demoprojMVC.BLL" singleton="false" >
+  </object>
+
+  <!--<object name="OrderInfoService" type="Heima8.OA.BLL.OrderInfoService, Heima8.OA.BLL" singleton="false" >
+  </object>
+
+  <object name="RoleInfoService" type="Heima8.OA.BLL.RoleInfoService, Heima8.OA.BLL" singleton="false" >
+  </object>
+
+  <object name="UserInfoService" type="Heima8.OA.BLL.UserInfoService, Heima8.OA.BLL" singleton="false" >
+  </object>-->
+</objects>

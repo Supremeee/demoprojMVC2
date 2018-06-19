@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hynustuaffModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActionInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="SubTime" Type="datetime" Nullable="false" />
+    <Property Name="ModfiedOn" Type="datetime" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="64" />
+    <Property Name="DelFlag" Type="smallint" Nullable="false" />
+    <Property Name="Url" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="HttpMethd" Type="nvarchar" MaxLength="32" />
+    <Property Name="ActionName" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="IsMenu" Type="bit" Nullable="false" />
+    <Property Name="MenuIcon" Type="nvarchar" MaxLength="512" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="acts">
+    <Key>
+      <PropertyRef Name="act_id" />
+    </Key>
+    <Property Name="act_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="act_tarids" Type="varchar" MaxLength="50" />
+    <Property Name="act_tartablename" Type="varchar" MaxLength="25" />
+    <Property Name="act_userIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="act_username" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="act_useraction" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="act_sqlstr" Type="varchar" MaxLength="200" />
+    <Property Name="act_datetime" Type="datetime" />
+    <Property Name="act_deptname" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="act_userrolename" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="act_DETAIL" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="application_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="application_program" Type="varchar" MaxLength="10" />
+    <Property Name="school_code" Type="varchar" MaxLength="10" />
+    <Property Name="school_year" Type="varchar" MaxLength="10" />
+    <Property Name="application_start_data" Type="datetime" />
+    <Property Name="application_end_data" Type="datetime" />
+    <Property Name="application_status" Type="varchar" MaxLength="10" />
+    <Property Name="prize_level" Type="varchar" MaxLength="10" />
+    <Property Name="is_difficult_stu" Type="bit" />
+    <Property Name="score_kao_ping_lowest" Type="varchar" MaxLength="10" />
+    <Property Name="nianji_score_rank" Type="varchar" MaxLength="10" />
+    <Property Name="banji_score_rank" Type="varchar" MaxLength="10" />
+    <Property Name="danke_lowest" Type="varchar" MaxLength="10" />
+    <Property Name="pinjun_lowest" Type="varchar" MaxLength="10" />
+    <Property Name="is_fail_a_exam" Type="bit" />
+    <Property Name="is_punishment" Type="bit" />
+    <Property Name="once_is_punishment" Type="bit" />
+    <Property Name="suitable_object" Type="varchar" MaxLength="50" />
+    <Property Name="project_intro" Type="varchar(max)" />
+    <Property Name="instructor_audit" Type="bit" />
+    <Property Name="instructor" Type="varchar" MaxLength="10" />
+    <Property Name="xuegong_audit" Type="bit" />
+    <Property Name="xuegong" Type="varchar" MaxLength="10" />
+    <Property Name="dept_approver" Type="varchar" MaxLength="10" />
+    <Property Name="dept_audit" Type="bit" />
+    <Property Name="is_instructor_audit" Type="bit" />
+    <Property Name="is_dept_audit" Type="bit" />
+    <Property Name="audit" Type="bit" Nullable="false" />
+    <Property Name="lock" Type="bit" />
+  </EntityType>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="dept_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dept_code" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="subject_code" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="connect_user" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="dept_director" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="found_time" Type="datetime" />
+    <Property Name="email" Type="varchar" MaxLength="25" />
+    <Property Name="tel" Type="varchar" MaxLength="20" />
+    <Property Name="website" Type="varchar" MaxLength="50" />
+    <Property Name="introduction" Type="nvarchar(max)" />
+    <Property Name="numofyanjiusheng" Type="int" />
+    <Property Name="numofboshisheng" Type="int" />
+    <Property Name="numofCNBooks" Type="int" />
+    <Property Name="numofFLBooks" Type="int" />
+    <Property Name="numofCNQikan" Type="int" />
+    <Property Name="numofFLQikan" Type="int" />
+    <Property Name="update_time" Type="datetime" />
+    <Property Name="audit" Type="bit" />
+    <Property Name="lock" Type="tinyint" />
+    <Property Name="Lab_equipment_count" Type="int" />
+    <Property Name="address" Type="varchar" MaxLength="30" />
+    <Property Name="Lab_equipment_property" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="admit_unit" Type="varchar" MaxLength="30" />
+    <Property Name="numstaff" Type="int" />
+    <Property Name="numproject" Type="int" />
+    <Property Name="numarchievement" Type="int" />
+    <Property Name="numaward" Type="int" />
+    <Property Name="numreflection" Type="int" />
+  </EntityType>
+  <EntityType Name="R_UserInfo_ActionInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="HasPermission" Type="bit" Nullable="false" />
+    <Property Name="UserInfoID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="ActionInfoID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="DelFlag" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoleInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="SubTime" Type="datetime" Nullable="false" />
+    <Property Name="ModfiedOn" Type="datetime" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="64" />
+    <Property Name="DelFlag" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoleInfoActionInfo">
+    <Key>
+      <PropertyRef Name="RoleInfoActionInfo_ActionInfo_ID" />
+      <PropertyRef Name="ActionInfo_ID" />
+    </Key>
+    <Property Name="RoleInfoActionInfo_ActionInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="ActionInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoleInfoUserInfo">
+    <Key>
+      <PropertyRef Name="RoleInfoUserInfo_UserInfo_ID" />
+      <PropertyRef Name="UserInfo_ID" />
+    </Key>
+    <Property Name="RoleInfoUserInfo_UserInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="UserInfo_ID" Type="varchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_App">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="app_code" Type="varchar" MaxLength="8" />
+    <Property Name="app_name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="app_nameEn" Type="varchar" MaxLength="50" />
+    <Property Name="app_type" Type="varchar" MaxLength="4" />
+    <Property Name="dept_Code" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="proc_name" Type="varchar" MaxLength="30" />
+    <Property Name="host_url" Type="varchar" MaxLength="50" />
+    <Property Name="audit" Type="bit" />
+    <Property Name="listorder" Type="int" />
+    <Property Name="parent_appcode" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="T_Roles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="role_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="role_AuthorRights" Type="int" Nullable="false" />
+    <Property Name="DataScale" Type="varchar" MaxLength="10" />
+    <Property Name="audit" Type="bit" />
+    <Property Name="ntime" Type="datetime" />
+    <Property Name="sitemap" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="T_Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="user_code" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="user_name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="user_realname" Type="varchar" MaxLength="12" />
+    <Property Name="user_roles_code" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="user_dept_code" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="user_telphone" Type="varchar" MaxLength="50" />
+    <Property Name="user_password" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="regdatetime" Type="datetime" />
+    <Property Name="lastApp" Type="varchar" MaxLength="60" />
+    <Property Name="authApps" Type="varchar(max)" />
+    <Property Name="authRights" Type="varchar(max)" />
+    <Property Name="lastLoginDatetime" Type="datetime" />
+    <Property Name="lastLoginIP" Type="varchar" MaxLength="30" />
+    <Property Name="useRolesitemap" Type="bit" />
+    <Property Name="lock" Type="smallint" />
+    <Property Name="audit" Type="bit" />
+  </EntityType>
+  <EntityType Name="td_students">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="school_code" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="student_name" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="grade" Type="varchar" MaxLength="10" />
+    <Property Name="dept" Type="varchar" MaxLength="10" />
+    <Property Name="major" Type="varchar" MaxLength="10" />
+    <Property Name="banji" Type="varchar" MaxLength="10" />
+    <Property Name="gender" Type="varchar" MaxLength="2" />
+    <Property Name="nation" Type="varchar" MaxLength="10" />
+    <Property Name="born_date" Type="datetime" />
+    <Property Name="telephone" Type="varchar" MaxLength="14" />
+    <Property Name="politicstatus" Type="varchar" MaxLength="6" />
+    <Property Name="ID_card" Type="varchar" MaxLength="18" />
+    <Property Name="native_place" Type="varchar" MaxLength="20" />
+    <Property Name="address" Type="varchar" MaxLength="100" />
+    <Property Name="home_telephone" Type="varchar" MaxLength="14" />
+    <Property Name="rollin_date" Type="datetime" />
+    <Property Name="dormitory" Type="varchar" MaxLength="10" />
+    <Property Name="imageurl" Type="varchar" MaxLength="50" />
+    <Property Name="audit" Type="bit" />
+    <Property Name="lock" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="UName" Type="nvarchar" MaxLength="32" />
+    <Property Name="Pwd" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="ShowName" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="DelFlag" Type="smallint" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="64" />
+    <Property Name="ModfiedOn" Type="datetime" Nullable="false" />
+    <Property Name="SubTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ActionInfoR_UserInfo_ActionInfo">
+    <End Role="ActionInfo" Type="Self.ActionInfo" Multiplicity="1" />
+    <End Role="R_UserInfo_ActionInfo" Type="Self.R_UserInfo_ActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActionInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_UserInfo_ActionInfo">
+        <PropertyRef Name="ActionInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleInfoActionInfo_ActionInfo">
+    <End Role="ActionInfo" Type="Self.ActionInfo" Multiplicity="1" />
+    <End Role="RoleInfoActionInfo" Type="Self.RoleInfoActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActionInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RoleInfoActionInfo">
+        <PropertyRef Name="ActionInfo_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleInfoActionInfo_RoleInfo">
+    <End Role="RoleInfo" Type="Self.RoleInfo" Multiplicity="1" />
+    <End Role="RoleInfoActionInfo" Type="Self.RoleInfoActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RoleInfoActionInfo">
+        <PropertyRef Name="RoleInfoActionInfo_ActionInfo_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleInfoUserInfo_RoleInfo">
+    <End Role="RoleInfo" Type="Self.RoleInfo" Multiplicity="1" />
+    <End Role="RoleInfoUserInfo" Type="Self.RoleInfoUserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RoleInfoUserInfo">
+        <PropertyRef Name="RoleInfoUserInfo_UserInfo_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleInfoUserInfo_UserInfo">
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+    <End Role="RoleInfoUserInfo" Type="Self.RoleInfoUserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RoleInfoUserInfo">
+        <PropertyRef Name="UserInfo_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfoR_UserInfo_ActionInfo">
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+    <End Role="R_UserInfo_ActionInfo" Type="Self.R_UserInfo_ActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_UserInfo_ActionInfo">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="hynustuaffModelStoreContainer">
+    <EntitySet Name="ActionInfo" EntityType="Self.ActionInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="acts" EntityType="Self.acts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="application_list" EntityType="Self.application_list" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_UserInfo_ActionInfo" EntityType="Self.R_UserInfo_ActionInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleInfo" EntityType="Self.RoleInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleInfoActionInfo" EntityType="Self.RoleInfoActionInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleInfoUserInfo" EntityType="Self.RoleInfoUserInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_App" EntityType="Self.T_App" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Roles" EntityType="Self.T_Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Users" EntityType="Self.T_Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="td_students" EntityType="Self.td_students" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ActionInfoR_UserInfo_ActionInfo" Association="Self.FK_ActionInfoR_UserInfo_ActionInfo">
+      <End Role="ActionInfo" EntitySet="ActionInfo" />
+      <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleInfoActionInfo_ActionInfo" Association="Self.FK_RoleInfoActionInfo_ActionInfo">
+      <End Role="ActionInfo" EntitySet="ActionInfo" />
+      <End Role="RoleInfoActionInfo" EntitySet="RoleInfoActionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleInfoActionInfo_RoleInfo" Association="Self.FK_RoleInfoActionInfo_RoleInfo">
+      <End Role="RoleInfo" EntitySet="RoleInfo" />
+      <End Role="RoleInfoActionInfo" EntitySet="RoleInfoActionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleInfoUserInfo_RoleInfo" Association="Self.FK_RoleInfoUserInfo_RoleInfo">
+      <End Role="RoleInfo" EntitySet="RoleInfo" />
+      <End Role="RoleInfoUserInfo" EntitySet="RoleInfoUserInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleInfoUserInfo_UserInfo" Association="Self.FK_RoleInfoUserInfo_UserInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="RoleInfoUserInfo" EntitySet="RoleInfoUserInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfoR_UserInfo_ActionInfo" Association="Self.FK_UserInfoR_UserInfo_ActionInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
